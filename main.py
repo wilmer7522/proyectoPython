@@ -61,6 +61,7 @@ def registrarNotas(camper):
         if str(inscripcion.get('id')) == id_camper:  # Convertir a cadena para comparar con entrada de usuario
             inscripcion_encontrada = inscripcion
             break
+    
     if inscripcion_encontrada:
         print(f"Inscripción encontrada para el ID: {id_camper}")
         nota_teorica = float(input("Ingrese la nota teórica del camper: "))
@@ -69,28 +70,41 @@ def registrarNotas(camper):
         inscripcion_encontrada["Promedio"] = promedio
         inscripcion_encontrada["Estado"] = "Aprobado" if promedio >= 60 else "Desaprobado"
         print("Notas registradas y estados actualizados.")
+        guardarArchivo(camper)  # Guardar cambios en el archivo JSON
     else:
         print("No se encontró ninguna inscripción para el ID proporcionado.")
 
-
 def areasEntrenamiento(camper):
     print("Areas de entrenamiento")
-    for camper in camper:
-        print(f"ID: {camper['# de identificación']}")
-        print("1. NodeJS")
-        print("2. Java")
-        print("3. NetCore")
+    id_camper = input("Ingrese el ID del camper: ")
+    inscripcion_encontrada = None
+    
+    # Buscar la inscripción con el ID proporcionado
+    for inscripcion in camper[0]["inscripciones"]:
+        if str(inscripcion.get('id')) == id_camper:  # Convertir a cadena para comparar con entrada de usuario
+            inscripcion_encontrada = inscripcion
+            break
+    
+    if inscripcion_encontrada:
+        print(f"Inscripción encontrada para el ID: {id_camper}")
+        print("1. Sputnik")
+        print("2. Artemis")
+        print("3. Apolo")
         area = input("Seleccione el área de entrenamiento para este camper: ")
         if area == "1":
-            camper["Area de entrenamiento"] = "Sputnik"
+            inscripcion_encontrada["Area de entrenamiento"] = "Sputnik"
         elif area == "2":
-            camper["Area de entrenamiento"] = "Atermis"
+            inscripcion_encontrada["Area de entrenamiento"] = "Artemis"
         elif area == "3":
-            camper["Area de entrenamiento"] = "Apolo"
+            inscripcion_encontrada["Area de entrenamiento"] = "Apolo"
         else:
             print("Opción no válida, se asignará el área Sputnik por defecto.")
-            camper["Area de entrenamiento"] = "Sputnik"
-        print()
+            inscripcion_encontrada["Area de entrenamiento"] = "Sputnik"
+        print("Asignación de área de entrenamiento completada.")
+        guardarArchivo(camper)  # Guardar cambios en el archivo JSON
+    else:
+        print("No se encontró ninguna inscripción para el ID proporcionado.")
+
 
 inscripciones ={}
 camper = abrirArchivo()
