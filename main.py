@@ -52,11 +52,11 @@ def procesar_inscripcion(camper):
     print("guardado con exito")
    
 def rutasEntrenamiento(camper):
-    horarios = {
-        "Ruta NodeJS": ["6:00 - 10:00", "10:00 - 14:00", "14:00 - 18:00"],
-        "Ruta Java":["6:00 - 10:00", "10:00 - 14:00", "14:00 - 18:00"],
-        "Ruta NetCore":["6:00 - 10:00", "10:00 - 14:00", "14:00 - 18:00"]
-    }
+    # horarios = {
+    #     "Ruta NodeJS": ["6:00 - 10:00", "10:00 - 14:00", "14:00 - 18:00"],
+    #     "Ruta Java":["6:00 - 10:00", "10:00 - 14:00", "14:00 - 18:00"],
+    #     "Ruta NetCore":["6:00 - 10:00", "10:00 - 14:00", "14:00 - 18:00"]
+    # }
     print("Rutas de entrenamiento")
     id_camper = input("Ingrese el ID del camper: ")
     camper_encontrado = None
@@ -102,7 +102,8 @@ def rutasEntrenamiento(camper):
             print("Opción no válida, se asignará la Ruta NodeJS por defecto.")
             camper_encontrado["rutaEntrenamiento"] = "Ruta NodeJS"
         print("Asignación de ruta completada.")
-        print("Horarios de clases para esta ruta: ")#, horarios[camper_encontrado["rutaEntrenamiento"]]
+        print("Horarios de clases para esta ruta: ")
+        # horarios[camper_encontrado("rutasEntrenamiento")]
         
         guardarArchivo(camper)  # Guardar cambios en el archivo JSON
     else:
@@ -161,10 +162,13 @@ def areasEntrenamiento(camper):
         area = input("Seleccione el área de entrenamiento para este camper: ")
         if area == "1":
             inscripcion_encontrada["Area de entrenamiento"] = "Sputnik"
+            guardarArchivo(camper)
         elif area == "2":
             inscripcion_encontrada["Area de entrenamiento"] = "Artemis"
+            guardarArchivo(camper)
         elif area == "3":
             inscripcion_encontrada["Area de entrenamiento"] = "Apolo"
+            guardarArchivo(camper)
         else:
             print("Opción no válida, se asignará el área Sputnik por defecto.")
             inscripcion_encontrada["Area de entrenamiento"] = "Sputnik"
@@ -196,22 +200,27 @@ def crearRutaEntrenamiento(camper):
     nueva_ruta = {
         "nombre": nombre_ruta,
         "modulos": {
-            "Fundamentos de programación": modulo_fundamentos,
-            "Programación Web": modulo_web,
-            "Programación formal": modulo_formal,
+            "Fundamentos de programacion": modulo_fundamentos,
+            "Programacion Web": modulo_web,
+            "Programacion formal": modulo_formal,
             "Bases de datos": {
                 "SGDB principal": sgdb_principal,
                 "SGDB alternativo": sgdb_alternativo
             },
             "Backend": {
                 "Horario": horario,
-                "Límite de estudiantes": limite_estudiantes
+                "Limite de estudiantes": limite_estudiantes
             }
         }
     }
     camper.append(nueva_ruta)
     guardarArchivo(camper)
     print("Nueva ruta de entrenamiento creada con éxito.")
+
+# def inscritoAprobado (camper):
+#     if len([c for c in camper[0]["inscripciones"] if c.get("rutasEntrenamiento")=="Estado"]):
+#             if 
+#             print("Lo siento, haz reprobado por lo tanto no te puedo asginar a una ruta de entrenamiento.")
 
 
 inscripciones ={}
@@ -223,6 +232,7 @@ print("2. Rutas de entrenamiento")
 print("3. Registrar notas")
 print("4. Áreas de entrenamiento")
 print("5. Crear nuevas rutas")
+# print("6. Campers inscrito a aprobado")
 opcion = int(input("Ingresa una opción: "))
 if opcion == 1:
     procesar_inscripcion(camper)
@@ -235,6 +245,7 @@ if opcion == 4:
 if opcion == 5:
     crearRutaEntrenamiento(camper)
 
+    
 menu()
 
 

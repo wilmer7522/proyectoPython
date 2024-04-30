@@ -58,7 +58,8 @@
                     {
                         "ingreso": "tiybu"
                     }
-                ]
+                ],
+                "rutaEntrenamiento": "ruta NetCore"
             },
             {
                 "id": 5,
@@ -255,7 +256,8 @@
                 ],
                 "rutaEntrenamiento": "Ruta NetCore",
                 "Promedio": 60.0,
-                "Estado": "Aprobado"
+                "Estado": "Aprobado",
+                "Area de entrenamiento": "Sputnik"
             },
             {
                 "id": 18,
@@ -305,7 +307,60 @@
                         "ingreso": "Aprobado"
                     }
                 ],
-                "rutaEntrenamiento": "ruta NodeJS"
+                "rutaEntrenamiento": "ruta NodeJS",
+                "Area de entrenamiento": "Sputnik"
+            },
+            {
+                "id": 21,
+                "nombre": "lorena",
+                "apellido": "loren",
+                "identificacion": 123456988,
+                "direccion": "19-63",
+                "acudiente": "Karen",
+                "telefono_celular": 323245896,
+                "telefono_fijo": 665544,
+                "estado": [
+                    {
+                        "ingreso": "Aprobado"
+                    }
+                ],
+                "rutaEntrenamiento": "ruta NetCore",
+                "Promedio": 20.0,
+                "Estado": "Reprobado",
+                "Area de entrenamiento": "Apolo"
+            },
+            {
+                "id": 22,
+                "nombre": "freiler",
+                "apellido": "ortega",
+                "identificacion": 300424080,
+                "direccion": "30-12",
+                "acudiente": "Aleiro",
+                "telefono_celular": 3124589521,
+                "telefono_fijo": 458952,
+                "estado": [
+                    {
+                        "ingreso": "En proceso de ingreso"
+                    }
+                ],
+                "rutaEntrenamiento": "ruta NetCore",
+                "Area de entrenamiento": "Artemis"
+            },
+            {
+                "id": 23,
+                "nombre": "Alexander",
+                "apellido": "Rojas",
+                "identificacion": 10025468912,
+                "direccion": "10-18",
+                "acudiente": "Wilmer",
+                "telefono_celular": 3245612896,
+                "telefono_fijo": 45125,
+                "estado": [
+                    {
+                        "ingreso": "Inscrito"
+                    }
+                ],
+                "rutaEntrenamiento": "ruta Java"
             }
         ]
     },
@@ -322,6 +377,22 @@
             "Backend": {
                 "Horario": "6:00 - 10:00",
                 "L\u00edmite de estudiantes": 33
+            }
+        }
+    },
+    {
+        "nombre": "Laravel 11",
+        "modulos": {
+            "Fundamentos de programacion": "Introducci\u00f3n a la algoritmia",
+            "Programacion Web": "HTML",
+            "Programacion formal": "C#",
+            "Bases de datos": {
+                "SGDB principal": "Postgresql",
+                "SGDB alternativo": "Mysql"
+            },
+            "Backend": {
+                "Horario": "6:00 - 10:00",
+                "Limite de estudiantes": 33
             }
         }
     }
