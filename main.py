@@ -50,6 +50,30 @@ def procesar_inscripcion(camper):
     )
     guardarArchivo(camper)
     print("guardado con exito")
+
+def vercampers(camper):
+    print("Buscar Camper")
+    id_camper = input("Ingrese el ID del camper a verificar: ")
+    camper_encontrado = None
+    
+    # Buscar el camper con el ID proporcionado dentro de las inscripciones
+    for inscripcion in camper[0]["inscripciones"]:
+        if str(inscripcion.get('id')) == id_camper:  # Convertir a cadena para comparar con entrada de usuario
+            camper_encontrado = inscripcion
+            #print(f"camper {camper_encontrado}Nombre {"nombre"}")
+            break
+    
+    if camper_encontrado:
+        print(f"ID: {camper_encontrado.get('id')}")
+        print("####################")
+        print(f"ID: {id_camper}")
+        print(f"Nombre: {inscripcion["nombre"]}")
+        print(f"Apellido: {inscripcion["apellido"]}")
+
+        print(f"Estado: {inscripcion["estado"][0]["ingreso"]}")
+        #print(f"Ruta de entrenamiento: {inscripcion["rutaEntrenamiento"]}")
+        print("#####################")
+    
    
 def rutasEntrenamiento(camper):
     # horarios = {
@@ -133,8 +157,41 @@ def registrarNotas(camper):
         promedio = (nota_teorica + nota_practica) / 2
         inscripcion_encontrada["Promedio"] = promedio
         inscripcion_encontrada["Estado"] = "Aprobado" if promedio >= 60 else "Reprobado"
-        print("Notas registradas y estados actualizados.")
+        if inscripcion_encontrada["Estado"] == "Aprobado":#AGREGADO
+            print("")
+        print("camper aprobado")#AGREGADO
+        print("#####################")
+        print("")
+        print("1. Ruta NodeJS")
+        print("2. Ruta Java")
+        print("3. Ruta NetCore")
+        print("")
+        ruta = input("Seleccione la ruta para este camper: ")
+        if ruta == "1":
+            if len([c for c in camper[0]["inscripciones"] if c.get("rutaEntrenamiento")=="Ruta NodeJS"]) >=33:
+                print("Lo siento, la ruta de entrenamiento NodeJS esta llena.")
+                return
+            inscripcion_encontrada["rutaEntrenamiento"] = "ruta NodeJS"
+        elif ruta == "2":
+            if len([c for c in camper[0]["inscripciones"] if c.get("rutaEntrenamiento")=="Ruta Java"]) >=33:
+                print("Lo siento, la ruta de entrenamiento Java esta llena.")
+                return
+            inscripcion_encontrada["rutaEntrenamiento"] = "ruta Java"
+        elif ruta == "3":
+            if len([c for c in camper[0]["inscripciones"] if c.get("rutaEntrenamiento")=="Ruta NetCore"]) >=33:
+                print("Lo siento, la ruta de entrenamiento NetCore esta llena.")
+                return
+            inscripcion_encontrada["rutaEntrenamiento"] = "ruta NetCore"
+        else:
+            print("Opción no válida, se asignará la Ruta NodeJS por defecto.")
+            inscripcion_encontrada["rutaEntrenamiento"] = "Ruta NodeJS"
+        print("Asignación de ruta completada.")
+        print("Horarios de clases para esta ruta: ")
+        # horarios[camper_encontrado("rutasEntrenamiento")]
+        
         guardarArchivo(camper)  # Guardar cambios en el archivo JSON
+        #print("Notas registradas y estados actualizados.")
+        #guardarArchivo(camper)  # Guardar cambios en el archivo JSON
     else:
         print("No se encontró ninguna inscripción para el ID proporcionado.")
 
@@ -226,12 +283,14 @@ def crearRutaEntrenamiento(camper):
 inscripciones ={}
 camper = abrirArchivo()
 def menu():
-    print("=====Menú=====")
+    print("")
+print("=====Menú=====")
 print("1. Inscripciones")
 print("2. Rutas de entrenamiento")
 print("3. Registrar notas")
 print("4. Áreas de entrenamiento")
 print("5. Crear nuevas rutas")
+print("6. Buscar camper")
 # print("6. Campers inscrito a aprobado")
 opcion = int(input("Ingresa una opción: "))
 if opcion == 1:
@@ -244,6 +303,8 @@ if opcion == 4:
     areasEntrenamiento(camper)
 if opcion == 5:
     crearRutaEntrenamiento(camper)
+if opcion == 6:
+    vercampers(camper)
 
     
 menu()

@@ -307,8 +307,10 @@
                         "ingreso": "Aprobado"
                     }
                 ],
-                "rutaEntrenamiento": "ruta NodeJS",
-                "Area de entrenamiento": "Sputnik"
+                "rutaEntrenamiento": "Ruta NodeJS",
+                "Area de entrenamiento": "Sputnik",
+                "Promedio": 20.0,
+                "Estado": "Reprobado"
             },
             {
                 "id": 21,
