@@ -222,6 +222,7 @@ print("1. Inscripciones")
 print("2. Rutas de entrenamiento")
 print("3. Registrar notas")
 print("4. Áreas de entrenamiento")
+print("5. Crear nuevas rutas")
 opcion = int(input("Ingresa una opción: "))
 if opcion == 1:
     procesar_inscripcion(camper)
@@ -231,6 +232,8 @@ if opcion == 3:
     registrarNotas(camper)
 if opcion == 4:
     areasEntrenamiento(camper)
+if opcion == 5:
+    crearRutaEntrenamiento(camper)
 
 menu()
 
