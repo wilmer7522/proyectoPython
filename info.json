@@ -395,5 +395,21 @@
                 "Limite de estudiantes": 33
             }
         }
+    },
+    {
+        "nombre": "flutter",
+        "modulos": {
+            "Fundamentos de programacion": "Python",
+            "Programacion Web": "Html",
+            "Programacion formal": "JavaScript",
+            "Bases de datos": {
+                "SGDB principal": "Mysql",
+                "SGDB alternativo": "Mongo"
+            },
+            "Backend": {
+                "Horario": "06",
+                "Limite de estudiantes": 33
+            }
+        }
     }
 ]
