@@ -363,6 +363,39 @@
                     }
                 ],
                 "rutaEntrenamiento": "ruta Java"
+            },
+            {
+                "id": 24,
+                "nombre": "karen",
+                "apellido": "karen",
+                "identificacion": 456456456,
+                "direccion": "4444",
+                "acudiente": "karen",
+                "telefono_celular": 323245689,
+                "telefono_fijo": 323323,
+                "estado": [
+                    {
+                        "ingreso": "En proceso"
+                    }
+                ],
+                "Promedio": 80.0,
+                "Estado": "Aprobado"
+            },
+            {
+                "id": 25,
+                "nombre": "g",
+                "apellido": "g",
+                "identificacion": 451268,
+                "direccion": "45-5",
+                "acudiente": "gg",
+                "telefono_celular": 321654987,
+                "telefono_fijo": 451236,
+                "estado": [
+                    {
+                        "ingreso": "Aprobado"
+                    }
+                ],
+                "rutaEntrenamiento": "ruta Java"
             }
         ]
     },
