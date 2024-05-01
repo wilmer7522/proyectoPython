@@ -331,10 +331,10 @@
                         "ingreso": "Aprobado"
                     }
                 ],
-                "rutaEntrenamiento": "ruta NetCore",
-                "Promedio": 20.0,
-                "Estado": "Reprobado",
-                "Area de entrenamiento": "Apolo"
+                "Promedio": 80.0,
+                "riesgo": "Bajo",
+                "rutaEntrenamiento": "ruta Java",
+                "horario": "10:00 - 14:00"
             },
             {
                 "id": 22,
@@ -347,11 +347,14 @@
                 "telefono_fijo": 458952,
                 "estado": [
                     {
-                        "ingreso": "En proceso de ingreso"
+                        "ingreso": "Aprobado"
                     }
                 ],
                 "rutaEntrenamiento": "ruta NetCore",
-                "Area de entrenamiento": "Artemis"
+                "Area de entrenamiento": "Artemis",
+                "Promedio": 69.0,
+                "riesgo": "Bajo",
+                "horario": "10:00 - 14:00"
             },
             {
                 "id": 23,
@@ -364,10 +367,13 @@
                 "telefono_fijo": 45125,
                 "estado": [
                     {
-                        "ingreso": "Inscrito"
+                        "ingreso": "Aprobado"
                     }
                 ],
-                "rutaEntrenamiento": "ruta Java"
+                "rutaEntrenamiento": "ruta NodeJS",
+                "Promedio": 77.5,
+                "riesgo": "Bajo",
+                "horario": "6:00 - 10:00"
             },
             {
                 "id": 24,
@@ -400,7 +406,9 @@
                         "ingreso": "Aprobado"
                     }
                 ],
-                "rutaEntrenamiento": "ruta Java"
+                "rutaEntrenamiento": "ruta Java",
+                "Promedio": 72.5,
+                "horario": "14:00 - 18:00"
             },
             {
                 "id": 26,
@@ -432,7 +440,46 @@
                     {
                         "ingreso": "Aprobado"
                     }
-                ]
+                ],
+                "Promedio": 75.0,
+                "rutaEntrenamiento": "ruta NetCore"
+            },
+            {
+                "id": 28,
+                "nombre": "Eduardo",
+                "apellido": "Rondon",
+                "identificacion": 55555555,
+                "direccion": "Cua",
+                "acudiente": "Alexander",
+                "telefono_celular": 323656989,
+                "telefono_fijo": 784578,
+                "estado": [
+                    {
+                        "ingreso": "Aprobado"
+                    }
+                ],
+                "Promedio": 65.0,
+                "rutaEntrenamiento": "ruta NodeJS",
+                "horario": "10:00 - 14:00"
+            },
+            {
+                "id": 29,
+                "nombre": "Ines",
+                "apellido": "Olaya",
+                "identificacion": 52879899,
+                "direccion": "Tibu",
+                "acudiente": "no tiene",
+                "telefono_celular": 656898,
+                "telefono_fijo": 54545656,
+                "estado": [
+                    {
+                        "ingreso": "Aprobado"
+                    }
+                ],
+                "Promedio": 80.0,
+                "rutaEntrenamiento": "ruta NodeJS",
+                "horario": "18:00 - 22:00",
+                "riesgo": "Bajo"
             }
         ]
     },

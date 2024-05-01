@@ -28,7 +28,16 @@ def procesar_inscripcion(camper):
     acudiente = input("Ingrese el nombre del acudiente: ")
     telefonoCelular = int(input("Ingrese el número de celular del camper: "))
     telefonoFijo = int(input("Ingrese un teléfono fijo del camper: "))
-    ingreso = "Proceso de Inscripcion"#input("Ingrese el estado del camper (En proceso de ingreso, Inscrito, Aprobado, Cursando, Graduado, Expulsado, Retirado): ")
+    valor = int(input("Ingrese el estado del camper\n1. En proceso de ingreso\n2. Inscrito\n"))
+    if valor == 1:
+        ingreso = "En proceso de inscripcion"
+    elif valor == 2:
+        ingreso = "inscrito"
+    else:
+        print("")
+    print("opción invalida intente de nuevo")
+            
+        
     
     camper[0]["inscripciones"].append(  
         {
@@ -136,6 +145,7 @@ def registrarNotas(camper):
         print(f"ID: {id_camper}")
         print(f"Nombre: {inscripcion['nombre']}")
         print(f"Apellido: {inscripcion['apellido']}")
+        print(f"N° Identificacion: {inscripcion["identificacion"]}")
         print(f"Estado: {inscripcion['estado'][0]['ingreso']}")
         print(f"Ruta de entrenamiento: {inscripcion.get('rutaEntrenamiento', 'No asignada')}")
         print("#####################")
@@ -144,13 +154,160 @@ def registrarNotas(camper):
         promedio = (nota_teorica + nota_practica) / 2
         inscripcion_encontrada["Promedio"] = promedio
         inscripcion_encontrada["estado"][0]["ingreso"] = "Aprobado" if promedio >= 60 else "Reprobado"
-        if inscripcion_encontrada["estado"][0]["ingreso"] == "Aprobado":
-            print("Camper aprobado.")
-            rutasEntrenamiento(camper)#yo lo habia hecho asi pero no me cuadro por lo que hay que volver a colocar el id 
-        print("#####################")
+    if inscripcion_encontrada["estado"][0]["ingreso"] == "Aprobado":
+        inscripcion_encontrada["riesgo"] = "Bajo"
+        print("Camper aprobado.")
+        print("")
+        print("1. Ruta NodeJS")
+        print("2. Ruta Java")
+        print("3. Ruta NetCore")
+        print("")
+                    
+        ruta = int(input("Seleccione la ruta para este camper: "))
+        if ruta == 1:
+            if len([c for c in camper[0]["inscripciones"] if c.get("rutaEntrenamiento")=="Ruta NodeJS"]) >=33:
+                print("Lo siento, la ruta de entrenamiento NodeJS está llena.")
+                return
+            inscripcion_encontrada["rutaEntrenamiento"] = "ruta NodeJS"
+            guardarArchivo(camper)
+        elif ruta == 2:
+            if len([c for c in camper[0]["inscripciones"] if c.get("rutaEntrenamiento")=="Ruta Java"]) >=33:
+                print("Lo siento, la ruta de entrenamiento Java está llena.")
+                return
+            inscripcion_encontrada["rutaEntrenamiento"] = "ruta Java"
+            guardarArchivo(camper)
+        elif ruta == 3:
+            if len([c for c in camper[0]["inscripciones"] if c.get("rutaEntrenamiento")=="Ruta NetCore"]) >=33:
+                print("Lo siento, la ruta de entrenamiento NetCore está llena.")
+                return
+            inscripcion_encontrada["rutaEntrenamiento"] = "ruta NetCore"
+            guardarArchivo(camper)
+        else:
+            print("Opción no válida, se asignará la Ruta NodeJS por defecto.")
+            inscripcion_encontrada["rutaEntrenamiento"] = "Ruta NodeJS"
+        print("Asignación de ruta completada.")
         guardarArchivo(camper)
-    else:
-        print("No se encontró ninguna inscripción para el ID proporcionado.")
+        print("ingrese el area de estudio")
+        print("")
+        area = int(input("1. Sputnik\n2. Artemis\n3. Apollo\n"))
+        if area == 1:
+            if len([c for c in camper[0]["inscripciones"] if c.get("areaEntrenamiento")=="Sputnik"]) >=33:
+                #print("Lo siento, la ruta de entrenamiento NodeJS está llena.")
+                #return
+                inscripcion_encontrada["areaEntrenamiento"] = "Sputnik"
+            guardarArchivo(camper)
+            hora = int(input("1. 6:00 - 10:00\n2. 10:00 - 14:00\n3. 14:00 - 18:00\n4. 18:00 - 22:00\n"))     
+            if hora == 1:       
+                if len([c for c in camper[0]["inscripciones"] if c.get("horario")=="6:00 - 10:00"]) >=33:
+                    print("Lo siento, el horario para el area de Sputnik está lleno.")
+                    return
+                inscripcion_encontrada["horario"] = "6:00 - 10:00"
+                guardarArchivo(camper)
+                print("Camper Asignado")
+            if hora == 2:
+                if len([c for c in camper[0]["inscripciones"] if c.get("horario")=="10:00 - 14:00"]) >=33:
+                    print("Lo siento, el horario para el area de Sputnik está lleno.")
+                    return
+                inscripcion_encontrada["horario"] = "10:00 - 14:00"
+                guardarArchivo(camper)
+                print("Camper Asignado")
+            if hora == 3:
+                if len([c for c in camper[0]["inscripciones"] if c.get("horario")=="14:00 - 18:00"]) >=33:
+                    print("Lo siento, el horario para el area de Sputnik está lleno.")
+                    return
+                inscripcion_encontrada["horario"] = "14:00 - 18:00"
+                guardarArchivo(camper)
+                print("Camper Asignado")
+            if hora == 4:
+                if len([c for c in camper[0]["inscripciones"] if c.get("horario")=="18:00 - 22:00"]) >=33:
+                    print("Lo siento, el horario para el area de Sputnik está lleno.")
+                    return
+                inscripcion_encontrada["horario"] = "18:00 - 22:00"
+                guardarArchivo(camper)
+                print("Camper Asignado")
+
+        if area == 2:
+            if len([c for c in camper[0]["inscripciones"] if c.get("areaEntrenamiento")=="Artemis"]) >=33:
+                #print("Lo siento, la ruta de entrenamiento NodeJS está llena.")
+                #return
+                inscripcion_encontrada["areaEntrenamiento"] = "Artemis"
+            guardarArchivo(camper)
+            hora = int(input("1. 6:00 - 10:00\n2. 10:00 - 14:00\n3. 14:00 - 18:00\n4. 18:00 - 22:00\n"))     
+            if hora == 1:       
+                if len([c for c in camper[0]["inscripciones"] if c.get("horario")=="6:00 - 10:00"]) >=33:
+                    print("Lo siento, el horario para el area de Artemis está lleno.")
+                    return
+                inscripcion_encontrada["horario"] = "6:00 - 10:00"
+                guardarArchivo(camper)
+                print("Camper Asignado")
+            if hora == 2:
+                if len([c for c in camper[0]["inscripciones"] if c.get("horario")=="10:00 - 14:00"]) >=33:
+                    print("Lo siento, el horario para el area de Artemis está lleno.")
+                    return
+                inscripcion_encontrada["horario"] = "10:00 - 14:00"
+                guardarArchivo(camper)
+                print("Camper Asignado")
+            if hora == 3:
+                if len([c for c in camper[0]["inscripciones"] if c.get("horario")=="14:00 - 18:00"]) >=33:
+                    print("Lo siento, el horario para el area de Artemis está lleno.")
+                    return
+                inscripcion_encontrada["horario"] = "14:00 - 18:00"
+                guardarArchivo(camper)
+                print("Camper Asignado")
+            if hora == 4:
+                if len([c for c in camper[0]["inscripciones"] if c.get("horario")=="18:00 - 22:00"]) >=33:
+                    print("Lo siento, el horario para el area de Artemis está lleno.")
+                    return
+                inscripcion_encontrada["horario"] = "18:00 - 22:00"
+                guardarArchivo(camper)
+                print("Camper Asignado")
+
+        if area == 3:
+            if len([c for c in camper[0]["inscripciones"] if c.get("areaEntrenamiento")=="Apollo"]) >=33:
+                #print("Lo siento, la ruta de entrenamiento NodeJS está llena.")
+                #return
+                inscripcion_encontrada["areaEntrenamiento"] = "Apollo"
+            guardarArchivo(camper)
+            hora = int(input("1. 6:00 - 10:00\n2. 10:00 - 14:00\n3. 14:00 - 18:00\n4. 18:00 - 22:00\n"))     
+            if hora == 1:       
+                if len([c for c in camper[0]["inscripciones"] if c.get("horario")=="6:00 - 10:00"]) >=33:
+                    print("Lo siento, el horario para el area de Apollo está lleno.")
+                    return
+                inscripcion_encontrada["horario"] = "6:00 - 10:00"
+                guardarArchivo(camper)
+                print("Camper Asignado")
+            if hora == 2:
+                if len([c for c in camper[0]["inscripciones"] if c.get("horario")=="10:00 - 14:00"]) >=33:
+                    print("Lo siento, el horario para el area de Apollo está lleno.")
+                    return
+                inscripcion_encontrada["horario"] = "10:00 - 14:00"
+                guardarArchivo(camper)
+                print("Camper Asignado")
+            if hora == 3:
+                if len([c for c in camper[0]["inscripciones"] if c.get("horario")=="14:00 - 18:00"]) >=33:
+                    print("Lo siento, el horario para el area de Apollo está lleno.")
+                    return
+                inscripcion_encontrada["horario"] = "14:00 - 18:00"
+                guardarArchivo(camper)
+                print("Camper Asignado")
+            if hora == 4:
+                if len([c for c in camper[0]["inscripciones"] if c.get("horario")=="18:00 - 22:00"]) >=33:
+                    print("Lo siento, el horario para el area de Apollo está lleno.")
+                    return
+                inscripcion_encontrada["horario"] = "18:00 - 22:00"
+
+                guardarArchivo(camper)
+                print("Camper Asignado")
+
+    elif inscripcion_encontrada["estado"][0]["ingreso"] == "Reprobado":
+        print("")
+        print("Camper raprobado no puede ser admitido")
+        guardarArchivo(camper)
+        
+        
+#fin de registro de notas, asignacion de ruta, area de estudio y horario
+    
+        
 
 def areasEntrenamiento(camper):
     print("Áreas de entrenamiento")
