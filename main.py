@@ -195,7 +195,7 @@ def crearRutaEntrenamiento(camper):
     print("Especifique los módulos para la nueva ruta:")
     
     # Módulos con opciones predefinidas
-    modulo_fundamentos = "Introducción a la algoritmia, PSeInt y Python"
+    modulo_fundamentos = "Introduccion a la algoritmia, PSeInt y Python"
     modulo_web = "HTML, CSS y Bootstrap"
     
     # Módulo de Programación formal con opciones para elegir
@@ -254,12 +254,16 @@ def crearRutaEntrenamiento(camper):
     opcion_backend = input("Ingrese la opción deseada: ")
     if opcion_backend == "1":
         modulo_backend = "NetCore"
+        guardarArchivo(camper)
     elif opcion_backend == "2":
         modulo_backend = "Spring Boot"
+        guardarArchivo(camper)
     elif opcion_backend == "3":
         modulo_backend = "NodeJS"
+        guardarArchivo(camper)
     elif opcion_backend == "4":
         modulo_backend = "Express"
+        guardarArchivo(camper)
     else:
         print("Opción no válida. Se asignará NetCore por defecto.")
         modulo_backend = "NetCore"
@@ -289,10 +293,6 @@ def crearRutaEntrenamiento(camper):
         "Horario": horario,
         "Limite de estudiantes": limite_estudiantes
     }
-    camper.append(nueva_ruta)
-    guardarArchivo(camper)
-    print("Nueva ruta de entrenamiento creada con éxito.")
-
     camper.append(nueva_ruta)
     guardarArchivo(camper)
     print("Nueva ruta de entrenamiento creada con éxito.")

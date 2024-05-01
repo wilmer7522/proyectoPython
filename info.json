@@ -446,5 +446,35 @@
                 "Limite de estudiantes": 33
             }
         }
+    },
+    {
+        "nombre": "laragon",
+        "modulos": {
+            "Fundamentos de programacion": "Introducci\u00f3n a la algoritmia, PSeInt y Python",
+            "Programacion Web": "HTML, CSS y Bootstrap",
+            "Programacion formal": "Java",
+            "Bases de datos": {
+                "SGDB principal": "Mysql",
+                "SGDB alternativo": "Mysql"
+            },
+            "Backend": "NetCore"
+        },
+        "Horario": "10-14",
+        "Limite de estudiantes": 33
+    },
+    {
+        "nombre": "\u00f1\u00f1\u00f1\u00f1",
+        "modulos": {
+            "Fundamentos de programacion": "Introduccion a la algoritmia, PSeInt y Python",
+            "Programacion Web": "HTML, CSS y Bootstrap",
+            "Programacion formal": "Java",
+            "Bases de datos": {
+                "SGDB principal": "Mysql",
+                "SGDB alternativo": "Mysql"
+            },
+            "Backend": "NetCore"
+        },
+        "Horario": "14-18",
+        "Limite de estudiantes": 33
     }
 ]
