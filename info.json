@@ -396,6 +396,23 @@
                     }
                 ],
                 "rutaEntrenamiento": "ruta Java"
+            },
+            {
+                "id": 26,
+                "nombre": "Blanca",
+                "apellido": "Moya",
+                "identificacion": 52987456,
+                "direccion": "Tibu",
+                "acudiente": "no tiene",
+                "telefono_celular": 312587878,
+                "telefono_fijo": 2524879,
+                "estado": [
+                    {
+                        "ingreso": "Aprobado"
+                    }
+                ],
+                "rutaEntrenamiento": "ruta NetCore",
+                "Promedio": 70.0
             }
         ]
     },

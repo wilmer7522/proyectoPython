@@ -28,7 +28,7 @@ def procesar_inscripcion(camper):
     acudiente = input("Ingrese el nombre del acudiente: ")
     telefonoCelular = int(input("Ingrese el número de celular del camper: "))
     telefonoFijo = int(input("Ingrese un teléfono fijo del camper: "))
-    ingreso = input("Ingrese el estado del camper (En proceso de ingreso, Inscrito, Aprobado, Cursando, Graduado, Expulsado, Retirado): ")
+    ingreso = "Proceso de Inscripcion"#input("Ingrese el estado del camper (En proceso de ingreso, Inscrito, Aprobado, Cursando, Graduado, Expulsado, Retirado): ")
     
     camper[0]["inscripciones"].append(  
         {
@@ -143,10 +143,10 @@ def registrarNotas(camper):
         nota_practica = float(input("Ingrese la nota práctica del camper: "))
         promedio = (nota_teorica + nota_practica) / 2
         inscripcion_encontrada["Promedio"] = promedio
-        inscripcion_encontrada["Estado"] = "Aprobado" if promedio >= 60 else "Reprobado"
-        if inscripcion_encontrada["Estado"] == "Aprobado":
+        inscripcion_encontrada["estado"][0]["ingreso"] = "Aprobado" if promedio >= 60 else "Reprobado"
+        if inscripcion_encontrada["estado"][0]["ingreso"] == "Aprobado":
             print("Camper aprobado.")
-            rutasEntrenamiento(camper)
+            rutasEntrenamiento(camper)#yo lo habia hecho asi pero no me cuadro por lo que hay que volver a colocar el id 
         print("#####################")
         guardarArchivo(camper)
     else:
@@ -242,7 +242,7 @@ def crearRutaEntrenamiento(camper):
     elif opcion_sgdb_alternativo == "3":
         sgdb_alternativo = "Postgresql"
     else:
-        print("Opción no válida. Se asignará Mysql por defecto.")
+        print("Opción no válida. Se asignará Mysql por defecto.")#hacer un bucle para condicionar si elige mal
         sgdb_alternativo = "Mysql"
     
     # Módulo de Backend con opciones para elegir
