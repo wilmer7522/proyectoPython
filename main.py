@@ -35,7 +35,7 @@ def procesar_inscripcion(camper):
         ingreso = "inscrito"
     else:
         print("")
-    print("opción invalida intente de nuevo")
+        print("opción invalida intente de nuevo")
             
         
     
@@ -301,7 +301,7 @@ def registrarNotas(camper):
 
     elif inscripcion_encontrada["estado"][0]["ingreso"] == "Reprobado":
         print("")
-        print("Camper raprobado no puede ser admitido")
+        print("Camper reprobado no puede ser admitido")
         guardarArchivo(camper)
         
         

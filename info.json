@@ -312,10 +312,10 @@
                         "ingreso": "Aprobado"
                     }
                 ],
-                "rutaEntrenamiento": "Ruta NodeJS",
-                "Area de entrenamiento": "Sputnik",
-                "Promedio": 20.0,
-                "Estado": "Reprobado"
+                "Promedio": 60.0,
+                "riesgo": "Bajo",
+                "rutaEntrenamiento": "ruta NodeJS",
+                "horario": "6:00 - 10:00"
             },
             {
                 "id": 21,
@@ -331,10 +331,10 @@
                         "ingreso": "Aprobado"
                     }
                 ],
-                "Promedio": 80.0,
+                "Promedio": 60.0,
                 "riesgo": "Bajo",
-                "rutaEntrenamiento": "ruta Java",
-                "horario": "10:00 - 14:00"
+                "rutaEntrenamiento": "ruta NodeJS",
+                "horario": "6:00 - 10:00"
             },
             {
                 "id": 22,
@@ -367,11 +367,11 @@
                 "telefono_fijo": 45125,
                 "estado": [
                     {
-                        "ingreso": "Aprobado"
+                        "ingreso": "Reprobado"
                     }
                 ],
                 "rutaEntrenamiento": "ruta NodeJS",
-                "Promedio": 77.5,
+                "Promedio": 10.0,
                 "riesgo": "Bajo",
                 "horario": "6:00 - 10:00"
             },
@@ -386,10 +386,10 @@
                 "telefono_fijo": 323323,
                 "estado": [
                     {
-                        "ingreso": "En proceso"
+                        "ingreso": "Reprobado"
                     }
                 ],
-                "Promedio": 80.0,
+                "Promedio": 10.0,
                 "Estado": "Aprobado"
             },
             {
@@ -480,6 +480,96 @@
                 "rutaEntrenamiento": "ruta NodeJS",
                 "horario": "18:00 - 22:00",
                 "riesgo": "Bajo"
+            },
+            {
+                "id": 30,
+                "nombre": "Jesus",
+                "apellido": "Gomez",
+                "identificacion": 56456456,
+                "direccion": "16-15",
+                "acudiente": "jesus",
+                "telefono_celular": 3214511689,
+                "telefono_fijo": 99955,
+                "estado": [
+                    {
+                        "ingreso": "inscrito"
+                    }
+                ]
+            },
+            {
+                "id": 31,
+                "nombre": "hgfh",
+                "apellido": "hfg",
+                "identificacion": 45465465,
+                "direccion": "hgfh",
+                "acudiente": "gfhgf",
+                "telefono_celular": 1215,
+                "telefono_fijo": 21521,
+                "estado": [
+                    {
+                        "ingreso": "inscrito"
+                    }
+                ]
+            },
+            {
+                "id": 32,
+                "nombre": "sddg",
+                "apellido": "sdfg",
+                "identificacion": 2144633000,
+                "direccion": "ksksks",
+                "acudiente": "lll",
+                "telefono_celular": 1100220,
+                "telefono_fijo": 0,
+                "estado": [
+                    {
+                        "ingreso": "inscrito"
+                    }
+                ]
+            },
+            {
+                "id": 33,
+                "nombre": "pppp",
+                "apellido": "pppp",
+                "identificacion": 111111111111,
+                "direccion": "opppppp",
+                "acudiente": "ppp",
+                "telefono_celular": 32456,
+                "telefono_fijo": 222,
+                "estado": [
+                    {
+                        "ingreso": "inscrito"
+                    }
+                ]
+            },
+            {
+                "id": 34,
+                "nombre": "tttttt",
+                "apellido": "tttttt",
+                "identificacion": 888888888,
+                "direccion": "teeeeee",
+                "acudiente": "ttt",
+                "telefono_celular": 666666666666,
+                "telefono_fijo": 1212121,
+                "estado": [
+                    {
+                        "ingreso": "inscrito"
+                    }
+                ]
+            },
+            {
+                "id": 35,
+                "nombre": "www",
+                "apellido": "www",
+                "identificacion": 444,
+                "direccion": "www",
+                "acudiente": "www",
+                "telefono_celular": 333333,
+                "telefono_fijo": 1212,
+                "estado": [
+                    {
+                        "ingreso": "inscrito"
+                    }
+                ]
             }
         ]
     },
