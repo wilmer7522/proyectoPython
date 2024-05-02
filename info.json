@@ -492,9 +492,14 @@
                 "telefono_fijo": 99955,
                 "estado": [
                     {
-                        "ingreso": "inscrito"
+                        "ingreso": "Aprobado"
                     }
-                ]
+                ],
+                "Promedio": 80.0,
+                "riesgo": "Bajo",
+                "rutaEntrenamiento": "ruta NodeJS",
+                "areaEntrenamiento": "Sputnik",
+                "horario": "6:00 - 10:00"
             },
             {
                 "id": 31,
@@ -570,6 +575,27 @@
                         "ingreso": "inscrito"
                     }
                 ]
+            },
+            {
+                "id": 36,
+                "nombre": "jerxon",
+                "apellido": "Correa",
+                "identificacion": 1236547,
+                "direccion": "tibu",
+                "acudiente": "no tiene",
+                "telefono_celular": 546489,
+                "telefono_fijo": 98798,
+                "estado": [
+                    {
+                        "ingreso": "Aprobado"
+                    }
+                ],
+                "Promedio": 80.0,
+                "rutaEntrenamiento": "ruta NodeJS",
+                "horario": "6:00 - 10:00",
+                "riesgo": "Bajo",
+                "trainer": "Pedro",
+                "areaEntrenamiento": "Sputnik"
             }
         ]
     },
@@ -650,5 +676,35 @@
         },
         "Horario": "14-18",
         "Limite de estudiantes": 33
+    },
+    {
+        "trainers": [
+            {
+                "pedro": [
+                    {
+                        "nombre": "Pedro",
+                        "apellido": "Gomez"
+                    }
+                ],
+                "Jholver": [
+                    {
+                        "nombre": "Jholver",
+                        "apellido": "Pardo"
+                    }
+                ],
+                "Miguel": [
+                    {
+                        "nombre": "Miguel Angel",
+                        "apellido": "Castillo"
+                    }
+                ],
+                "Juan": [
+                    {
+                        "nombre": "Juan Carlos",
+                        "apellido": "Mari\u00f1o"
+                    }
+                ]
+            }
+        ]
     }
 ]
