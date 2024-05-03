@@ -32,7 +32,7 @@ def procesar_inscripcion(camper):
     if valor == 1:
         ingreso = "En proceso de inscripcion"
     elif valor == 2:
-        ingreso = "inscrito"
+        ingreso = "Inscrito"
     else:
         print("")
         print("opción invalida intente de nuevo")
@@ -549,14 +549,16 @@ def evaluar_camper(camper):
 def listar_campers_inscritos(camper):
     print("Campers inscritos:")
     for inscripcion in camper[0]["inscripciones"]:
-        if inscripcion["estado"][0]["ingreso"] == "Inscrito":
-            print(f"{inscripcion['nombre']}{inscripcion['apellido']}")
+        if inscripcion.get("estado") and inscripcion["estado"][0]["ingreso"] in ["Inscrito"]:
+        #if inscripcion["estado"][0]["ingreso"] == "Inscrito":
+            print(f"Nombre: {inscripcion['nombre']} Apellido: {inscripcion['apellido']} Estado: {inscripcion["estado"][0]["ingreso"]}")
         guardarArchivo(camper)
 def listar_campers_aprobados(camper):
     print("Campers que aprobaron el examen inicial:")
     for inscripcion in camper[0]["inscripciones"]:
-        if inscripcion["estado"][0]["ingreso"] == "Aprobado":
-            print(f"{inscripcion['nombre']}{inscripcion['apellido']}")
+        if inscripcion.get("estado") and inscripcion["estado"][0]["ingreso"] in ["Aprobado"]:
+        #if inscripcion["estado"][0]["ingreso"] == "Aprobado":
+            print(f"Nombre: {inscripcion['nombre']} Apellido: {inscripcion['apellido']} Estado: {inscripcion["estado"][0]["ingreso"]}")
         guardarArchivo(camper)
 def listar_trainers(camper):
     print("Trainers trabajando con CampusLands:")
@@ -568,12 +570,12 @@ def listar_campers_bajo_rendimiento(camper):
     print("Campers con bajo rendimiento:")
     for inscripcion in camper[0]["inscripciones"]:
         if inscripcion.get("riesgo") == "Alto":
-            print(f"{inscripcion['nombre']}{inscripcion['apellido']}") 
+            print(f" {inscripcion['nombre']} {inscripcion['apellido']} Promedio: {inscripcion["Promedio"]}") 
         guardarArchivo(camper)
 def listar_campers_trainer_ruta(camper):
     print("Campers y Trainers asociados a una ruta de entrenamiento:")
     for inscripcion in camper[0]["inscripciones"]:
-        if inscripcion.get["rutaEntrenamiento"]:
+        if inscripcion.get("rutaEntrenamiento"):
             print(f"Camper:{inscripcion['nombre']}{inscripcion['apellido']}, Trainer:{inscripcion.get('trainer, No signado')}, Ruta:{inscripcion['rutaEntrenamiento']}")
         guardarArchivo(camper)
 def listar_aprobados_y_reprobado(camper):
@@ -581,66 +583,69 @@ def listar_aprobados_y_reprobado(camper):
     for inscripcion in camper[0]["inscripciones"]:
         if inscripcion.get("promedio") is not None:
             if inscripcion["promedio"] >=60:
-                estado = "Aprobado"#me lees?
+                estado = "Aprobado"#a que llama?
+                print(f"Camper:{inscripcion['nombre']}{inscripcion['apellido']}, Ruta:{inscripcion['rutaEntrenamiento']}, Trainer:{inscripcion.get('trainer, No signado')}, Estado:{estado}")
                 guardarArchivo(camper)
             else:
                 estado = "Reprobado"
                 print(f"Camper:{inscripcion['nombre']}{inscripcion['apellido']}, Ruta:{inscripcion['rutaEntrenamiento']}, Trainer:{inscripcion.get('trainer, No signado')}, Estado:{estado}") 
                 guardarArchivo(camper)
+menu = True
+while menu:
 
-def menu():
-    print("")
-    print("=====Menú=====")
-    print("1. Inscripciones")
-    #print("2. Rutas de entrenamiento")
-    print("3. Registrar notas de examen de Ingreso")
-    #print("4. Áreas de entrenamiento")
-    print("5. Crear nuevas rutas")
-    #print("6. Asignar camper a ruta de entrenamiento")
-    print("7. Buscar camper")
-    #print("8. Asignar Trainer")
-    #print("9. Matricular camper")
-    print("10. Evaluar campers")
-    # print("11. Campers en riesgo")
-    print("12. Reportes")
-    opcion = int(input("Ingrese una opción: "))
-    
-    if opcion == 1:
-        procesar_inscripcion(camper)
-    #elif opcion == 2:
-        #rutasEntrenamiento(camper)
-    elif opcion == 3:
-        registrarNotas(camper)
-    # elif opcion == 4:
-    #     areasEntrenamiento(camper)
-    elif opcion == 5:
-        crearRutaEntrenamiento(camper)
-    #elif opcion == 6:
-     #   asignarCamperRuta(camper)
-    elif opcion == 7:
-        vercampers(camper)
-   # elif opcion == 8:
-        #asignarTrainer(camper)
-    elif opcion == 10:
-        evaluar_camper(camper)
-    elif opcion == 12:
-        print("elija la opcion deseada:")
-        a = int(input("1. Campers Inscritos\n2. Campers Aprobados\n3. Trainers\n4. Campers con resdimiendo bajo\n5. Ruta Campers y Trainers\n6. Campers Aprobados y Reprobados "))
-        if a == 1:
-            listar_campers_inscritos(camper)
-        elif a == 2:
-            listar_campers_aprobados(camper)
-        elif a == 3:
-            listar_trainers(camper)
-        elif a == 4:
-            listar_campers_bajo_rendimiento(camper)
-        elif a == 5:
-            listar_campers_trainer_ruta(camper)
-        elif a == 6:
-            listar_aprobados_y_reprobado(camper)
+    def menu():
+        print("")
+        print("=====Menú=====")
+        print("1. Inscripciones")
+        #print("2. Rutas de entrenamiento")
+        print("3. Registrar notas de examen de Ingreso")
+        #print("4. Áreas de entrenamiento")
+        print("5. Crear nuevas rutas")
+        #print("6. Asignar camper a ruta de entrenamiento")
+        print("7. Buscar camper")
+        #print("8. Asignar Trainer")
+        #print("9. Matricular camper")
+        print("10. Evaluar campers")
+        # print("11. Campers en riesgo")
+        print("12. Reportes")
+        opcion = int(input("Ingrese una opción: "))
         
-    else:
-        print("Opción no válida.")
+        if opcion == 1:
+            procesar_inscripcion(camper)
+        #elif opcion == 2:
+            #rutasEntrenamiento(camper)
+        elif opcion == 3:
+            registrarNotas(camper)
+        # elif opcion == 4:
+        #     areasEntrenamiento(camper)
+        elif opcion == 5:
+            crearRutaEntrenamiento(camper)
+        #elif opcion == 6:
+        #   asignarCamperRuta(camper)
+        elif opcion == 7:
+            vercampers(camper)
+        # elif opcion == 8:
+            #asignarTrainer(camper)
+        elif opcion == 10:
+            evaluar_camper(camper)
+        elif opcion == 12:
+            print("elija la opcion deseada:")
+            a = int(input("1. Campers Inscritos\n2. Campers Aprobados\n3. Trainers\n4. Campers con resdimiendo bajo\n5. Ruta Campers y Trainers\n6. Campers Aprobados y Reprobados "))
+            if a == 1:
+                listar_campers_inscritos(camper)
+            elif a == 2:
+                listar_campers_aprobados(camper)
+            elif a == 3:
+                listar_trainers(camper)
+            elif a == 4:
+                listar_campers_bajo_rendimiento(camper)
+            elif a == 5:
+                listar_campers_trainer_ruta(camper)
+            elif a == 6:
+                listar_aprobados_y_reprobado(camper)
+            
+        else:
+            print("Opción no válida.")
 
-camper = abrirArchivo()
-menu()
+    camper = abrirArchivo()
+    menu()
