@@ -4,24 +4,23 @@
             {},
             {
                 "id": 1,
-                "nombre": "karen",
-                "apellido": "caceres",
-                "direccion": "45",
-                "acudiente": "rosa",
-                "telefono_celular": "321456789",
-                "telefono_fijo": "23423",
+                "nombre": "alexander",
+                "apellido": "rojas",
+                "identificacion": 123654789,
+                "direccion": "tibu",
+                "acudiente": "no tiene",
+                "telefono_celular": 963963,
+                "telefono_fijo": 369369,
                 "estado": [
                     {
-                        "ingreso": "Inscrito"
+                        "ingreso": "inscrito"
                     }
                 ],
-                "rutaEntrenamiento": "Ruta NodeJS",
-                "Area de entrenamiento": "Sputnik",
-                "Trainer": {
-                    "nombre": "Pedro",
-                    "especialidad": "python",
-                    "horario": "6-10"
-                }
+                "Promedio": 0,
+                "rutaEntrenamiento": "",
+                "horario": "",
+                "riesgo": "",
+                "trainer": ""
             },
             {
                 "id": 2,
@@ -35,7 +34,12 @@
                     {
                         "ingreso": "Inscrito"
                     }
-                ]
+                ],
+                "Promedio": 0,
+                "rutaEntrenamiento": "",
+                "horario": "",
+                "riesgo": "",
+                "trainer": ""
             },
             {
                 "id": 3,
@@ -572,9 +576,15 @@
                 "telefono_fijo": 1212,
                 "estado": [
                     {
-                        "ingreso": "inscrito"
+                        "ingreso": "Aprobado"
                     }
-                ]
+                ],
+                "Promedio": 60.0,
+                "riesgo": "Bajo",
+                "rutaEntrenamiento": "ruta NodeJS",
+                "areaEntrenamiento": "Artemis",
+                "horario": "14:00 - 18:00",
+                "trainer": "Juan"
             },
             {
                 "id": 36,
@@ -594,8 +604,28 @@
                 "rutaEntrenamiento": "ruta NodeJS",
                 "horario": "6:00 - 10:00",
                 "riesgo": "Bajo",
-                "trainer": "Pedro",
+                "trainer": "Juan",
                 "areaEntrenamiento": "Sputnik"
+            },
+            {
+                "id": 37,
+                "nombre": "alexander",
+                "apellido": "rojas",
+                "identificacion": 123654789,
+                "direccion": "tibu",
+                "acudiente": "no tiene",
+                "telefono_celular": 963963,
+                "telefono_fijo": 369369,
+                "estado": [
+                    {
+                        "ingreso": "inscrito"
+                    }
+                ],
+                "Promedio": 0,
+                "rutaEntrenamiento": "",
+                "horario": "",
+                "riesgo": "",
+                "trainer": ""
             }
         ]
     },
@@ -683,7 +713,8 @@
                 "pedro": [
                     {
                         "nombre": "Pedro",
-                        "apellido": "Gomez"
+                        "apellido": "Gomez",
+                        "rutaEntrenamiento": "Ruta Java"
                     }
                 ],
                 "Jholver": [

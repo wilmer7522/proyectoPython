@@ -85,10 +85,16 @@ def vercampers(camper):
         print(f"Nombre: {inscripcion['nombre']}")
         print(f"Apellido: {inscripcion['apellido']}")
         print(f"Estado: {inscripcion['estado'][0]['ingreso']}")
+        print(f"Promedio: {inscripcion['Promedio']}")
+        print(f"Riego: {inscripcion['riesgo']}")
+        print(f"Ruta de Entrenamiento: {inscripcion['rutaEntrenamiento']}")
+        print(f"Horario: {inscripcion['horario']}")
+        print(f"Trainer: {inscripcion['trainer']}")
+        
         print("#####################")
     else:
         print("No se encontró ningún camper con el ID proporcionado.")
-
+'''
 def rutasEntrenamiento(camper):
     print("Rutas de entrenamiento")
     id_camper = input("Ingrese el ID del camper: ")
@@ -138,7 +144,7 @@ def rutasEntrenamiento(camper):
         guardarArchivo(camper)
     else:
         print("No se encontró ningún camper con el ID proporcionado.")
-
+'''
 def registrarNotas(camper):
     print("Registro de notas")
     id_camper = input("Ingrese el ID del camper: ")
@@ -205,7 +211,7 @@ def registrarNotas(camper):
                 return
             inscripcion_encontrada["areaEntrenamiento"] = "Sputnik"
             guardarArchivo(camper)
-            hora = int(input("1. 6:00 - 10:00\n2. 10:00 - 14:00\n3. 14:00 - 18:00\n4. 18:00 - 22:00\n"))     
+            hora = int(input("ingrese horario:\n1. 6:00 - 10:00\n2. 10:00 - 14:00\n3. 14:00 - 18:00\n4. 18:00 - 22:00\n"))     
             if hora == 1:       
                 if len([c for c in camper[0]["inscripciones"] if c.get("horario")=="6:00 - 10:00"]) >=33:
                     print("Lo siento, el horario para el area de Sputnik está lleno.")
@@ -307,40 +313,44 @@ def registrarNotas(camper):
 
                 guardarArchivo(camper)
                 print("Camper Asignado")
-            print("Ingrese el trainer que desea asignar:")
-        trainer = str(input("1. Pedro\n2. Jholver\n3. Miguel\n4. Juan\n"))
+        print("Ingrese el trainer que desea asignar:")
+        trainer = int(input("1. Pedro\n2. Jholver\n3. Miguel\n4. Juan\n"))
         if trainer == 1:
             
             if len([c for c in camper[0]["inscripciones"] if c.get("trainer")=="Pedro"]) >=33:
-                if inscripcion_encontrada["trainer"] == "":
+                #if inscripcion_encontrada["trainer"] == "":
                     #inscripcion_encontrada["trainer"] = "Pedro"
                 #print("Lo siento, el trainer ya fue asignado a otra ruta.")
                     return
-        inscripcion_encontrada["trainer"] = "Pedro"
-        guardarArchivo(camper)
-        print("Trainer Asignado")
+            inscripcion_encontrada["trainer"] = "Pedro"
+        
+            guardarArchivo(camper)
+            print("Trainer Pedro Asignado")
+    
+        
         if trainer == 2:
             if len([c for c in camper[0]["inscripciones"] if c.get("trainer")=="Jholver"]) >=33:
                 print("Lo siento, el trainer ya fue asignado a otra ruta.")
                 return
             inscripcion_encontrada["trainer"] = "Jholver"
             guardarArchivo(camper)
-            print("Trainer Asignado")
+            print("Trainer Jholver Asignado")
         if trainer == 3:
-                if len([c for c in camper[0]["inscripciones"] if c.get("trainer")=="Miguel"]) >=33:
+            if len([c for c in camper[0]["inscripciones"] if c.get("trainer")=="Miguel"]) >=33:
                     print("Lo siento, el trainer ya fue asignado a otra ruta.")
                     return
-                inscripcion_encontrada["trainer"] = "Miguel"
-                guardarArchivo(camper)
-                print("Trainer Asignado")
+            inscripcion_encontrada["trainer"] = "Miguel"
+            guardarArchivo(camper)
+            print("Trainer Miguel Asignado")
         if trainer == 4:
-                if len([c for c in camper[0]["inscripciones"] if c.get("trainer")=="Juan"]) >=33:
+            if len([c for c in camper[0]["inscripciones"] if c.get("trainer")=="Juan"]) >=33:
                     print("Lo siento, el trainer ya fue asignado a otra ruta.")
                     return
-                inscripcion_encontrada["trainer"] = "Juan"
+            inscripcion_encontrada["trainer"] = "Juan"
 
-                guardarArchivo(camper)
-                print("Trainer Asignado")
+            guardarArchivo(camper)
+            print("Trainer Juan Asignado")
+        
 
     elif inscripcion_encontrada["estado"][0]["ingreso"] == "Reprobado":
         print("")
@@ -496,7 +506,7 @@ def crearRutaEntrenamiento(camper):
     camper.append(nueva_ruta)
     guardarArchivo(camper)
     print("Nueva ruta de entrenamiento creada con éxito.")
-
+'''
 def asignarCamperRuta(camper):
     print("Asignar camper a ruta de entrenamiento")
     id_camper = input("Ingrese el ID del camper: ")
@@ -547,7 +557,7 @@ def asignarTrainer(camper):
     print("No se encontró la ruta de entrenamiento especificada o no hay campers inscritos en esa ruta.")
 
 # def matricular_camper_aprobado(matriculas, camper, trainer, ruta_entrenamiento, fecha_inicio, fecha_fin, salon_entrenamiento):
-
+'''
 def evaluar_camper(camper):
     id_camper = input("Ingrese el ID del camper a evaluar: ")
 
@@ -564,10 +574,10 @@ def evaluar_camper(camper):
         trabajos = float(input("Ingrese la nota de los trabajos realizados por el camper: "))
         promedio = (nota_teorica * 0.3) + (nota_practica * 0.6) + (trabajos * 0.1)
         if promedio >= 60:
-            camper_encontrado["estado"][0]["ingreso"] = "Aprobado"
+            camper_encontrado["estado"][0]["evaluacion"] = "Aprobado"
         else:
-            camper_encontrado["estado"][0]["ingreso"] = "Reprobado"
-        print(f"Notas registradas y estado actualizado: {camper_encontrado['estado'][0]['ingreso']}")
+            camper_encontrado["estado"][0]["evaluacion"] = "Reprobado"
+        print(f"Notas registradas y estado actualizado: {camper_encontrado['estado'][0]['evaluacion']}")
         guardarArchivo(camper)
     else:
         print("No se encontró ningún camper con el ID proporcionado.")
@@ -578,14 +588,14 @@ def menu():
     print("")
     print("=====Menú=====")
     print("1. Inscripciones")
-    print("2. Rutas de entrenamiento")
-    print("3. Registrar notas")
-    print("4. Áreas de entrenamiento")
+    #print("2. Rutas de entrenamiento")
+    print("3. Registrar notas de examen de Ingreso")
+    #print("4. Áreas de entrenamiento")
     print("5. Crear nuevas rutas")
-    print("6. Asignar camper a ruta de entrenamiento")
+    #print("6. Asignar camper a ruta de entrenamiento")
     print("7. Buscar camper")
-    print("8. Asignar Trainer")
-    print("9. Matricular camper")
+    #print("8. Asignar Trainer")
+    #print("9. Matricular camper")
     print("10. Evaluar campers")
     print("11. Campers en riesgo")
     print("12. Reportes")
@@ -593,20 +603,20 @@ def menu():
     
     if opcion == 1:
         procesar_inscripcion(camper)
-    elif opcion == 2:
-        rutasEntrenamiento(camper)
+    #elif opcion == 2:
+        #rutasEntrenamiento(camper)
     elif opcion == 3:
         registrarNotas(camper)
     elif opcion == 4:
         areasEntrenamiento(camper)
     elif opcion == 5:
         crearRutaEntrenamiento(camper)
-    elif opcion == 6:
-        asignarCamperRuta(camper)
+    #elif opcion == 6:
+     #   asignarCamperRuta(camper)
     elif opcion == 7:
         vercampers(camper)
-    elif opcion == 8:
-        asignarTrainer(camper)
+   # elif opcion == 8:
+        #asignarTrainer(camper)
     elif opcion == 10:
         evaluar_camper(camper)
     else:
