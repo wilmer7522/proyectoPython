@@ -53,7 +53,12 @@
                     {
                         "ingreso": "Inscrito"
                     }
-                ]
+                ],
+                "Promedio": 0,
+                "rutaEntrenamiento": "",
+                "horario": "",
+                "riesgo": "Alto",
+                "trainer": ""
             },
             {
                 "id": 4,
@@ -68,7 +73,12 @@
                         "ingreso": "tiybu"
                     }
                 ],
-                "rutaEntrenamiento": "ruta NetCore"
+                "Promedio": 0,
+                "rutaEntrenamiento": "",
+                "horario": "",
+                "riesgo": "Alto",
+                "trainer": ""
+                
             },
             {
                 "id": 5,
@@ -82,7 +92,12 @@
                     {
                         "ingreso": "l"
                     }
-                ]
+                ],
+                "Promedio": 0,
+                "rutaEntrenamiento": "",
+                "horario": "",
+                "riesgo": "Alto",
+                "trainer": ""
             },
             {
                 "id": 6,
@@ -97,7 +112,12 @@
                     {
                         "ingreso": "Aprobado"
                     }
-                ]
+                ],
+                "Promedio": 0,
+                "rutaEntrenamiento": "",
+                "horario": "",
+                "riesgo": "Alto",
+                "trainer": ""
             },
             {
                 "id": 7,
@@ -112,7 +132,12 @@
                     {
                         "ingreso": "Cursando"
                     }
-                ]
+                ],
+                "Promedio": 0,
+                "rutaEntrenamiento": "",
+                "horario": "",
+                "riesgo": "Alto",
+                "trainer": ""
             },
             {
                 "id": 8,
@@ -127,7 +152,12 @@
                     {
                         "ingreso": "fggf"
                     }
-                ]
+                ],
+                "Promedio": 0,
+                "rutaEntrenamiento": "",
+                "horario": "",
+                "riesgo": "Alto",
+                "trainer": ""
             },
             {
                 "id": 9,
@@ -142,7 +172,12 @@
                     {
                         "ingreso": "fff"
                     }
-                ]
+                ],
+                "Promedio": 0,
+                "rutaEntrenamiento": "",
+                "horario": "",
+                "riesgo": "Alto",
+                "trainer": ""
             },
             {
                 "id": 10,
@@ -157,7 +192,12 @@
                     {
                         "ingreso": "k"
                     }
-                ]
+                ],
+                "Promedio": 0,
+                "rutaEntrenamiento": "",
+                "horario": "",
+                "riesgo": "Alto",
+                "trainer": ""
             },
             {
                 "id": 11,
@@ -172,7 +212,12 @@
                     {
                         "ingreso": "aa"
                     }
-                ]
+                ],
+                "Promedio": 0,
+                "rutaEntrenamiento": "",
+                "horario": "",
+                "riesgo": "Alto",
+                "trainer": ""
             },
             {
                 "id": 12,
@@ -187,7 +232,12 @@
                     {
                         "ingreso": "s"
                     }
-                ]
+                ],
+                "Promedio": 0,
+                "rutaEntrenamiento": "",
+                "horario": "",
+                "riesgo": "Alto",
+                "trainer": ""
             },
             {
                 "id": 13,
@@ -202,7 +252,12 @@
                     {
                         "ingreso": "w"
                     }
-                ]
+                ],
+                "Promedio": 0,
+                "rutaEntrenamiento": "",
+                "horario": "",
+                "riesgo": "Alto",
+                "trainer": ""
             },
             {
                 "id": 14,
@@ -217,7 +272,12 @@
                     {
                         "ingreso": "e"
                     }
-                ]
+                ],
+                "Promedio": 0,
+                "rutaEntrenamiento": "",
+                "horario": "",
+                "riesgo": "Alto",
+                "trainer": ""
             },
             {
                 "id": 15,
@@ -232,7 +292,12 @@
                     {
                         "ingreso": "r"
                     }
-                ]
+                ],
+                "Promedio": 0,
+                "rutaEntrenamiento": "",
+                "horario": "",
+                "riesgo": "Alto",
+                "trainer": ""
             },
             {
                 "id": 16,
@@ -247,7 +312,12 @@
                     {
                         "ingreso": "t"
                     }
-                ]
+                ],
+                "Promedio": 0,
+                "rutaEntrenamiento": "",
+                "horario": "",
+                "riesgo": "Alto",
+                "trainer": ""
             },
             {
                 "id": 17,
@@ -263,10 +333,11 @@
                         "ingreso": "En proceso de ingreso"
                     }
                 ],
-                "rutaEntrenamiento": "Ruta NetCore",
-                "Promedio": 60.0,
-                "Estado": "Aprobado",
-                "Area de entrenamiento": "Sputnik"
+                "Promedio": 0,
+                "rutaEntrenamiento": "",
+                "horario": "",
+                "riesgo": "Alto",
+                "trainer": ""
             },
             {
                 "id": 18,
@@ -282,10 +353,11 @@
                         "ingreso": "Expulsado "
                     }
                 ],
-                "rutaEntrenamiento": "Ruta Java",
-                "Promedio": 11.5,
-                "Estado": "Desaprobado",
-                "Area de entrenamiento": "Sputnik"
+                "Promedio": 0,
+                "rutaEntrenamiento": "",
+                "horario": "",
+                "riesgo": "Alto",
+                "trainer": ""
             },
             {
                 "id": 19,
@@ -300,7 +372,12 @@
                     {
                         "ingreso": "Cursando"
                     }
-                ]
+                ],
+                "Promedio": 0,
+                "rutaEntrenamiento": "",
+                "horario": "",
+                "riesgo": "Alto",
+                "trainer": ""
             },
             {
                 "id": 20,
@@ -316,10 +393,11 @@
                         "ingreso": "Aprobado"
                     }
                 ],
-                "Promedio": 60.0,
-                "riesgo": "Bajo",
-                "rutaEntrenamiento": "ruta NodeJS",
-                "horario": "6:00 - 10:00"
+                "Promedio": 0,
+                "rutaEntrenamiento": "",
+                "horario": "",
+                "riesgo": "Alto",
+                "trainer": ""
             },
             {
                 "id": 21,
@@ -335,10 +413,11 @@
                         "ingreso": "Aprobado"
                     }
                 ],
-                "Promedio": 60.0,
-                "riesgo": "Bajo",
-                "rutaEntrenamiento": "ruta NodeJS",
-                "horario": "6:00 - 10:00"
+                "Promedio": 0,
+                "rutaEntrenamiento": "",
+                "horario": "",
+                "riesgo": "Alto",
+                "trainer": ""
             },
             {
                 "id": 22,
@@ -354,11 +433,11 @@
                         "ingreso": "Aprobado"
                     }
                 ],
-                "rutaEntrenamiento": "ruta NetCore",
-                "Area de entrenamiento": "Artemis",
-                "Promedio": 69.0,
-                "riesgo": "Bajo",
-                "horario": "10:00 - 14:00"
+                "Promedio": 0,
+                "rutaEntrenamiento": "",
+                "horario": "",
+                "riesgo": "Alto",
+                "trainer": ""
             },
             {
                 "id": 23,
@@ -374,10 +453,11 @@
                         "ingreso": "Reprobado"
                     }
                 ],
-                "rutaEntrenamiento": "ruta NodeJS",
-                "Promedio": 10.0,
-                "riesgo": "Bajo",
-                "horario": "6:00 - 10:00"
+                "Promedio": 0,
+                "rutaEntrenamiento": "",
+                "horario": "",
+                "riesgo": "Alto",
+                "trainer": ""
             },
             {
                 "id": 24,
@@ -393,8 +473,11 @@
                         "ingreso": "Reprobado"
                     }
                 ],
-                "Promedio": 10.0,
-                "Estado": "Aprobado"
+                "Promedio": 0,
+                "rutaEntrenamiento": "",
+                "horario": "",
+                "riesgo": "Alto",
+                "trainer": ""
             },
             {
                 "id": 25,
@@ -410,9 +493,11 @@
                         "ingreso": "Aprobado"
                     }
                 ],
-                "rutaEntrenamiento": "ruta Java",
-                "Promedio": 72.5,
-                "horario": "14:00 - 18:00"
+                "Promedio": 0,
+                "rutaEntrenamiento": "",
+                "horario": "",
+                "riesgo": "Alto",
+                "trainer": ""
             },
             {
                 "id": 26,
@@ -428,8 +513,11 @@
                         "ingreso": "Aprobado"
                     }
                 ],
-                "rutaEntrenamiento": "ruta NetCore",
-                "Promedio": 70.0
+                "Promedio": 0,
+                "rutaEntrenamiento": "",
+                "horario": "",
+                "riesgo": "Alto",
+                "trainer": ""
             },
             {
                 "id": 27,
@@ -445,8 +533,11 @@
                         "ingreso": "Aprobado"
                     }
                 ],
-                "Promedio": 75.0,
-                "rutaEntrenamiento": "ruta NetCore"
+                "Promedio": 0,
+                "rutaEntrenamiento": "",
+                "horario": "",
+                "riesgo": "Alto",
+                "trainer": ""
             },
             {
                 "id": 28,
@@ -462,9 +553,11 @@
                         "ingreso": "Aprobado"
                     }
                 ],
-                "Promedio": 65.0,
-                "rutaEntrenamiento": "ruta NodeJS",
-                "horario": "10:00 - 14:00"
+                "Promedio": 0,
+                "rutaEntrenamiento": "",
+                "horario": "",
+                "riesgo": "Alto",
+                "trainer": ""
             },
             {
                 "id": 29,
@@ -480,10 +573,11 @@
                         "ingreso": "Aprobado"
                     }
                 ],
-                "Promedio": 80.0,
-                "rutaEntrenamiento": "ruta NodeJS",
-                "horario": "18:00 - 22:00",
-                "riesgo": "Bajo"
+                "Promedio": 0,
+                "rutaEntrenamiento": "",
+                "horario": "",
+                "riesgo": "Alto",
+                "trainer": ""
             },
             {
                 "id": 30,
@@ -499,11 +593,11 @@
                         "ingreso": "Aprobado"
                     }
                 ],
-                "Promedio": 80.0,
-                "riesgo": "Bajo",
-                "rutaEntrenamiento": "ruta NodeJS",
-                "areaEntrenamiento": "Sputnik",
-                "horario": "6:00 - 10:00"
+                "Promedio": 0,
+                "rutaEntrenamiento": "",
+                "horario": "",
+                "riesgo": "Alto",
+                "trainer": ""
             },
             {
                 "id": 31,
@@ -518,7 +612,12 @@
                     {
                         "ingreso": "inscrito"
                     }
-                ]
+                ],
+                "Promedio": 0,
+                "rutaEntrenamiento": "",
+                "horario": "",
+                "riesgo": "Alto",
+                "trainer": ""
             },
             {
                 "id": 32,
@@ -533,7 +632,12 @@
                     {
                         "ingreso": "inscrito"
                     }
-                ]
+                ],
+                "Promedio": 0,
+                "rutaEntrenamiento": "",
+                "horario": "",
+                "riesgo": "Alto",
+                "trainer": ""
             },
             {
                 "id": 33,
@@ -548,7 +652,12 @@
                     {
                         "ingreso": "inscrito"
                     }
-                ]
+                ],
+                "Promedio": 0,
+                "rutaEntrenamiento": "",
+                "horario": "",
+                "riesgo": "Alto",
+                "trainer": ""
             },
             {
                 "id": 34,
@@ -563,7 +672,12 @@
                     {
                         "ingreso": "inscrito"
                     }
-                ]
+                ],
+                "Promedio": 0,
+                "rutaEntrenamiento": "",
+                "horario": "",
+                "riesgo": "Alto",
+                "trainer": ""
             },
             {
                 "id": 35,
@@ -597,15 +711,18 @@
                 "telefono_fijo": 98798,
                 "estado": [
                     {
-                        "ingreso": "Aprobado"
+                        "ingreso": "Aprobado",
+                        "evaluacion": "Reprobado"
                     }
                 ],
-                "Promedio": 80.0,
+                "Promedio": 85.0,
                 "rutaEntrenamiento": "ruta NodeJS",
                 "horario": "6:00 - 10:00",
-                "riesgo": "Bajo",
-                "trainer": "Juan",
-                "areaEntrenamiento": "Sputnik"
+                "riesgo": "Alto",
+                "trainer": "Pedro",
+                "areaEntrenamiento": "Sputnik",
+                "fecha_inicio": "2024-10-02",
+                "fecha_finalizacion": "2025-10-02"
             },
             {
                 "id": 37,
@@ -618,13 +735,14 @@
                 "telefono_fijo": 369369,
                 "estado": [
                     {
-                        "ingreso": "inscrito"
+                        "ingreso": "inscrito",
+                        "evaluacion": "Reprobado"
                     }
                 ],
                 "Promedio": 0,
                 "rutaEntrenamiento": "",
                 "horario": "",
-                "riesgo": "",
+                "riesgo": "Alto",
                 "trainer": ""
             }
         ]
