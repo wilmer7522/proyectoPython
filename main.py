@@ -95,6 +95,114 @@ def vercampers(camper):
     else:
         print("No se encontró ningún camper con el ID proporcionado.")
 
+def nuevarut(camper):
+    print("Creación de nueva ruta de entrenamiento")
+    print("Especifique los módulos para la nueva ruta:")
+    nueva_id = 0
+    for inscripcion in camper[0]["rutasNuevas"]:
+        if 'idRuta' in inscripcion and inscripcion["idRuta"] > nueva_id:
+            nueva_id = inscripcion["idRuta"]
+
+    nuevaRuta =nueva_id + 1
+    modulo_fundamentos = "Introduccion a la algoritmia, PSeInt y Python"
+    modulo_web = "HTML, CSS y Bootstrap"
+    nombreNuevaRuta = str(input("Ingrese el Nombre de la nueva ruta "))
+    print("Seleccione el módulo de Programación formal:")
+    print("1. Java")
+    print("2. JavaScript")
+    print("3. C#")
+    opcion_formal = int(input("Ingrese la opción deseada: "))
+    if opcion_formal == 1:
+        modulo_formal = "Java"
+    elif opcion_formal == 2:
+        modulo_formal = "JavaScript"
+    elif opcion_formal == 3:
+        modulo_formal = "C#"
+
+        print("Seleccione el SGDB principal para la ruta de entrenamiento:")
+    print("1. Mysql")
+    print("2. MongoDb")
+    print("3. Postgresql")
+    opcion_sgdb_principal = int(input("Ingrese la opción deseada: "))
+    if opcion_sgdb_principal == 1:
+        sgdb_principal = "Mysql"
+    elif opcion_sgdb_principal == 2:
+        sgdb_principal = "MongoDb"
+    elif opcion_sgdb_principal == 3:
+        sgdb_principal = "Postgresql"
+
+        print("Seleccione el SGDB alternativo para la ruta de entrenamiento:")
+    print("1. Mysql")
+    print("2. MongoDb")
+    print("3. Postgresql")
+    opcion_sgdb_alternativo = int(input("Ingrese la opción deseada: "))
+    if opcion_sgdb_alternativo == 1:
+        sgdb_alternativo = "Mysql"
+    elif opcion_sgdb_alternativo == 2:
+        sgdb_alternativo = "MongoDb"
+    elif opcion_sgdb_alternativo == 3:
+        sgdb_alternativo = "Postgresql"
+
+        print("Seleccione el módulo de Backend:")
+    print("1. NetCore")
+    print("2. Spring Boot")
+    print("3. NodeJS")
+    print("4. Express")
+    opcion_backend = int(input("Ingrese la opción deseada: "))
+    if opcion_backend == 1:
+        modulo_backend = "NetCore"
+        guardarArchivo(camper)
+    elif opcion_backend == 2:
+        modulo_backend = "Spring Boot"
+        guardarArchivo(camper)
+    elif opcion_backend == 3:
+        modulo_backend = "NodeJS"
+        guardarArchivo(camper)
+    elif opcion_backend == 4:
+        modulo_backend = "Express"
+        guardarArchivo(camper)
+    
+
+    camper[2]["rutasNuevas"].append(
+        {
+                "idRuta": nuevaRuta,
+                "nombre": nombreNuevaRuta,
+                "modulos": {
+                    "Fundamentos de programacion": modulo_fundamentos,
+                    "Programacion Web": modulo_web,
+                    "Programacion formal": modulo_formal,
+                    "Bases de datos": {
+                        "SGDB principal": sgdb_principal,
+                        "SGDB alternativo": sgdb_alternativo
+                    },
+                    "Backend": modulo_backend
+                }
+                
+            
+            }
+    )
+    guardarArchivo(camper)
+    print("Nueva ruta de entrenamiento creada con éxito.")
+
+
+
+def nuevaRuta(camper):
+    print("Nueva Ruta")
+    id_camper = input("Ingrese el ID de la Nueva Ruta a agregar: ")
+    camper_encontrado = None
+    
+    for inscripcion in camper[2]["rutasNuevas"]:
+        if str(inscripcion.get('idRuta')) == id_camper:
+            camper_encontrado = inscripcion
+            break
+    
+    if camper_encontrado:
+        print(f"ID: {camper_encontrado.get('idRuta')}")
+        print("####################")
+        print(f"ID: {id_camper}")
+        print(f"Nombre: {inscripcion['nombre']}")
+        
+
 def registrarNotas(camper):
     print("Registro de notas")
     id_camper = input("Ingrese el ID del camper: ")
@@ -134,6 +242,7 @@ def registrarNotas(camper):
         print("1. Ruta NodeJS")
         print("2. Ruta Java")
         print("3. Ruta NetCore")
+        print("4. Nueva Ruta ")
         print("")
                     
         ruta = int(input("Seleccione la ruta para este camper: "))
@@ -155,6 +264,12 @@ def registrarNotas(camper):
                 return
             inscripcion_encontrada["rutaEntrenamiento"] = "ruta NetCore"
             guardarArchivo(camper)
+
+        elif ruta == 4:
+            nuevarut(camper)
+
+
+
         else:
             print("Opción no válida, se asignará la Ruta NodeJS por defecto.")
             inscripcion_encontrada["rutaEntrenamiento"] = "Ruta NodeJS"
@@ -322,19 +437,13 @@ def crearRutaEntrenamiento(camper):
     print("Especifique los módulos para la nueva ruta:")
     nueva_id = 0
     for inscripcion in camper[2]["rutasNuevas"]:
-        if 'id' in inscripcion and inscripcion["idRuta"] > nueva_id:
+        if 'idRuta' in inscripcion and inscripcion["idRuta"] > nueva_id:
             nueva_id = inscripcion["idRuta"]
 
     nuevaRuta =nueva_id + 1
-    camper[2]["rutasNuevas"].append({
-        "idRuta": nuevaRuta
-    })
-
-    # Módulos con opciones predefinidas
     modulo_fundamentos = "Introduccion a la algoritmia, PSeInt y Python"
     modulo_web = "HTML, CSS y Bootstrap"
-    
-    # Módulo de Programación formal con opciones para elegir
+    nombreNuevaRuta = str(input("Ingrese el Nombre de la nueva ruta "))
     print("Seleccione el módulo de Programación formal:")
     print("1. Java")
     print("2. JavaScript")
@@ -346,12 +455,8 @@ def crearRutaEntrenamiento(camper):
         modulo_formal = "JavaScript"
     elif opcion_formal == 3:
         modulo_formal = "C#"
-    else:
-        print("Opción no válida. Se asignará Java por defecto.")
-        modulo_formal = "Java"
-    
-    # Módulo de Bases de datos con opciones para elegir SGDB principal y alternativo
-    print("Seleccione el SGDB principal para la ruta de entrenamiento:")
+
+        print("Seleccione el SGDB principal para la ruta de entrenamiento:")
     print("1. Mysql")
     print("2. MongoDb")
     print("3. Postgresql")
@@ -362,11 +467,8 @@ def crearRutaEntrenamiento(camper):
         sgdb_principal = "MongoDb"
     elif opcion_sgdb_principal == 3:
         sgdb_principal = "Postgresql"
-    else:
-        print("Opción no válida. Se asignará Mysql por defecto.")
-        sgdb_principal = "Mysql"
-    
-    print("Seleccione el SGDB alternativo para la ruta de entrenamiento:")
+
+        print("Seleccione el SGDB alternativo para la ruta de entrenamiento:")
     print("1. Mysql")
     print("2. MongoDb")
     print("3. Postgresql")
@@ -377,12 +479,8 @@ def crearRutaEntrenamiento(camper):
         sgdb_alternativo = "MongoDb"
     elif opcion_sgdb_alternativo == 3:
         sgdb_alternativo = "Postgresql"
-    else:
-        print("Opción no válida. Se asignará Mysql por defecto.")#hacer un bucle para condicionar si elige mal
-        sgdb_alternativo = "Mysql"
-    
-    # Módulo de Backend con opciones para elegir
-    print("Seleccione el módulo de Backend:")
+
+        print("Seleccione el módulo de Backend:")
     print("1. NetCore")
     print("2. Spring Boot")
     print("3. NodeJS")
@@ -400,38 +498,131 @@ def crearRutaEntrenamiento(camper):
     elif opcion_backend == 4:
         modulo_backend = "Express"
         guardarArchivo(camper)
-    else:
-        print("Opción no válida. Se asignará NetCore por defecto.")
-        modulo_backend = "NetCore"
     
-    horario = input("Ingrese el horario de clases para esta ruta: ")
-    limite_estudiantes = 33  # El límite siempre es 33 para todas las rutas
 
-    nombre_ruta = input("Ingrese el nombre de la nueva ruta de entrenamiento: ")
-
-    rutas_existentes = [ruta.get("nombre") for ruta in camper]
-    if nombre_ruta in rutas_existentes:
-        print("La ruta de entrenamiento ya existe.")
-        return
-
-    nueva_ruta = {
-        "nombre": nombre_ruta,
-        "modulos": {
-            "Fundamentos de programacion": modulo_fundamentos,
-            "Programacion Web": modulo_web,
-            "Programacion formal": modulo_formal,
-            "Bases de datos": {
-                "SGDB principal": sgdb_principal,
-                "SGDB alternativo": sgdb_alternativo
-            },
-            "Backend": modulo_backend
-        },
-        "Horario": horario,
-        "Limite de estudiantes": limite_estudiantes
-    }
-    camper.append(nueva_ruta)
+    camper[2]["rutasNuevas"].append(
+        {
+                "idRuta": nuevaRuta,
+                "nombre": nombreNuevaRuta,
+                "modulos": {
+                    "Fundamentos de programacion": modulo_fundamentos,
+                    "Programacion Web": modulo_web,
+                    "Programacion formal": modulo_formal,
+                    "Bases de datos": {
+                        "SGDB principal": sgdb_principal,
+                        "SGDB alternativo": sgdb_alternativo
+                    },
+                    "Backend": modulo_backend
+                }
+                
+            
+            }
+    )
     guardarArchivo(camper)
     print("Nueva ruta de entrenamiento creada con éxito.")
+
+    # Módulos con opciones predefinidas
+    
+    
+    # Módulo de Programación formal con opciones para elegir
+    # print("Seleccione el módulo de Programación formal:")
+    # print("1. Java")
+    # print("2. JavaScript")
+    # print("3. C#")
+    # opcion_formal = int(input("Ingrese la opción deseada: "))
+    # if opcion_formal == 1:
+    #     modulo_formal = "Java"
+    # elif opcion_formal == 2:
+    #     modulo_formal = "JavaScript"
+    # elif opcion_formal == 3:
+    #     modulo_formal = "C#"
+    # else:
+    #     print("Opción no válida. Se asignará Java por defecto.")
+    #     modulo_formal = "Java"
+    
+    # # Módulo de Bases de datos con opciones para elegir SGDB principal y alternativo
+    # print("Seleccione el SGDB principal para la ruta de entrenamiento:")
+    # print("1. Mysql")
+    # print("2. MongoDb")
+    # print("3. Postgresql")
+    # opcion_sgdb_principal = int(input("Ingrese la opción deseada: "))
+    # if opcion_sgdb_principal == 1:
+    #     sgdb_principal = "Mysql"
+    # elif opcion_sgdb_principal == 2:
+    #     sgdb_principal = "MongoDb"
+    # elif opcion_sgdb_principal == 3:
+    #     sgdb_principal = "Postgresql"
+    # else:
+    #     print("Opción no válida. Se asignará Mysql por defecto.")
+    #     sgdb_principal = "Mysql"
+    
+    # print("Seleccione el SGDB alternativo para la ruta de entrenamiento:")
+    # print("1. Mysql")
+    # print("2. MongoDb")
+    # print("3. Postgresql")
+    # opcion_sgdb_alternativo = int(input("Ingrese la opción deseada: "))
+    # if opcion_sgdb_alternativo == 1:
+    #     sgdb_alternativo = "Mysql"
+    # elif opcion_sgdb_alternativo == 2:
+    #     sgdb_alternativo = "MongoDb"
+    # elif opcion_sgdb_alternativo == 3:
+    #     sgdb_alternativo = "Postgresql"
+    # else:
+    #     print("Opción no válida. Se asignará Mysql por defecto.")#hacer un bucle para condicionar si elige mal
+    #     sgdb_alternativo = "Mysql"
+    
+    # # Módulo de Backend con opciones para elegir
+    # print("Seleccione el módulo de Backend:")
+    # print("1. NetCore")
+    # print("2. Spring Boot")
+    # print("3. NodeJS")
+    # print("4. Express")
+    # opcion_backend = int(input("Ingrese la opción deseada: "))
+    # if opcion_backend == 1:
+    #     modulo_backend = "NetCore"
+    #     guardarArchivo(camper)
+    # elif opcion_backend == 2:
+    #     modulo_backend = "Spring Boot"
+    #     guardarArchivo(camper)
+    # elif opcion_backend == 3:
+    #     modulo_backend = "NodeJS"
+    #     guardarArchivo(camper)
+    # elif opcion_backend == 4:
+    #     modulo_backend = "Express"
+    #     guardarArchivo(camper)
+    # else:
+    #     print("Opción no válida. Se asignará NetCore por defecto.")
+    #     modulo_backend = "NetCore"
+    
+    # horario = input("Ingrese el horario de clases para esta ruta: ")
+    # limite_estudiantes = 33  # El límite siempre es 33 para todas las rutas
+
+    # nombre_ruta = input("Ingrese el nombre de la nueva ruta de entrenamiento: ")
+
+    # rutas_existentes = [ruta.get("nombre") for ruta in camper]
+    # if nombre_ruta in rutas_existentes:
+    #     print("La ruta de entrenamiento ya existe.")
+    #     return
+
+    # nueva_ruta = {
+
+    #     "nombre": nombre_ruta,
+    #     "modulos": {
+    #         "Fundamentos de programacion": modulo_fundamentos,
+    #         "Programacion Web": modulo_web,
+    #         "Programacion formal": modulo_formal,
+    #         "Bases de datos": {
+    #             "SGDB principal": sgdb_principal,
+    #             "SGDB alternativo": sgdb_alternativo
+    #         },
+    #         "Backend": modulo_backend
+    #     },
+    #     "Horario": horario,
+    #     "Limite de estudiantes": limite_estudiantes
+    # }
+    # camper.append(nueva_ruta)
+    # guardarArchivo(camper)
+    # print("Nueva ruta de entrenamiento creada con éxito.")
 
 def evaluar_camper(camper):
     print("Evaluación de campers")

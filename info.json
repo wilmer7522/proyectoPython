@@ -67,13 +67,13 @@
                         "evaluacion": "Aprobado"
                     }
                 ],
-                "Promedio": 75.0,
+                "Promedio": 85.0,
                 "rutaEntrenamiento": "ruta NodeJS",
                 "horario": "6:00 - 10:00",
                 "riesgo": "Bajo",
-                "trainer": "Miguel Angel Castillo",
-                "fecha_inicio": "10-05",
-                "fecha_finalizacion": "2004",
+                "trainer": "Jholver Pardo",
+                "fecha_inicio": "20",
+                "fecha_finalizacion": "30",
                 "areaEntrenamiento": "Sputnik",
                 "promedioGeneral": 80.0
             },
@@ -122,8 +122,8 @@
                 "horario": "6:00 - 10:00",
                 "riesgo": "Bajo",
                 "trainer": "Miguel Angel Castillo",
-                "fecha_inicio": "10-05",
-                "fecha_finalizacion": "2004",
+                "fecha_inicio": "10",
+                "fecha_finalizacion": "20",
                 "areaEntrenamiento": "Sputnik",
                 "promedioGeneral": 80.0
             },
@@ -143,14 +143,45 @@
                     }
                 ],
                 "Promedio": 75.0,
-                "rutaEntrenamiento": "ruta NodeJS",
+                "rutaEntrenamiento": "Ruta NodeJS",
                 "horario": "6:00 - 10:00",
                 "riesgo": "Bajo",
                 "trainer": "Miguel Angel Castillo",
-                "fecha_inicio": "10-05",
-                "fecha_finalizacion": "2004",
+                "fecha_inicio": "10",
+                "fecha_finalizacion": "20",
                 "areaEntrenamiento": "Sputnik",
-                "promedioGeneral": 80.0
+                "promedioGeneral": 80.0,
+                "idRuta": [
+                    {},
+                    {
+                        "idRuta": 1,
+                        "nombre": "prueba",
+                        "modulos": {
+                            "Fundamentos de programacion": "Introduccion a la algoritmia, PSeInt y Python",
+                            "Programacion Web": "HTML, CSS y Bootstrap",
+                            "Programacion formal": "JavaScript",
+                            "Bases de datos": {
+                                "SGDB principal": "Mysql",
+                                "SGDB alternativo": "MongoDb"
+                            },
+                            "Backend": "Express"
+                        }
+                    },
+                    {
+                        "idRuta": 2,
+                        "nombre": "pasa",
+                        "modulos": {
+                            "Fundamentos de programacion": "Introduccion a la algoritmia, PSeInt y Python",
+                            "Programacion Web": "HTML, CSS y Bootstrap",
+                            "Programacion formal": "C#",
+                            "Bases de datos": {
+                                "SGDB principal": "Mysql",
+                                "SGDB alternativo": "Postgresql"
+                            },
+                            "Backend": "Spring Boot"
+                        }
+                    }
+                ]
             },
             {
                 "id": 7,
@@ -172,9 +203,9 @@
                 "horario": "6:00 - 10:00",
                 "riesgo": "Bajo",
                 "trainer": "Miguel Angel Castillo",
-                "fecha_inicio": "10-05",
-                "fecha_finalizacion": "2004",
-                "areaEntrenamiento": "Sputnik",
+                "fecha_inicio": "10",
+                "fecha_finalizacion": "20",
+                "areaEntrenamiento": "Apollo",
                 "promedioGeneral": 80.0
             },
             {
@@ -962,55 +993,63 @@
     },
     {
         "rutasNuevas": [
+            {},
             {
                 "idRuta": 1,
-                "nombre": "Java",
+                "nombre": "prueba",
+                "modulos": {
+                    "Fundamentos de programacion": "Introduccion a la algoritmia, PSeInt y Python",
+                    "Programacion Web": "HTML, CSS y Bootstrap",
+                    "Programacion formal": "JavaScript",
+                    "Bases de datos": {
+                        "SGDB principal": "Mysql",
+                        "SGDB alternativo": "MongoDb"
+                    },
+                    "Backend": "Express"
+                }
+            },
+            {
+                "idRuta": 2,
+                "nombre": "pasa",
+                "modulos": {
+                    "Fundamentos de programacion": "Introduccion a la algoritmia, PSeInt y Python",
+                    "Programacion Web": "HTML, CSS y Bootstrap",
+                    "Programacion formal": "C#",
+                    "Bases de datos": {
+                        "SGDB principal": "Mysql",
+                        "SGDB alternativo": "Postgresql"
+                    },
+                    "Backend": "Spring Boot"
+                }
+            },
+            {
+                "idRuta": 3,
+                "nombre": "React",
+                "modulos": {
+                    "Fundamentos de programacion": "Introduccion a la algoritmia, PSeInt y Python",
+                    "Programacion Web": "HTML, CSS y Bootstrap",
+                    "Programacion formal": "C#",
+                    "Bases de datos": {
+                        "SGDB principal": "Mysql",
+                        "SGDB alternativo": "Postgresql"
+                    },
+                    "Backend": "NodeJS"
+                }
+            },
+            {
+                "idRuta": 4,
+                "nombre": "bootstrat",
                 "modulos": {
                     "Fundamentos de programacion": "Introduccion a la algoritmia, PSeInt y Python",
                     "Programacion Web": "HTML, CSS y Bootstrap",
                     "Programacion formal": "Java",
                     "Bases de datos": {
                         "SGDB principal": "Mysql",
-                        "SGDB alternativo": "Mysql"
+                        "SGDB alternativo": "Postgresql"
                     },
-                    "Backend": "NetCore"
-                },
-                "Horario": "666",
-                "Limite de estudiantes": 33
-            },
-            {
-                "idRuta": 1
+                    "Backend": "Express"
+                }
             }
         ]
-    },
-    {
-        "nombre": "karen",
-        "modulos": {
-            "Fundamentos de programacion": "Introduccion a la algoritmia, PSeInt y Python",
-            "Programacion Web": "HTML, CSS y Bootstrap",
-            "Programacion formal": "C#",
-            "Bases de datos": {
-                "SGDB principal": "Mysql",
-                "SGDB alternativo": "Postgresql"
-            },
-            "Backend": "NodeJS"
-        },
-        "Horario": "0",
-        "Limite de estudiantes": 33
-    },
-    {
-        "nombre": "alex",
-        "modulos": {
-            "Fundamentos de programacion": "Introduccion a la algoritmia, PSeInt y Python",
-            "Programacion Web": "HTML, CSS y Bootstrap",
-            "Programacion formal": "JavaScript",
-            "Bases de datos": {
-                "SGDB principal": "Mysql",
-                "SGDB alternativo": "MongoDb"
-            },
-            "Backend": "Spring Boot"
-        },
-        "Horario": "2",
-        "Limite de estudiantes": 33
     }
 ]
