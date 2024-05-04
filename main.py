@@ -697,62 +697,54 @@ def listar_aprobados_y_reprobados(camper):
     for inscripcion in camper[0]["inscripciones"]:
         if inscripcion.get("estado") and inscripcion["estado"][0].get("evaluacion"):
             print(f"Camper: {inscripcion['nombre']} {inscripcion['apellido']}, Ruta: {inscripcion.get('rutaEntrenamiento', 'No asignada')}, Trainer: {inscripcion.get('trainer', 'No asignado')}, Evaluación: {inscripcion['estado'][0]['evaluacion']}")
-menu = True
-while menu:
 
-    def menu():
-        print("")
-        print("=====Menú=====")
-        print("1. Inscripciones")
-        #print("2. Rutas de entrenamiento")
-        print("3. Registrar notas de examen de Ingreso")
-        #print("4. Áreas de entrenamiento")
-        print("5. Crear nuevas rutas")
-        #print("6. Asignar camper a ruta de entrenamiento")
-        print("7. Buscar camper")
-        #print("8. Asignar Trainer")
-        #print("9. Matricular camper")
-        print("10. Evaluar campers")
-        # print("11. Campers en riesgo")
-        print("12. Reportes")
-        opcion = int(input("Ingrese una opción: "))
-        
-        if opcion == 1:
-            procesar_inscripcion(camper)
-        #elif opcion == 2:
-            #rutasEntrenamiento(camper)
-        elif opcion == 3:
-            registrarNotas(camper)
-        # elif opcion == 4:
-        #     areasEntrenamiento(camper)
-        elif opcion == 5:
-            crearRutaEntrenamiento(camper)
-        #elif opcion == 6:
-        #   asignarCamperRuta(camper)
-        elif opcion == 7:
+def menu():
+    print("")
+    print("=====Menú General=====")
+    print("1. Camper")
+    print("2. Trainer")
+    print("3. Coordinador")
+    opcion = int(input("Ingrese una opción: "))
+    if opcion == 1:
+        print("Elija la opción deseada:")
+        a = int(input("1. Ver Campers\n2. Listar Campers Inscritos\n3. Listar Campers Aprobados\n4. Listar Campers con Rendimiento Bajo\n5. Listar Campers con Ruta de Trainer\n6. Listar Campers Aprobados y Reprobados "))
+        if a == 1:
             vercampers(camper)
-        # elif opcion == 8:
-            #asignarTrainer(camper)
-        elif opcion == 10:
-            evaluar_camper(camper)
-        elif opcion == 12:
-            print("elija la opcion deseada:")
-            a = int(input("1. Campers Inscritos\n2. Campers Aprobados\n3. Trainers\n4. Campers con resdimiendo bajo\n5. Ruta Campers y Trainers\n6. Campers Aprobados y Reprobados "))
-            if a == 1:
-                listar_campers_inscritos(camper)
-            elif a == 2:
-                listar_campers_aprobados(camper)
-            elif a == 3:
-                listar_trainers(camper)
-            elif a == 4:
-                listar_campers_bajo_rendimiento(camper)
-            elif a == 5:
-                listar_campers_trainer_ruta(camper)
-            elif a == 6:
-                listar_aprobados_y_reprobados(camper)
-            
+        elif a == 2:
+            listar_campers_inscritos(camper)
+        elif a == 3:
+            listar_campers_aprobados(camper)
+        elif a == 4:
+            listar_campers_bajo_rendimiento(camper)
+        elif a == 5:
+            listar_campers_trainer_ruta(camper)
+        elif a == 6:
+            listar_aprobados_y_reprobados(camper)
         else:
             print("Opción no válida.")
+    elif opcion == 2:
+        print("Elija la opción deseada:")
+        a = int(input("1. Listar Trainers\n2. Crear Ruta de Entrenamiento "))
+        if a == 1:
+            listar_trainers(camper)
+        elif a == 2:
+            crearRutaEntrenamiento(camper)
+        else:
+            print("Opción no válida.")
+    elif opcion == 3:
+        print("Elija la opción deseada:")
+        a = int(input("1. Procesar Inscripción\n2. Registrar Notas\n3. Evaluar Camper "))
+        if a == 1:
+            procesar_inscripcion(camper)
+        elif a == 2:
+            registrarNotas(camper)
+        elif a == 3:
+            evaluar_camper(camper)
+        else:
+            print("Opción no válida.")
+    else:
+        print("Opción no válida.")
 
-    camper = abrirArchivo()
+camper = abrirArchivo()
+while True:
     menu()
