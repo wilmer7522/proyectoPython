@@ -99,7 +99,7 @@ def nuevarut(camper):
     print("Creación de nueva ruta de entrenamiento")
     print("Especifique los módulos para la nueva ruta:")
     nueva_id = 0
-    for inscripcion in camper[0]["rutasNuevas"]:
+    for inscripcion in camper[2]["rutasNuevas"]:
         if 'idRuta' in inscripcion and inscripcion["idRuta"] > nueva_id:
             nueva_id = inscripcion["idRuta"]
 
@@ -265,18 +265,21 @@ def registrarNotas(camper):
             inscripcion_encontrada["rutaEntrenamiento"] = "ruta NetCore"
             guardarArchivo(camper)
 
-        elif ruta == 4:
-            nuevarut(camper)
-
+        elif ruta == 4:#hay que revisar servia y ahora da error
+            if len([c for c in camper[2]["rutasNuevas"] if c.get("idRuta")=="idRuta"]) >=33:
+                print("Lo siento, la ruta de entrenamiento NetCore está llena.")
+                return
+            inscripcion_encontrada["idRuta"] = camper[2]["rutasNuevas"]
+            guardarArchivo(camper)
 
 
         else:
             print("Opción no válida, se asignará la Ruta NodeJS por defecto.")
             inscripcion_encontrada["rutaEntrenamiento"] = "Ruta NodeJS"
-        print("Asignación de ruta completada.")
-        guardarArchivo(camper)
-        print("Ingrese el area de estudio")
-        print("")
+            print("Asignación de ruta completada.")
+            guardarArchivo(camper)
+            print("Ingrese el area de estudio")
+            print("")
         area = int(input("1. Sputnik\n2. Artemis\n3. Apollo\n"))
         if area == 1:
             #if len([c for c in camper[0]["inscripciones"]]):# if c.get("areaEntrenamiento")=="Sputnik"]): #>=33:

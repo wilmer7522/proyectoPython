@@ -1,1 +1,1125 @@
-[{"inscripciones": [{}, {"id": 1, "nombre": "alexander", "apellido": "rojas", "identificacion": 123654789, "direccion": "tibu", "acudiente": "no tiene", "telefono_celular": 963963, "telefono_fijo": 369369, "estado": [{"ingreso": "Aprobado", "evaluacion": "Aprobado"}], "Promedio": 75.0, "rutaEntrenamiento": "ruta Java", "horario": "10:00 - 14:00", "riesgo": "Bajo", "trainer": "Jholver Pardo", "fecha_inicio": "10-02-2024", "fecha_finalizacion": "20-06-2025", "areaEntrenamiento": "Artemis", "promedioGeneral": 80.0}, {"id": 2, "nombre": "alexander", "apellido": "rojas", "identificacion": 123654789, "direccion": "tibu", "acudiente": "no tiene", "telefono_celular": 963963, "telefono_fijo": 369369, "estado": [{"ingreso": "Aprobado", "evaluacion": "Aprobado"}], "Promedio": 75.0, "rutaEntrenamiento": "ruta NodeJS", "horario": "6:00 - 10:00", "riesgo": "Bajo", "trainer": "Miguel Angel Castillo", "fecha_inicio": "10-05", "fecha_finalizacion": "2004", "areaEntrenamiento": "Sputnik", "promedioGeneral": 80.0}, {"id": 3, "nombre": "alexander", "apellido": "rojas", "identificacion": 123654789, "direccion": "tibu", "acudiente": "no tiene", "telefono_celular": 963963, "telefono_fijo": 369369, "estado": [{"ingreso": "Aprobado", "evaluacion": "Aprobado"}], "Promedio": 85.0, "rutaEntrenamiento": "ruta NodeJS", "horario": "6:00 - 10:00", "riesgo": "Bajo", "trainer": "Jholver Pardo", "fecha_inicio": "20", "fecha_finalizacion": "30", "areaEntrenamiento": "Sputnik", "promedioGeneral": 80.0}, {"id": 4, "nombre": "alexander", "apellido": "rojas", "identificacion": 123654789, "direccion": "tibu", "acudiente": "no tiene", "telefono_celular": 963963, "telefono_fijo": 369369, "estado": [{"ingreso": "Aprobado", "evaluacion": "Aprobado"}], "Promedio": 70.0, "rutaEntrenamiento": "ruta NodeJS", "horario": "6:00 - 10:00", "riesgo": "Bajo", "trainer": "Jholver Pardo", "fecha_inicio": "5", "fecha_finalizacion": "10", "areaEntrenamiento": "Sputnik", "promedioGeneral": 80.0}, {"id": 5, "nombre": "alexander", "apellido": "rojas", "identificacion": 123654789, "direccion": "tibu", "acudiente": "no tiene", "telefono_celular": 963963, "telefono_fijo": 369369, "estado": [{"ingreso": "Aprobado", "evaluacion": "Aprobado"}], "Promedio": 75.0, "rutaEntrenamiento": "ruta NodeJS", "horario": "6:00 - 10:00", "riesgo": "Bajo", "trainer": "Miguel Angel Castillo", "fecha_inicio": "10", "fecha_finalizacion": "20", "areaEntrenamiento": "Sputnik", "promedioGeneral": 80.0}, {"id": 6, "nombre": "alexander", "apellido": "rojas", "identificacion": 123654789, "direccion": "tibu", "acudiente": "no tiene", "telefono_celular": 963963, "telefono_fijo": 369369, "estado": [{"ingreso": "Aprobado", "evaluacion": "Aprobado"}], "Promedio": 75.0, "rutaEntrenamiento": "Ruta NodeJS", "horario": "6:00 - 10:00", "riesgo": "Bajo", "trainer": "Miguel Angel Castillo", "fecha_inicio": "10", "fecha_finalizacion": "20", "areaEntrenamiento": "Sputnik", "promedioGeneral": 80.0, "idRuta": [{}, {"idRuta": 1, "nombre": "prueba", "modulos": {"Fundamentos de programacion": "Introduccion a la algoritmia, PSeInt y Python", "Programacion Web": "HTML, CSS y Bootstrap", "Programacion formal": "JavaScript", "Bases de datos": {"SGDB principal": "Mysql", "SGDB alternativo": "MongoDb"}, "Backend": "Express"}}, {"idRuta": 2, "nombre": "pasa", "modulos": {"Fundamentos de programacion": "Introduccion a la algoritmia, PSeInt y Python", "Programacion Web": "HTML, CSS y Bootstrap", "Programacion formal": "C#", "Bases de datos": {"SGDB principal": "Mysql", "SGDB alternativo": "Postgresql"}, "Backend": "Spring Boot"}}]}, {"id": 7, "nombre": "alexander", "apellido": "rojas", "identificacion": 123654789, "direccion": "tibu", "acudiente": "no tiene", "telefono_celular": 963963, "telefono_fijo": 369369, "estado": [{"ingreso": "Aprobado", "evaluacion": "Aprobado"}], "Promedio": 75.0, "rutaEntrenamiento": "ruta NodeJS", "horario": "6:00 - 10:00", "riesgo": "Bajo", "trainer": "Miguel Angel Castillo", "fecha_inicio": "10", "fecha_finalizacion": "20", "areaEntrenamiento": "Apollo", "promedioGeneral": 80.0}, {"id": 8, "nombre": "alexander", "apellido": "rojas", "identificacion": 123654789, "direccion": "tibu", "acudiente": "no tiene", "telefono_celular": 963963, "telefono_fijo": 369369, "estado": [{"ingreso": "Aprobado", "evaluacion": "Aprobado"}], "Promedio": 75.0, "rutaEntrenamiento": "ruta NodeJS", "horario": "6:00 - 10:00", "riesgo": "Bajo", "trainer": "Miguel Angel Castillo", "fecha_inicio": "10-05", "fecha_finalizacion": "2004", "areaEntrenamiento": "Sputnik", "promedioGeneral": 80.0}, {"id": 9, "nombre": "alexander", "apellido": "rojas", "identificacion": 123654789, "direccion": "tibu", "acudiente": "no tiene", "telefono_celular": 963963, "telefono_fijo": 369369, "estado": [{"ingreso": "Aprobado", "evaluacion": "Aprobado"}], "Promedio": 75.0, "rutaEntrenamiento": "ruta NodeJS", "horario": "6:00 - 10:00", "riesgo": "Bajo", "trainer": "Miguel Angel Castillo", "fecha_inicio": "10-05", "fecha_finalizacion": "2004", "areaEntrenamiento": "Sputnik", "promedioGeneral": 80.0}, {"id": 10, "nombre": "alexander", "apellido": "rojas", "identificacion": 123654789, "direccion": "tibu", "acudiente": "no tiene", "telefono_celular": 963963, "telefono_fijo": 369369, "estado": [{"ingreso": "Aprobado", "evaluacion": "Aprobado"}], "Promedio": 75.0, "rutaEntrenamiento": "ruta NodeJS", "horario": "6:00 - 10:00", "riesgo": "Bajo", "trainer": "Miguel Angel Castillo", "fecha_inicio": "10-05", "fecha_finalizacion": "2004", "areaEntrenamiento": "Sputnik", "promedioGeneral": 80.0}, {"id": 11, "nombre": "alexander", "apellido": "rojas", "identificacion": 123654789, "direccion": "tibu", "acudiente": "no tiene", "telefono_celular": 963963, "telefono_fijo": 369369, "estado": [{"ingreso": "Aprobado", "evaluacion": "Aprobado"}], "Promedio": 75.0, "rutaEntrenamiento": "ruta NodeJS", "horario": "6:00 - 10:00", "riesgo": "Bajo", "trainer": "Miguel Angel Castillo", "fecha_inicio": "10-05", "fecha_finalizacion": "2004", "areaEntrenamiento": "Sputnik", "promedioGeneral": 80.0}, {"id": 12, "nombre": "alexander", "apellido": "rojas", "identificacion": 123654789, "direccion": "tibu", "acudiente": "no tiene", "telefono_celular": 963963, "telefono_fijo": 369369, "estado": [{"ingreso": "Aprobado", "evaluacion": "Aprobado"}], "Promedio": 75.0, "rutaEntrenamiento": "ruta NodeJS", "horario": "6:00 - 10:00", "riesgo": "Bajo", "trainer": "Miguel Angel Castillo", "fecha_inicio": "10-05", "fecha_finalizacion": "2004", "areaEntrenamiento": "Sputnik", "promedioGeneral": 80.0}, {"id": 13, "nombre": "alexander", "apellido": "rojas", "identificacion": 123654789, "direccion": "tibu", "acudiente": "no tiene", "telefono_celular": 963963, "telefono_fijo": 369369, "estado": [{"ingreso": "Aprobado", "evaluacion": "Aprobado"}], "Promedio": 75.0, "rutaEntrenamiento": "ruta NodeJS", "horario": "6:00 - 10:00", "riesgo": "Bajo", "trainer": "Miguel Angel Castillo", "fecha_inicio": "10-05", "fecha_finalizacion": "2004", "areaEntrenamiento": "Sputnik", "promedioGeneral": 80.0}, {"id": 14, "nombre": "alexander", "apellido": "rojas", "identificacion": 123654789, "direccion": "tibu", "acudiente": "no tiene", "telefono_celular": 963963, "telefono_fijo": 369369, "estado": [{"ingreso": "Aprobado", "evaluacion": "Aprobado"}], "Promedio": 75.0, "rutaEntrenamiento": "ruta NodeJS", "horario": "6:00 - 10:00", "riesgo": "Bajo", "trainer": "Miguel Angel Castillo", "fecha_inicio": "10-05", "fecha_finalizacion": "2004", "areaEntrenamiento": "Sputnik", "promedioGeneral": 80.0}, {"id": 15, "nombre": "alexander", "apellido": "rojas", "identificacion": 123654789, "direccion": "tibu", "acudiente": "no tiene", "telefono_celular": 963963, "telefono_fijo": 369369, "estado": [{"ingreso": "Aprobado", "evaluacion": "Aprobado"}], "Promedio": 75.0, "rutaEntrenamiento": "ruta NodeJS", "horario": "6:00 - 10:00", "riesgo": "Bajo", "trainer": "Miguel Angel Castillo", "fecha_inicio": "10-05", "fecha_finalizacion": "2004", "areaEntrenamiento": "Sputnik", "promedioGeneral": 80.0}, {"id": 16, "nombre": "alexander", "apellido": "rojas", "identificacion": 123654789, "direccion": "tibu", "acudiente": "no tiene", "telefono_celular": 963963, "telefono_fijo": 369369, "estado": [{"ingreso": "Aprobado", "evaluacion": "Aprobado"}], "Promedio": 75.0, "rutaEntrenamiento": "ruta NodeJS", "horario": "6:00 - 10:00", "riesgo": "Bajo", "trainer": "Miguel Angel Castillo", "fecha_inicio": "10-05", "fecha_finalizacion": "2004", "areaEntrenamiento": "Sputnik", "promedioGeneral": 80.0}, {"id": 17, "nombre": "alexander", "apellido": "rojas", "identificacion": 123654789, "direccion": "tibu", "acudiente": "no tiene", "telefono_celular": 963963, "telefono_fijo": 369369, "estado": [{"ingreso": "Aprobado", "evaluacion": "Aprobado"}], "Promedio": 75.0, "rutaEntrenamiento": "ruta NodeJS", "horario": "6:00 - 10:00", "riesgo": "Bajo", "trainer": "Miguel Angel Castillo", "fecha_inicio": "10-05", "fecha_finalizacion": "2004", "areaEntrenamiento": "Sputnik", "promedioGeneral": 80.0}, {"id": 18, "nombre": "alexander", "apellido": "rojas", "identificacion": 123654789, "direccion": "tibu", "acudiente": "no tiene", "telefono_celular": 963963, "telefono_fijo": 369369, "estado": [{"ingreso": "Aprobado", "evaluacion": "Aprobado"}], "Promedio": 75.0, "rutaEntrenamiento": "ruta NodeJS", "horario": "6:00 - 10:00", "riesgo": "Bajo", "trainer": "Miguel Angel Castillo", "fecha_inicio": "10-05", "fecha_finalizacion": "2004", "areaEntrenamiento": "Sputnik", "promedioGeneral": 80.0}, {"id": 19, "nombre": "alexander", "apellido": "rojas", "identificacion": 123654789, "direccion": "tibu", "acudiente": "no tiene", "telefono_celular": 963963, "telefono_fijo": 369369, "estado": [{"ingreso": "Aprobado", "evaluacion": "Aprobado"}], "Promedio": 75.0, "rutaEntrenamiento": "ruta NodeJS", "horario": "6:00 - 10:00", "riesgo": "Bajo", "trainer": "Miguel Angel Castillo", "fecha_inicio": "10-05", "fecha_finalizacion": "2004", "areaEntrenamiento": "Sputnik", "promedioGeneral": 80.0}, {"id": 20, "nombre": "alexander", "apellido": "rojas", "identificacion": 123654789, "direccion": "tibu", "acudiente": "no tiene", "telefono_celular": 963963, "telefono_fijo": 369369, "estado": [{"ingreso": "Aprobado", "evaluacion": "Aprobado"}], "Promedio": 75.0, "rutaEntrenamiento": "ruta NodeJS", "horario": "6:00 - 10:00", "riesgo": "Bajo", "trainer": "Miguel Angel Castillo", "fecha_inicio": "10-05", "fecha_finalizacion": "2004", "areaEntrenamiento": "Sputnik", "promedioGeneral": 80.0}, {"id": 21, "nombre": "alexander", "apellido": "rojas", "identificacion": 123654789, "direccion": "tibu", "acudiente": "no tiene", "telefono_celular": 963963, "telefono_fijo": 369369, "estado": [{"ingreso": "Aprobado", "evaluacion": "Aprobado"}], "Promedio": 75.0, "rutaEntrenamiento": "ruta NodeJS", "horario": "6:00 - 10:00", "riesgo": "Bajo", "trainer": "Miguel Angel Castillo", "fecha_inicio": "10-05", "fecha_finalizacion": "2004", "areaEntrenamiento": "Sputnik", "promedioGeneral": 80.0}, {"id": 22, "nombre": "alexander", "apellido": "rojas", "identificacion": 123654789, "direccion": "tibu", "acudiente": "no tiene", "telefono_celular": 963963, "telefono_fijo": 369369, "estado": [{"ingreso": "Aprobado", "evaluacion": "Aprobado"}], "Promedio": 75.0, "rutaEntrenamiento": "ruta NodeJS", "horario": "6:00 - 10:00", "riesgo": "Bajo", "trainer": "Miguel Angel Castillo", "fecha_inicio": "10-05", "fecha_finalizacion": "2004", "areaEntrenamiento": "Sputnik", "promedioGeneral": 80.0}, {"id": 23, "nombre": "alexander", "apellido": "rojas", "identificacion": 123654789, "direccion": "tibu", "acudiente": "no tiene", "telefono_celular": 963963, "telefono_fijo": 369369, "estado": [{"ingreso": "Aprobado", "evaluacion": "Aprobado"}], "Promedio": 75.0, "rutaEntrenamiento": "ruta NodeJS", "horario": "6:00 - 10:00", "riesgo": "Bajo", "trainer": "Miguel Angel Castillo", "fecha_inicio": "10-05", "fecha_finalizacion": "2004", "areaEntrenamiento": "Sputnik", "promedioGeneral": 80.0}, {"id": 24, "nombre": "alexander", "apellido": "rojas", "identificacion": 123654789, "direccion": "tibu", "acudiente": "no tiene", "telefono_celular": 963963, "telefono_fijo": 369369, "estado": [{"ingreso": "Aprobado", "evaluacion": "Aprobado"}], "Promedio": 75.0, "rutaEntrenamiento": "ruta NodeJS", "horario": "6:00 - 10:00", "riesgo": "Bajo", "trainer": "Miguel Angel Castillo", "fecha_inicio": "10-05", "fecha_finalizacion": "2004", "areaEntrenamiento": "Sputnik", "promedioGeneral": 80.0}, {"id": 25, "nombre": "alexander", "apellido": "rojas", "identificacion": 123654789, "direccion": "tibu", "acudiente": "no tiene", "telefono_celular": 963963, "telefono_fijo": 369369, "estado": [{"ingreso": "Aprobado", "evaluacion": "Aprobado"}], "Promedio": 75.0, "rutaEntrenamiento": "ruta NodeJS", "horario": "6:00 - 10:00", "riesgo": "Bajo", "trainer": "Miguel Angel Castillo", "fecha_inicio": "10-05", "fecha_finalizacion": "2004", "areaEntrenamiento": "Sputnik", "promedioGeneral": 80.0}, {"id": 26, "nombre": "alexander", "apellido": "rojas", "identificacion": 123654789, "direccion": "tibu", "acudiente": "no tiene", "telefono_celular": 963963, "telefono_fijo": 369369, "estado": [{"ingreso": "Aprobado", "evaluacion": "Aprobado"}], "Promedio": 75.0, "rutaEntrenamiento": "ruta NodeJS", "horario": "6:00 - 10:00", "riesgo": "Bajo", "trainer": "Miguel Angel Castillo", "fecha_inicio": "10-05", "fecha_finalizacion": "2004", "areaEntrenamiento": "Sputnik", "promedioGeneral": 80.0}, {"id": 27, "nombre": "alexander", "apellido": "rojas", "identificacion": 123654789, "direccion": "tibu", "acudiente": "no tiene", "telefono_celular": 963963, "telefono_fijo": 369369, "estado": [{"ingreso": "Aprobado", "evaluacion": "Aprobado"}], "Promedio": 75.0, "rutaEntrenamiento": "ruta NodeJS", "horario": "6:00 - 10:00", "riesgo": "Bajo", "trainer": "Miguel Angel Castillo", "fecha_inicio": "10-05", "fecha_finalizacion": "2004", "areaEntrenamiento": "Sputnik", "promedioGeneral": 80.0}, {"id": 28, "nombre": "alexander", "apellido": "rojas", "identificacion": 123654789, "direccion": "tibu", "acudiente": "no tiene", "telefono_celular": 963963, "telefono_fijo": 369369, "estado": [{"ingreso": "Aprobado", "evaluacion": "Aprobado"}], "Promedio": 75.0, "rutaEntrenamiento": "ruta NodeJS", "horario": "6:00 - 10:00", "riesgo": "Bajo", "trainer": "Miguel Angel Castillo", "fecha_inicio": "10-05", "fecha_finalizacion": "2004", "areaEntrenamiento": "Sputnik", "promedioGeneral": 80.0}, {"id": 29, "nombre": "alexander", "apellido": "rojas", "identificacion": 123654789, "direccion": "tibu", "acudiente": "no tiene", "telefono_celular": 963963, "telefono_fijo": 369369, "estado": [{"ingreso": "Aprobado", "evaluacion": "Aprobado"}], "Promedio": 75.0, "rutaEntrenamiento": "ruta NodeJS", "horario": "6:00 - 10:00", "riesgo": "Bajo", "trainer": "Miguel Angel Castillo", "fecha_inicio": "10-05", "fecha_finalizacion": "2004", "areaEntrenamiento": "Sputnik", "promedioGeneral": 80.0}, {"id": 30, "nombre": "alexander", "apellido": "rojas", "identificacion": 123654789, "direccion": "tibu", "acudiente": "no tiene", "telefono_celular": 963963, "telefono_fijo": 369369, "estado": [{"ingreso": "Aprobado", "evaluacion": "Aprobado"}], "Promedio": 75.0, "rutaEntrenamiento": "ruta NodeJS", "horario": "6:00 - 10:00", "riesgo": "Bajo", "trainer": "Miguel Angel Castillo", "fecha_inicio": "10-05", "fecha_finalizacion": "2004", "areaEntrenamiento": "Sputnik", "promedioGeneral": 80.0}, {"id": 31, "nombre": "alexander", "apellido": "rojas", "identificacion": 123654789, "direccion": "tibu", "acudiente": "no tiene", "telefono_celular": 963963, "telefono_fijo": 369369, "estado": [{"ingreso": "Aprobado", "evaluacion": "Aprobado"}], "Promedio": 75.0, "rutaEntrenamiento": "ruta NodeJS", "horario": "6:00 - 10:00", "riesgo": "Bajo", "trainer": "Miguel Angel Castillo", "fecha_inicio": "10-05", "fecha_finalizacion": "2004", "areaEntrenamiento": "Sputnik", "promedioGeneral": 80.0}, {"id": 32, "nombre": "alexander", "apellido": "rojas", "identificacion": 123654789, "direccion": "tibu", "acudiente": "no tiene", "telefono_celular": 963963, "telefono_fijo": 369369, "estado": [{"ingreso": "Aprobado", "evaluacion": "Aprobado"}], "Promedio": 75.0, "rutaEntrenamiento": "ruta NodeJS", "horario": "6:00 - 10:00", "riesgo": "Bajo", "trainer": "Miguel Angel Castillo", "fecha_inicio": "10-05", "fecha_finalizacion": "2004", "areaEntrenamiento": "Sputnik", "promedioGeneral": 80.0}, {"id": 33, "nombre": "alexander", "apellido": "rojas", "identificacion": 123654789, "direccion": "tibu", "acudiente": "no tiene", "telefono_celular": 963963, "telefono_fijo": 369369, "estado": [{"ingreso": "Aprobado", "evaluacion": "Aprobado"}], "Promedio": 75.0, "rutaEntrenamiento": "ruta NodeJS", "horario": "6:00 - 10:00", "riesgo": "Bajo", "trainer": "Miguel Angel Castillo", "fecha_inicio": "10-05", "fecha_finalizacion": "2004", "areaEntrenamiento": "Sputnik", "promedioGeneral": 80.0}, {"id": 34, "nombre": "alexander", "apellido": "rojas", "identificacion": 123654789, "direccion": "tibu", "acudiente": "no tiene", "telefono_celular": 963963, "telefono_fijo": 369369, "estado": [{"ingreso": "Aprobado", "evaluacion": "Aprobado"}], "Promedio": 75.0, "rutaEntrenamiento": "ruta NodeJS", "horario": "6:00 - 10:00", "riesgo": "Bajo", "trainer": "Miguel Angel Castillo", "fecha_inicio": "10-05", "fecha_finalizacion": "2004", "areaEntrenamiento": "Sputnik", "promedioGeneral": 80.0}, {"id": 35, "nombre": "alexander", "apellido": "rojas", "identificacion": 123654789, "direccion": "tibu", "acudiente": "no tiene", "telefono_celular": 963963, "telefono_fijo": 369369, "estado": [{"ingreso": "Aprobado", "evaluacion": "Aprobado"}], "Promedio": 75.0, "rutaEntrenamiento": "ruta NodeJS", "horario": "6:00 - 10:00", "riesgo": "Bajo", "trainer": "Miguel Angel Castillo", "fecha_inicio": "10-05", "fecha_finalizacion": "2004", "areaEntrenamiento": "Sputnik", "promedioGeneral": 80.0}, {"id": 36, "nombre": "alexander", "apellido": "rojas", "identificacion": 123654789, "direccion": "tibu", "acudiente": "no tiene", "telefono_celular": 963963, "telefono_fijo": 369369, "estado": [{"ingreso": "Aprobado", "evaluacion": "Aprobado"}], "Promedio": 75.0, "rutaEntrenamiento": "ruta NodeJS", "horario": "6:00 - 10:00", "riesgo": "Bajo", "trainer": "Miguel Angel Castillo", "fecha_inicio": "10-05", "fecha_finalizacion": "2004", "areaEntrenamiento": "Sputnik", "promedioGeneral": 80.0}, {"id": 37, "nombre": "alexander", "apellido": "rojas", "identificacion": 123654789, "direccion": "tibu", "acudiente": "no tiene", "telefono_celular": 963963, "telefono_fijo": 369369, "estado": [{"ingreso": "Aprobado", "evaluacion": "Aprobado"}], "Promedio": 75.0, "rutaEntrenamiento": "ruta NodeJS", "horario": "6:00 - 10:00", "riesgo": "Bajo", "trainer": "Miguel Angel Castillo", "fecha_inicio": "10-05", "fecha_finalizacion": "2004", "areaEntrenamiento": "Sputnik", "promedioGeneral": 71.0}]}, {"trainers": [{"pedro": [{"nombre": "Pedro", "apellido": "Gomez", "rutaEntrenamiento": "Ruta Java"}], "Jholver": [{"nombre": "Jholver", "apellido": "Pardo"}], "Miguel": [{"nombre": "Miguel Angel", "apellido": "Castillo"}], "Juan": [{"nombre": "Juan Carlos", "apellido": "Mari\u00f1o"}]}]}, {"rutasNuevas": [{}, {"idRuta": 1, "nombre": "prueba", "modulos": {"Fundamentos de programacion": "Introduccion a la algoritmia, PSeInt y Python", "Programacion Web": "HTML, CSS y Bootstrap", "Programacion formal": "JavaScript", "Bases de datos": {"SGDB principal": "Mysql", "SGDB alternativo": "MongoDb"}, "Backend": "Express"}}, {"idRuta": 2, "nombre": "pasa", "modulos": {"Fundamentos de programacion": "Introduccion a la algoritmia, PSeInt y Python", "Programacion Web": "HTML, CSS y Bootstrap", "Programacion formal": "C#", "Bases de datos": {"SGDB principal": "Mysql", "SGDB alternativo": "Postgresql"}, "Backend": "Spring Boot"}}, {"idRuta": 3, "nombre": "React", "modulos": {"Fundamentos de programacion": "Introduccion a la algoritmia, PSeInt y Python", "Programacion Web": "HTML, CSS y Bootstrap", "Programacion formal": "C#", "Bases de datos": {"SGDB principal": "Mysql", "SGDB alternativo": "Postgresql"}, "Backend": "NodeJS"}}, {"idRuta": 4, "nombre": "bootstrat", "modulos": {"Fundamentos de programacion": "Introduccion a la algoritmia, PSeInt y Python", "Programacion Web": "HTML, CSS y Bootstrap", "Programacion formal": "Java", "Bases de datos": {"SGDB principal": "Mysql", "SGDB alternativo": "Postgresql"}, "Backend": "Express"}}]}]
+[
+    {
+        "inscripciones": [
+            {},
+            {
+                "id": 1,
+                "nombre": "alexander",
+                "apellido": "rojas",
+                "identificacion": 123654789,
+                "direccion": "tibu",
+                "acudiente": "no tiene",
+                "telefono_celular": 963963,
+                "telefono_fijo": 369369,
+                "estado": [
+                    {
+                        "ingreso": "Aprobado",
+                        "evaluacion": "Aprobado"
+                    }
+                ],
+                "Promedio": 75.0,
+                "rutaEntrenamiento": "ruta Java",
+                "horario": "10:00 - 14:00",
+                "riesgo": "Bajo",
+                "trainer": "Jholver Pardo",
+                "fecha_inicio": "10-02-2024",
+                "fecha_finalizacion": "20-06-2025",
+                "areaEntrenamiento": "Artemis",
+                "promedioGeneral": 80.0
+            },
+            {
+                "id": 2,
+                "nombre": "alexander",
+                "apellido": "rojas",
+                "identificacion": 123654789,
+                "direccion": "tibu",
+                "acudiente": "no tiene",
+                "telefono_celular": 963963,
+                "telefono_fijo": 369369,
+                "estado": [
+                    {
+                        "ingreso": "Aprobado",
+                        "evaluacion": "Aprobado"
+                    }
+                ],
+                "Promedio": 75.0,
+                "rutaEntrenamiento": "ruta NodeJS",
+                "horario": "6:00 - 10:00",
+                "riesgo": "Bajo",
+                "trainer": "Miguel Angel Castillo",
+                "fecha_inicio": "10-05",
+                "fecha_finalizacion": "2004",
+                "areaEntrenamiento": "Sputnik",
+                "promedioGeneral": 80.0
+            },
+            {
+                "id": 3,
+                "nombre": "alexander",
+                "apellido": "rojas",
+                "identificacion": 123654789,
+                "direccion": "tibu",
+                "acudiente": "no tiene",
+                "telefono_celular": 963963,
+                "telefono_fijo": 369369,
+                "estado": [
+                    {
+                        "ingreso": "Aprobado",
+                        "evaluacion": "Aprobado"
+                    }
+                ],
+                "Promedio": 85.0,
+                "rutaEntrenamiento": "ruta NodeJS",
+                "horario": "6:00 - 10:00",
+                "riesgo": "Bajo",
+                "trainer": "Jholver Pardo",
+                "fecha_inicio": "20",
+                "fecha_finalizacion": "30",
+                "areaEntrenamiento": "Sputnik",
+                "promedioGeneral": 80.0
+            },
+            {
+                "id": 4,
+                "nombre": "alexander",
+                "apellido": "rojas",
+                "identificacion": 123654789,
+                "direccion": "tibu",
+                "acudiente": "no tiene",
+                "telefono_celular": 963963,
+                "telefono_fijo": 369369,
+                "estado": [
+                    {
+                        "ingreso": "Aprobado",
+                        "evaluacion": "Aprobado"
+                    }
+                ],
+                "Promedio": 70.0,
+                "rutaEntrenamiento": "ruta NodeJS",
+                "horario": "6:00 - 10:00",
+                "riesgo": "Bajo",
+                "trainer": "Jholver Pardo",
+                "fecha_inicio": "5",
+                "fecha_finalizacion": "10",
+                "areaEntrenamiento": "Sputnik",
+                "promedioGeneral": 80.0
+            },
+            {
+                "id": 5,
+                "nombre": "alexander",
+                "apellido": "rojas",
+                "identificacion": 123654789,
+                "direccion": "tibu",
+                "acudiente": "no tiene",
+                "telefono_celular": 963963,
+                "telefono_fijo": 369369,
+                "estado": [
+                    {
+                        "ingreso": "Aprobado",
+                        "evaluacion": "Aprobado"
+                    }
+                ],
+                "Promedio": 75.0,
+                "rutaEntrenamiento": "ruta NodeJS",
+                "horario": "6:00 - 10:00",
+                "riesgo": "Bajo",
+                "trainer": "Miguel Angel Castillo",
+                "fecha_inicio": "10",
+                "fecha_finalizacion": "20",
+                "areaEntrenamiento": "Sputnik",
+                "promedioGeneral": 80.0
+            },
+            {
+                "id": 6,
+                "nombre": "alexander",
+                "apellido": "rojas",
+                "identificacion": 123654789,
+                "direccion": "tibu",
+                "acudiente": "no tiene",
+                "telefono_celular": 963963,
+                "telefono_fijo": 369369,
+                "estado": [
+                    {
+                        "ingreso": "Aprobado",
+                        "evaluacion": "Aprobado"
+                    }
+                ],
+                "Promedio": 75.0,
+                "rutaEntrenamiento": "Ruta NodeJS",
+                "horario": "10:00 - 14:00",
+                "riesgo": "Bajo",
+                "trainer": "Jholver Pardo",
+                "fecha_inicio": "20",
+                "fecha_finalizacion": "30",
+                "areaEntrenamiento": "Sputnik",
+                "promedioGeneral": 80.0,
+                "idRuta": [
+                    {},
+                    {
+                        "idRuta": 1,
+                        "nombre": "prueba",
+                        "modulos": {
+                            "Fundamentos de programacion": "Introduccion a la algoritmia, PSeInt y Python",
+                            "Programacion Web": "HTML, CSS y Bootstrap",
+                            "Programacion formal": "JavaScript",
+                            "Bases de datos": {
+                                "SGDB principal": "Mysql",
+                                "SGDB alternativo": "MongoDb"
+                            },
+                            "Backend": "Express"
+                        }
+                    },
+                    {
+                        "idRuta": 2,
+                        "nombre": "pasa",
+                        "modulos": {
+                            "Fundamentos de programacion": "Introduccion a la algoritmia, PSeInt y Python",
+                            "Programacion Web": "HTML, CSS y Bootstrap",
+                            "Programacion formal": "C#",
+                            "Bases de datos": {
+                                "SGDB principal": "Mysql",
+                                "SGDB alternativo": "Postgresql"
+                            },
+                            "Backend": "Spring Boot"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": 7,
+                "nombre": "alexander",
+                "apellido": "rojas",
+                "identificacion": 123654789,
+                "direccion": "tibu",
+                "acudiente": "no tiene",
+                "telefono_celular": 963963,
+                "telefono_fijo": 369369,
+                "estado": [
+                    {
+                        "ingreso": "Aprobado",
+                        "evaluacion": "Aprobado"
+                    }
+                ],
+                "Promedio": 85.0,
+                "rutaEntrenamiento": "Ruta NodeJS",
+                "horario": "10:00 - 14:00",
+                "riesgo": "Bajo",
+                "trainer": "Pedro Gomez",
+                "fecha_inicio": "10",
+                "fecha_finalizacion": "20",
+                "areaEntrenamiento": "Apollo",
+                "promedioGeneral": 80.0
+            },
+            {
+                "id": 8,
+                "nombre": "alexander",
+                "apellido": "rojas",
+                "identificacion": 123654789,
+                "direccion": "tibu",
+                "acudiente": "no tiene",
+                "telefono_celular": 963963,
+                "telefono_fijo": 369369,
+                "estado": [
+                    {
+                        "ingreso": "Aprobado",
+                        "evaluacion": "Aprobado"
+                    }
+                ],
+                "Promedio": 75.0,
+                "rutaEntrenamiento": "ruta NodeJS",
+                "horario": "6:00 - 10:00",
+                "riesgo": "Bajo",
+                "trainer": "Miguel Angel Castillo",
+                "fecha_inicio": "10-05",
+                "fecha_finalizacion": "2004",
+                "areaEntrenamiento": "Sputnik",
+                "promedioGeneral": 80.0
+            },
+            {
+                "id": 9,
+                "nombre": "alexander",
+                "apellido": "rojas",
+                "identificacion": 123654789,
+                "direccion": "tibu",
+                "acudiente": "no tiene",
+                "telefono_celular": 963963,
+                "telefono_fijo": 369369,
+                "estado": [
+                    {
+                        "ingreso": "Aprobado",
+                        "evaluacion": "Aprobado"
+                    }
+                ],
+                "Promedio": 75.0,
+                "rutaEntrenamiento": "ruta NodeJS",
+                "horario": "6:00 - 10:00",
+                "riesgo": "Bajo",
+                "trainer": "Miguel Angel Castillo",
+                "fecha_inicio": "10-05",
+                "fecha_finalizacion": "2004",
+                "areaEntrenamiento": "Sputnik",
+                "promedioGeneral": 80.0
+            },
+            {
+                "id": 10,
+                "nombre": "alexander",
+                "apellido": "rojas",
+                "identificacion": 123654789,
+                "direccion": "tibu",
+                "acudiente": "no tiene",
+                "telefono_celular": 963963,
+                "telefono_fijo": 369369,
+                "estado": [
+                    {
+                        "ingreso": "Aprobado",
+                        "evaluacion": "Aprobado"
+                    }
+                ],
+                "Promedio": 75.0,
+                "rutaEntrenamiento": "ruta NodeJS",
+                "horario": "6:00 - 10:00",
+                "riesgo": "Bajo",
+                "trainer": "Miguel Angel Castillo",
+                "fecha_inicio": "10-05",
+                "fecha_finalizacion": "2004",
+                "areaEntrenamiento": "Sputnik",
+                "promedioGeneral": 80.0
+            },
+            {
+                "id": 11,
+                "nombre": "alexander",
+                "apellido": "rojas",
+                "identificacion": 123654789,
+                "direccion": "tibu",
+                "acudiente": "no tiene",
+                "telefono_celular": 963963,
+                "telefono_fijo": 369369,
+                "estado": [
+                    {
+                        "ingreso": "Aprobado",
+                        "evaluacion": "Aprobado"
+                    }
+                ],
+                "Promedio": 75.0,
+                "rutaEntrenamiento": "ruta NodeJS",
+                "horario": "6:00 - 10:00",
+                "riesgo": "Bajo",
+                "trainer": "Miguel Angel Castillo",
+                "fecha_inicio": "10-05",
+                "fecha_finalizacion": "2004",
+                "areaEntrenamiento": "Sputnik",
+                "promedioGeneral": 80.0
+            },
+            {
+                "id": 12,
+                "nombre": "alexander",
+                "apellido": "rojas",
+                "identificacion": 123654789,
+                "direccion": "tibu",
+                "acudiente": "no tiene",
+                "telefono_celular": 963963,
+                "telefono_fijo": 369369,
+                "estado": [
+                    {
+                        "ingreso": "Aprobado",
+                        "evaluacion": "Aprobado"
+                    }
+                ],
+                "Promedio": 75.0,
+                "rutaEntrenamiento": "ruta NodeJS",
+                "horario": "6:00 - 10:00",
+                "riesgo": "Bajo",
+                "trainer": "Miguel Angel Castillo",
+                "fecha_inicio": "10-05",
+                "fecha_finalizacion": "2004",
+                "areaEntrenamiento": "Sputnik",
+                "promedioGeneral": 80.0
+            },
+            {
+                "id": 13,
+                "nombre": "alexander",
+                "apellido": "rojas",
+                "identificacion": 123654789,
+                "direccion": "tibu",
+                "acudiente": "no tiene",
+                "telefono_celular": 963963,
+                "telefono_fijo": 369369,
+                "estado": [
+                    {
+                        "ingreso": "Aprobado",
+                        "evaluacion": "Aprobado"
+                    }
+                ],
+                "Promedio": 75.0,
+                "rutaEntrenamiento": "ruta NodeJS",
+                "horario": "6:00 - 10:00",
+                "riesgo": "Bajo",
+                "trainer": "Miguel Angel Castillo",
+                "fecha_inicio": "10-05",
+                "fecha_finalizacion": "2004",
+                "areaEntrenamiento": "Sputnik",
+                "promedioGeneral": 80.0
+            },
+            {
+                "id": 14,
+                "nombre": "alexander",
+                "apellido": "rojas",
+                "identificacion": 123654789,
+                "direccion": "tibu",
+                "acudiente": "no tiene",
+                "telefono_celular": 963963,
+                "telefono_fijo": 369369,
+                "estado": [
+                    {
+                        "ingreso": "Aprobado",
+                        "evaluacion": "Aprobado"
+                    }
+                ],
+                "Promedio": 75.0,
+                "rutaEntrenamiento": "ruta NodeJS",
+                "horario": "6:00 - 10:00",
+                "riesgo": "Bajo",
+                "trainer": "Miguel Angel Castillo",
+                "fecha_inicio": "10-05",
+                "fecha_finalizacion": "2004",
+                "areaEntrenamiento": "Sputnik",
+                "promedioGeneral": 80.0
+            },
+            {
+                "id": 15,
+                "nombre": "alexander",
+                "apellido": "rojas",
+                "identificacion": 123654789,
+                "direccion": "tibu",
+                "acudiente": "no tiene",
+                "telefono_celular": 963963,
+                "telefono_fijo": 369369,
+                "estado": [
+                    {
+                        "ingreso": "Aprobado",
+                        "evaluacion": "Aprobado"
+                    }
+                ],
+                "Promedio": 75.0,
+                "rutaEntrenamiento": "ruta NodeJS",
+                "horario": "6:00 - 10:00",
+                "riesgo": "Bajo",
+                "trainer": "Miguel Angel Castillo",
+                "fecha_inicio": "10-05",
+                "fecha_finalizacion": "2004",
+                "areaEntrenamiento": "Sputnik",
+                "promedioGeneral": 80.0
+            },
+            {
+                "id": 16,
+                "nombre": "alexander",
+                "apellido": "rojas",
+                "identificacion": 123654789,
+                "direccion": "tibu",
+                "acudiente": "no tiene",
+                "telefono_celular": 963963,
+                "telefono_fijo": 369369,
+                "estado": [
+                    {
+                        "ingreso": "Aprobado",
+                        "evaluacion": "Aprobado"
+                    }
+                ],
+                "Promedio": 75.0,
+                "rutaEntrenamiento": "ruta NodeJS",
+                "horario": "6:00 - 10:00",
+                "riesgo": "Bajo",
+                "trainer": "Miguel Angel Castillo",
+                "fecha_inicio": "10-05",
+                "fecha_finalizacion": "2004",
+                "areaEntrenamiento": "Sputnik",
+                "promedioGeneral": 80.0
+            },
+            {
+                "id": 17,
+                "nombre": "alexander",
+                "apellido": "rojas",
+                "identificacion": 123654789,
+                "direccion": "tibu",
+                "acudiente": "no tiene",
+                "telefono_celular": 963963,
+                "telefono_fijo": 369369,
+                "estado": [
+                    {
+                        "ingreso": "Aprobado",
+                        "evaluacion": "Aprobado"
+                    }
+                ],
+                "Promedio": 75.0,
+                "rutaEntrenamiento": "ruta NodeJS",
+                "horario": "6:00 - 10:00",
+                "riesgo": "Bajo",
+                "trainer": "Miguel Angel Castillo",
+                "fecha_inicio": "10-05",
+                "fecha_finalizacion": "2004",
+                "areaEntrenamiento": "Sputnik",
+                "promedioGeneral": 80.0
+            },
+            {
+                "id": 18,
+                "nombre": "alexander",
+                "apellido": "rojas",
+                "identificacion": 123654789,
+                "direccion": "tibu",
+                "acudiente": "no tiene",
+                "telefono_celular": 963963,
+                "telefono_fijo": 369369,
+                "estado": [
+                    {
+                        "ingreso": "Aprobado",
+                        "evaluacion": "Aprobado"
+                    }
+                ],
+                "Promedio": 75.0,
+                "rutaEntrenamiento": "ruta NodeJS",
+                "horario": "6:00 - 10:00",
+                "riesgo": "Bajo",
+                "trainer": "Miguel Angel Castillo",
+                "fecha_inicio": "10-05",
+                "fecha_finalizacion": "2004",
+                "areaEntrenamiento": "Sputnik",
+                "promedioGeneral": 80.0
+            },
+            {
+                "id": 19,
+                "nombre": "alexander",
+                "apellido": "rojas",
+                "identificacion": 123654789,
+                "direccion": "tibu",
+                "acudiente": "no tiene",
+                "telefono_celular": 963963,
+                "telefono_fijo": 369369,
+                "estado": [
+                    {
+                        "ingreso": "Aprobado",
+                        "evaluacion": "Aprobado"
+                    }
+                ],
+                "Promedio": 75.0,
+                "rutaEntrenamiento": "ruta NodeJS",
+                "horario": "6:00 - 10:00",
+                "riesgo": "Bajo",
+                "trainer": "Miguel Angel Castillo",
+                "fecha_inicio": "10-05",
+                "fecha_finalizacion": "2004",
+                "areaEntrenamiento": "Sputnik",
+                "promedioGeneral": 80.0
+            },
+            {
+                "id": 20,
+                "nombre": "alexander",
+                "apellido": "rojas",
+                "identificacion": 123654789,
+                "direccion": "tibu",
+                "acudiente": "no tiene",
+                "telefono_celular": 963963,
+                "telefono_fijo": 369369,
+                "estado": [
+                    {
+                        "ingreso": "Aprobado",
+                        "evaluacion": "Aprobado"
+                    }
+                ],
+                "Promedio": 75.0,
+                "rutaEntrenamiento": "ruta NodeJS",
+                "horario": "6:00 - 10:00",
+                "riesgo": "Bajo",
+                "trainer": "Miguel Angel Castillo",
+                "fecha_inicio": "10-05",
+                "fecha_finalizacion": "2004",
+                "areaEntrenamiento": "Sputnik",
+                "promedioGeneral": 80.0
+            },
+            {
+                "id": 21,
+                "nombre": "alexander",
+                "apellido": "rojas",
+                "identificacion": 123654789,
+                "direccion": "tibu",
+                "acudiente": "no tiene",
+                "telefono_celular": 963963,
+                "telefono_fijo": 369369,
+                "estado": [
+                    {
+                        "ingreso": "Aprobado",
+                        "evaluacion": "Aprobado"
+                    }
+                ],
+                "Promedio": 75.0,
+                "rutaEntrenamiento": "ruta NodeJS",
+                "horario": "6:00 - 10:00",
+                "riesgo": "Bajo",
+                "trainer": "Miguel Angel Castillo",
+                "fecha_inicio": "10-05",
+                "fecha_finalizacion": "2004",
+                "areaEntrenamiento": "Sputnik",
+                "promedioGeneral": 80.0
+            },
+            {
+                "id": 22,
+                "nombre": "alexander",
+                "apellido": "rojas",
+                "identificacion": 123654789,
+                "direccion": "tibu",
+                "acudiente": "no tiene",
+                "telefono_celular": 963963,
+                "telefono_fijo": 369369,
+                "estado": [
+                    {
+                        "ingreso": "Aprobado",
+                        "evaluacion": "Aprobado"
+                    }
+                ],
+                "Promedio": 75.0,
+                "rutaEntrenamiento": "ruta NodeJS",
+                "horario": "6:00 - 10:00",
+                "riesgo": "Bajo",
+                "trainer": "Miguel Angel Castillo",
+                "fecha_inicio": "10-05",
+                "fecha_finalizacion": "2004",
+                "areaEntrenamiento": "Sputnik",
+                "promedioGeneral": 80.0
+            },
+            {
+                "id": 23,
+                "nombre": "alexander",
+                "apellido": "rojas",
+                "identificacion": 123654789,
+                "direccion": "tibu",
+                "acudiente": "no tiene",
+                "telefono_celular": 963963,
+                "telefono_fijo": 369369,
+                "estado": [
+                    {
+                        "ingreso": "Aprobado",
+                        "evaluacion": "Aprobado"
+                    }
+                ],
+                "Promedio": 75.0,
+                "rutaEntrenamiento": "ruta NodeJS",
+                "horario": "6:00 - 10:00",
+                "riesgo": "Bajo",
+                "trainer": "Miguel Angel Castillo",
+                "fecha_inicio": "10-05",
+                "fecha_finalizacion": "2004",
+                "areaEntrenamiento": "Sputnik",
+                "promedioGeneral": 80.0
+            },
+            {
+                "id": 24,
+                "nombre": "alexander",
+                "apellido": "rojas",
+                "identificacion": 123654789,
+                "direccion": "tibu",
+                "acudiente": "no tiene",
+                "telefono_celular": 963963,
+                "telefono_fijo": 369369,
+                "estado": [
+                    {
+                        "ingreso": "Aprobado",
+                        "evaluacion": "Aprobado"
+                    }
+                ],
+                "Promedio": 75.0,
+                "rutaEntrenamiento": "ruta NodeJS",
+                "horario": "6:00 - 10:00",
+                "riesgo": "Bajo",
+                "trainer": "Miguel Angel Castillo",
+                "fecha_inicio": "10-05",
+                "fecha_finalizacion": "2004",
+                "areaEntrenamiento": "Sputnik",
+                "promedioGeneral": 80.0
+            },
+            {
+                "id": 25,
+                "nombre": "alexander",
+                "apellido": "rojas",
+                "identificacion": 123654789,
+                "direccion": "tibu",
+                "acudiente": "no tiene",
+                "telefono_celular": 963963,
+                "telefono_fijo": 369369,
+                "estado": [
+                    {
+                        "ingreso": "Aprobado",
+                        "evaluacion": "Aprobado"
+                    }
+                ],
+                "Promedio": 75.0,
+                "rutaEntrenamiento": "ruta NodeJS",
+                "horario": "6:00 - 10:00",
+                "riesgo": "Bajo",
+                "trainer": "Miguel Angel Castillo",
+                "fecha_inicio": "10-05",
+                "fecha_finalizacion": "2004",
+                "areaEntrenamiento": "Sputnik",
+                "promedioGeneral": 80.0
+            },
+            {
+                "id": 26,
+                "nombre": "alexander",
+                "apellido": "rojas",
+                "identificacion": 123654789,
+                "direccion": "tibu",
+                "acudiente": "no tiene",
+                "telefono_celular": 963963,
+                "telefono_fijo": 369369,
+                "estado": [
+                    {
+                        "ingreso": "Aprobado",
+                        "evaluacion": "Aprobado"
+                    }
+                ],
+                "Promedio": 75.0,
+                "rutaEntrenamiento": "ruta NodeJS",
+                "horario": "6:00 - 10:00",
+                "riesgo": "Bajo",
+                "trainer": "Miguel Angel Castillo",
+                "fecha_inicio": "10-05",
+                "fecha_finalizacion": "2004",
+                "areaEntrenamiento": "Sputnik",
+                "promedioGeneral": 80.0
+            },
+            {
+                "id": 27,
+                "nombre": "alexander",
+                "apellido": "rojas",
+                "identificacion": 123654789,
+                "direccion": "tibu",
+                "acudiente": "no tiene",
+                "telefono_celular": 963963,
+                "telefono_fijo": 369369,
+                "estado": [
+                    {
+                        "ingreso": "Aprobado",
+                        "evaluacion": "Aprobado"
+                    }
+                ],
+                "Promedio": 75.0,
+                "rutaEntrenamiento": "ruta NodeJS",
+                "horario": "6:00 - 10:00",
+                "riesgo": "Bajo",
+                "trainer": "Miguel Angel Castillo",
+                "fecha_inicio": "10-05",
+                "fecha_finalizacion": "2004",
+                "areaEntrenamiento": "Sputnik",
+                "promedioGeneral": 80.0
+            },
+            {
+                "id": 28,
+                "nombre": "alexander",
+                "apellido": "rojas",
+                "identificacion": 123654789,
+                "direccion": "tibu",
+                "acudiente": "no tiene",
+                "telefono_celular": 963963,
+                "telefono_fijo": 369369,
+                "estado": [
+                    {
+                        "ingreso": "Aprobado",
+                        "evaluacion": "Aprobado"
+                    }
+                ],
+                "Promedio": 75.0,
+                "rutaEntrenamiento": "ruta NodeJS",
+                "horario": "6:00 - 10:00",
+                "riesgo": "Bajo",
+                "trainer": "Miguel Angel Castillo",
+                "fecha_inicio": "10-05",
+                "fecha_finalizacion": "2004",
+                "areaEntrenamiento": "Sputnik",
+                "promedioGeneral": 80.0
+            },
+            {
+                "id": 29,
+                "nombre": "alexander",
+                "apellido": "rojas",
+                "identificacion": 123654789,
+                "direccion": "tibu",
+                "acudiente": "no tiene",
+                "telefono_celular": 963963,
+                "telefono_fijo": 369369,
+                "estado": [
+                    {
+                        "ingreso": "Aprobado",
+                        "evaluacion": "Aprobado"
+                    }
+                ],
+                "Promedio": 75.0,
+                "rutaEntrenamiento": "ruta NodeJS",
+                "horario": "6:00 - 10:00",
+                "riesgo": "Bajo",
+                "trainer": "Miguel Angel Castillo",
+                "fecha_inicio": "10-05",
+                "fecha_finalizacion": "2004",
+                "areaEntrenamiento": "Sputnik",
+                "promedioGeneral": 80.0
+            },
+            {
+                "id": 30,
+                "nombre": "alexander",
+                "apellido": "rojas",
+                "identificacion": 123654789,
+                "direccion": "tibu",
+                "acudiente": "no tiene",
+                "telefono_celular": 963963,
+                "telefono_fijo": 369369,
+                "estado": [
+                    {
+                        "ingreso": "Aprobado",
+                        "evaluacion": "Aprobado"
+                    }
+                ],
+                "Promedio": 75.0,
+                "rutaEntrenamiento": "ruta NodeJS",
+                "horario": "6:00 - 10:00",
+                "riesgo": "Bajo",
+                "trainer": "Miguel Angel Castillo",
+                "fecha_inicio": "10-05",
+                "fecha_finalizacion": "2004",
+                "areaEntrenamiento": "Sputnik",
+                "promedioGeneral": 80.0
+            },
+            {
+                "id": 31,
+                "nombre": "alexander",
+                "apellido": "rojas",
+                "identificacion": 123654789,
+                "direccion": "tibu",
+                "acudiente": "no tiene",
+                "telefono_celular": 963963,
+                "telefono_fijo": 369369,
+                "estado": [
+                    {
+                        "ingreso": "Aprobado",
+                        "evaluacion": "Aprobado"
+                    }
+                ],
+                "Promedio": 75.0,
+                "rutaEntrenamiento": "ruta NodeJS",
+                "horario": "6:00 - 10:00",
+                "riesgo": "Bajo",
+                "trainer": "Miguel Angel Castillo",
+                "fecha_inicio": "10-05",
+                "fecha_finalizacion": "2004",
+                "areaEntrenamiento": "Sputnik",
+                "promedioGeneral": 80.0
+            },
+            {
+                "id": 32,
+                "nombre": "alexander",
+                "apellido": "rojas",
+                "identificacion": 123654789,
+                "direccion": "tibu",
+                "acudiente": "no tiene",
+                "telefono_celular": 963963,
+                "telefono_fijo": 369369,
+                "estado": [
+                    {
+                        "ingreso": "Aprobado",
+                        "evaluacion": "Aprobado"
+                    }
+                ],
+                "Promedio": 75.0,
+                "rutaEntrenamiento": "ruta NodeJS",
+                "horario": "6:00 - 10:00",
+                "riesgo": "Bajo",
+                "trainer": "Miguel Angel Castillo",
+                "fecha_inicio": "10-05",
+                "fecha_finalizacion": "2004",
+                "areaEntrenamiento": "Sputnik",
+                "promedioGeneral": 80.0
+            },
+            {
+                "id": 33,
+                "nombre": "alexander",
+                "apellido": "rojas",
+                "identificacion": 123654789,
+                "direccion": "tibu",
+                "acudiente": "no tiene",
+                "telefono_celular": 963963,
+                "telefono_fijo": 369369,
+                "estado": [
+                    {
+                        "ingreso": "Aprobado",
+                        "evaluacion": "Aprobado"
+                    }
+                ],
+                "Promedio": 75.0,
+                "rutaEntrenamiento": "ruta NodeJS",
+                "horario": "6:00 - 10:00",
+                "riesgo": "Bajo",
+                "trainer": "Miguel Angel Castillo",
+                "fecha_inicio": "10-05",
+                "fecha_finalizacion": "2004",
+                "areaEntrenamiento": "Sputnik",
+                "promedioGeneral": 80.0
+            },
+            {
+                "id": 34,
+                "nombre": "alexander",
+                "apellido": "rojas",
+                "identificacion": 123654789,
+                "direccion": "tibu",
+                "acudiente": "no tiene",
+                "telefono_celular": 963963,
+                "telefono_fijo": 369369,
+                "estado": [
+                    {
+                        "ingreso": "Aprobado",
+                        "evaluacion": "Aprobado"
+                    }
+                ],
+                "Promedio": 75.0,
+                "rutaEntrenamiento": "ruta NodeJS",
+                "horario": "6:00 - 10:00",
+                "riesgo": "Bajo",
+                "trainer": "Miguel Angel Castillo",
+                "fecha_inicio": "10-05",
+                "fecha_finalizacion": "2004",
+                "areaEntrenamiento": "Sputnik",
+                "promedioGeneral": 80.0
+            },
+            {
+                "id": 35,
+                "nombre": "alexander",
+                "apellido": "rojas",
+                "identificacion": 123654789,
+                "direccion": "tibu",
+                "acudiente": "no tiene",
+                "telefono_celular": 963963,
+                "telefono_fijo": 369369,
+                "estado": [
+                    {
+                        "ingreso": "Aprobado",
+                        "evaluacion": "Aprobado"
+                    }
+                ],
+                "Promedio": 75.0,
+                "rutaEntrenamiento": "ruta NodeJS",
+                "horario": "6:00 - 10:00",
+                "riesgo": "Bajo",
+                "trainer": "Miguel Angel Castillo",
+                "fecha_inicio": "10-05",
+                "fecha_finalizacion": "2004",
+                "areaEntrenamiento": "Sputnik",
+                "promedioGeneral": 80.0
+            },
+            {
+                "id": 36,
+                "nombre": "alexander",
+                "apellido": "rojas",
+                "identificacion": 123654789,
+                "direccion": "tibu",
+                "acudiente": "no tiene",
+                "telefono_celular": 963963,
+                "telefono_fijo": 369369,
+                "estado": [
+                    {
+                        "ingreso": "Aprobado",
+                        "evaluacion": "Aprobado"
+                    }
+                ],
+                "Promedio": 75.0,
+                "rutaEntrenamiento": "ruta NodeJS",
+                "horario": "6:00 - 10:00",
+                "riesgo": "Bajo",
+                "trainer": "Miguel Angel Castillo",
+                "fecha_inicio": "10-05",
+                "fecha_finalizacion": "2004",
+                "areaEntrenamiento": "Sputnik",
+                "promedioGeneral": 80.0
+            },
+            {
+                "id": 37,
+                "nombre": "alexander",
+                "apellido": "rojas",
+                "identificacion": 123654789,
+                "direccion": "tibu",
+                "acudiente": "no tiene",
+                "telefono_celular": 963963,
+                "telefono_fijo": 369369,
+                "estado": [
+                    {
+                        "ingreso": "Aprobado",
+                        "evaluacion": "Aprobado"
+                    }
+                ],
+                "Promedio": 75.0,
+                "rutaEntrenamiento": "ruta NodeJS",
+                "horario": "6:00 - 10:00",
+                "riesgo": "Bajo",
+                "trainer": "Miguel Angel Castillo",
+                "fecha_inicio": "10-05",
+                "fecha_finalizacion": "2004",
+                "areaEntrenamiento": "Sputnik",
+                "promedioGeneral": 71.0
+            },
+            {
+                "trainers": [
+                    {
+                        "pedro": [
+                            {
+                                "nombre": "Pedro",
+                                "apellido": "Gomez",
+                                "rutaEntrenamiento": "Ruta Java"
+                            }
+                        ],
+                        "Jholver": [
+                            {
+                                "nombre": "Jholver",
+                                "apellido": "Pardo"
+                            }
+                        ],
+                        "Miguel": [
+                            {
+                                "nombre": "Miguel Angel",
+                                "apellido": "Castillo"
+                            }
+                        ],
+                        "Juan": [
+                            {
+                                "nombre": "Juan Carlos",
+                                "apellido": "Mari\u00f1o"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "rutasNuevas": [
+                    {},
+                    {
+                        "idRuta": 1,
+                        "nombre": "prueba",
+                        "modulos": {
+                            "Fundamentos de programacion": "Introduccion a la algoritmia, PSeInt y Python",
+                            "Programacion Web": "HTML, CSS y Bootstrap",
+                            "Programacion formal": "JavaScript",
+                            "Bases de datos": {
+                                "SGDB principal": "Mysql",
+                                "SGDB alternativo": "MongoDb"
+                            },
+                            "Backend": "Express"
+                        }
+                    },
+                    {
+                        "idRuta": 2,
+                        "nombre": "pasa",
+                        "modulos": {
+                            "Fundamentos de programacion": "Introduccion a la algoritmia, PSeInt y Python",
+                            "Programacion Web": "HTML, CSS y Bootstrap",
+                            "Programacion formal": "C#",
+                            "Bases de datos": {
+                                "SGDB principal": "Mysql",
+                                "SGDB alternativo": "Postgresql"
+                            },
+                            "Backend": "Spring Boot"
+                        }
+                    },
+                    {
+                        "idRuta": 3,
+                        "nombre": "React",
+                        "modulos": {
+                            "Fundamentos de programacion": "Introduccion a la algoritmia, PSeInt y Python",
+                            "Programacion Web": "HTML, CSS y Bootstrap",
+                            "Programacion formal": "C#",
+                            "Bases de datos": {
+                                "SGDB principal": "Mysql",
+                                "SGDB alternativo": "Postgresql"
+                            },
+                            "Backend": "NodeJS"
+                        }
+                    },
+                    {
+                        "idRuta": 4,
+                        "nombre": "bootstrat",
+                        "modulos": {
+                            "Fundamentos de programacion": "Introduccion a la algoritmia, PSeInt y Python",
+                            "Programacion Web": "HTML, CSS y Bootstrap",
+                            "Programacion formal": "Java",
+                            "Bases de datos": {
+                                "SGDB principal": "Mysql",
+                                "SGDB alternativo": "Postgresql"
+                            },
+                            "Backend": "Express"
+                        }
+                    },
+                    {
+                        "idRuta": 5,
+                        "nombre": "pera",
+                        "modulos": {
+                            "Fundamentos de programacion": "Introduccion a la algoritmia, PSeInt y Python",
+                            "Programacion Web": "HTML, CSS y Bootstrap",
+                            "Programacion formal": "Java",
+                            "Bases de datos": {
+                                "SGDB principal": "Mysql",
+                                "SGDB alternativo": "Postgresql"
+                            },
+                            "Backend": "Express"
+                        }
+                    },
+                    {
+                        "idRuta": 6,
+                        "nombre": "pera",
+                        "modulos": {
+                            "Fundamentos de programacion": "Introduccion a la algoritmia, PSeInt y Python",
+                            "Programacion Web": "HTML, CSS y Bootstrap",
+                            "Programacion formal": "C#",
+                            "Bases de datos": {
+                                "SGDB principal": "Mysql",
+                                "SGDB alternativo": "Postgresql"
+                            },
+                            "Backend": "NodeJS"
+                        }
+                    },
+                    {
+                        "idRuta": 7,
+                        "nombre": "pizza",
+                        "modulos": {
+                            "Fundamentos de programacion": "Introduccion a la algoritmia, PSeInt y Python",
+                            "Programacion Web": "HTML, CSS y Bootstrap",
+                            "Programacion formal": "Java",
+                            "Bases de datos": {
+                                "SGDB principal": "MongoDb",
+                                "SGDB alternativo": "Mysql"
+                            },
+                            "Backend": "NetCore"
+                        }
+                    },
+                    {
+                        "idRuta": 8,
+                        "nombre": "pasta",
+                        "modulos": {
+                            "Fundamentos de programacion": "Introduccion a la algoritmia, PSeInt y Python",
+                            "Programacion Web": "HTML, CSS y Bootstrap",
+                            "Programacion formal": "C#",
+                            "Bases de datos": {
+                                "SGDB principal": "Mysql",
+                                "SGDB alternativo": "Postgresql"
+                            },
+                            "Backend": "Express"
+                        }
+                    },
+                    {
+                        "idRuta": 9,
+                        "nombre": "pio",
+                        "modulos": {
+                            "Fundamentos de programacion": "Introduccion a la algoritmia, PSeInt y Python",
+                            "Programacion Web": "HTML, CSS y Bootstrap",
+                            "Programacion formal": "C#",
+                            "Bases de datos": {
+                                "SGDB principal": "Postgresql",
+                                "SGDB alternativo": "MongoDb"
+                            },
+                            "Backend": "NetCore"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+]
