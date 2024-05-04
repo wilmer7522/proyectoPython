@@ -948,13 +948,13 @@
                         "evaluacion": "Aprobado"
                     }
                 ],
-                "Promedio": 75.0,
+                "Promedio": 90.0,
                 "rutaEntrenamiento": "ruta NodeJS",
                 "horario": "6:00 - 10:00",
                 "riesgo": "Bajo",
                 "trainer": "Miguel Angel Castillo",
-                "fecha_inicio": "10-05",
-                "fecha_finalizacion": "2004",
+                "fecha_inicio": "20",
+                "fecha_finalizacion": "20",
                 "areaEntrenamiento": "Sputnik",
                 "promedioGeneral": 71.0
             },
