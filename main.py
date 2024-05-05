@@ -158,35 +158,40 @@ def registrarNotas(camper):
             guardarArchivo(camper)
 
         elif ruta == 4:#hay que revisar servia y ahora da error
-            nombre_nueva_ruta = input("Ingrese el Nombre de la nueva ruta: ")
-            modulo_fundamentos = "Introduccion a la algoritmia, PSeInt y Python"
-            modulo_web = "HTML, CSS y Bootstrap"
-            modulo_formal = "Programación Formal"
-            sgdb_principal = "Mysql"
-            sgdb_alternativo = "MongoDb"
-            modulo_backend = "NetCore"
-            limite_estudiantes = 33  # El límite siempre es 33 para todas las rutas
+            print("revisar rutas nuevas")
+            # nueva_id = 0
+            # for inscripcion in camper[0]["inscripciones"]:
+            #     if 'idRuta' in inscripcion and inscripcion["idRuta"] > nueva_id:
+            #         nueva_id = inscripcion["idRuta"]
+            #         nombre_nueva_ruta = input("Ingrese el Nombre de la nueva ruta: ")
+            #         modulo_fundamentos = "Introduccion a la algoritmia, PSeInt y Python"
+            #         modulo_web = "HTML, CSS y Bootstrap"
+            #         modulo_formal = "Programación Formal"
+            #         sgdb_principal = "Mysql"
+            #         sgdb_alternativo = "MongoDb"
+            #         modulo_backend = "NetCore"
+            #         limite_estudiantes = 33  # El límite siempre es 33 para todas las rutas
 
-            nueva_ruta = {
-                "nombre": nombre_nueva_ruta,
-                "modulos": {
-                    "Fundamentos de programacion": modulo_fundamentos,
-                    "Programacion Web": modulo_web,
-                    "Programacion formal": modulo_formal,
-                    "Bases de datos": {
-                        "SGDB principal": sgdb_principal,
-                        "SGDB alternativo": sgdb_alternativo
-                    },
-                    "Backend": modulo_backend
-                    # Agrega otros módulos aquí
-                },
-                "Limite de estudiantes": limite_estudiantes
-            }
+            # nueva_ruta = {
+            #     "nombre": nombre_nueva_ruta,
+            #     "modulos": {
+            #         "Fundamentos de programacion": modulo_fundamentos,
+            #         "Programacion Web": modulo_web,
+            #         "Programacion formal": modulo_formal,
+            #         "Bases de datos": {
+            #             "SGDB principal": sgdb_principal,
+            #             "SGDB alternativo": sgdb_alternativo
+            #         },
+            #         "Backend": modulo_backend
+            #         # Agrega otros módulos aquí
+            #     },
+            #     "Limite de estudiantes": limite_estudiantes
+            # }
 
-                # Agregar la nueva ruta a la lista de rutas en camper
-            camper[0]["rutasNuevas"].append(nueva_ruta)
+            #     # Agregar la nueva ruta a la lista de rutas en camper
+            # camper[2]["rutasNuevas"].append(nueva_ruta)
 
-            print("Nueva ruta de entrenamiento creada con éxito.")
+            # print("Nueva ruta de entrenamiento creada con éxito.")
 
         else:
             print("Camper no encontrado.")
@@ -443,108 +448,7 @@ def crearRutaEntrenamiento(camper):
     guardarArchivo(camper)
     print("Nueva ruta de entrenamiento creada con éxito.")
 
-    # Módulos con opciones predefinidas
     
-    
-    # Módulo de Programación formal con opciones para elegir
-    # print("Seleccione el módulo de Programación formal:")
-    # print("1. Java")
-    # print("2. JavaScript")
-    # print("3. C#")
-    # opcion_formal = int(input("Ingrese la opción deseada: "))
-    # if opcion_formal == 1:
-    #     modulo_formal = "Java"
-    # elif opcion_formal == 2:
-    #     modulo_formal = "JavaScript"
-    # elif opcion_formal == 3:
-    #     modulo_formal = "C#"
-    # else:
-    #     print("Opción no válida. Se asignará Java por defecto.")
-    #     modulo_formal = "Java"
-    
-    # # Módulo de Bases de datos con opciones para elegir SGDB principal y alternativo
-    # print("Seleccione el SGDB principal para la ruta de entrenamiento:")
-    # print("1. Mysql")
-    # print("2. MongoDb")
-    # print("3. Postgresql")
-    # opcion_sgdb_principal = int(input("Ingrese la opción deseada: "))
-    # if opcion_sgdb_principal == 1:
-    #     sgdb_principal = "Mysql"
-    # elif opcion_sgdb_principal == 2:
-    #     sgdb_principal = "MongoDb"
-    # elif opcion_sgdb_principal == 3:
-    #     sgdb_principal = "Postgresql"
-    # else:
-    #     print("Opción no válida. Se asignará Mysql por defecto.")
-    #     sgdb_principal = "Mysql"
-    
-    # print("Seleccione el SGDB alternativo para la ruta de entrenamiento:")
-    # print("1. Mysql")
-    # print("2. MongoDb")
-    # print("3. Postgresql")
-    # opcion_sgdb_alternativo = int(input("Ingrese la opción deseada: "))
-    # if opcion_sgdb_alternativo == 1:
-    #     sgdb_alternativo = "Mysql"
-    # elif opcion_sgdb_alternativo == 2:
-    #     sgdb_alternativo = "MongoDb"
-    # elif opcion_sgdb_alternativo == 3:
-    #     sgdb_alternativo = "Postgresql"
-    # else:
-    #     print("Opción no válida. Se asignará Mysql por defecto.")#hacer un bucle para condicionar si elige mal
-    #     sgdb_alternativo = "Mysql"
-    
-    # # Módulo de Backend con opciones para elegir
-    # print("Seleccione el módulo de Backend:")
-    # print("1. NetCore")
-    # print("2. Spring Boot")
-    # print("3. NodeJS")
-    # print("4. Express")
-    # opcion_backend = int(input("Ingrese la opción deseada: "))
-    # if opcion_backend == 1:
-    #     modulo_backend = "NetCore"
-    #     guardarArchivo(camper)
-    # elif opcion_backend == 2:
-    #     modulo_backend = "Spring Boot"
-    #     guardarArchivo(camper)
-    # elif opcion_backend == 3:
-    #     modulo_backend = "NodeJS"
-    #     guardarArchivo(camper)
-    # elif opcion_backend == 4:
-    #     modulo_backend = "Express"
-    #     guardarArchivo(camper)
-    # else:
-    #     print("Opción no válida. Se asignará NetCore por defecto.")
-    #     modulo_backend = "NetCore"
-    
-    # horario = input("Ingrese el horario de clases para esta ruta: ")
-    # limite_estudiantes = 33  # El límite siempre es 33 para todas las rutas
-
-    # nombre_ruta = input("Ingrese el nombre de la nueva ruta de entrenamiento: ")
-
-    # rutas_existentes = [ruta.get("nombre") for ruta in camper]
-    # if nombre_ruta in rutas_existentes:
-    #     print("La ruta de entrenamiento ya existe.")
-    #     return
-
-    # nueva_ruta = {
-
-    #     "nombre": nombre_ruta,
-    #     "modulos": {
-    #         "Fundamentos de programacion": modulo_fundamentos,
-    #         "Programacion Web": modulo_web,
-    #         "Programacion formal": modulo_formal,
-    #         "Bases de datos": {
-    #             "SGDB principal": sgdb_principal,
-    #             "SGDB alternativo": sgdb_alternativo
-    #         },
-    #         "Backend": modulo_backend
-    #     },
-    #     "Horario": horario,
-    #     "Limite de estudiantes": limite_estudiantes
-    # }
-    # camper.append(nueva_ruta)
-    # guardarArchivo(camper)
-    # print("Nueva ruta de entrenamiento creada con éxito.")
 
 def evaluar_camper(camper):
     print("Evaluación de campers")
@@ -598,27 +502,35 @@ def listar_campers_aprobados(camper):
         guardarArchivo(camper)
 def listar_trainers(camper):
     print("Trainers trabajando con CampusLands:")
+    trainers_mostrados = set()
     for inscripcion in camper[0]["inscripciones"]:
-        if inscripcion.get("trainer") and inscripcion["trainer"] in ["Pedro Gomez","Jholver Pardo","Miguel Angel Castillo","Juan Carlos Mariño"]:
-            print(inscripcion["trainer"])
-        guardarArchivo(camper)
+        if inscripcion.get("trainer") and inscripcion["trainer"] in ["Pedro Gomez", "Jholver Pardo", "Miguel Angel Castillo", "Juan Carlos Mariño"]:
+            trainer = inscripcion["trainer"]
+            if trainer not in trainers_mostrados:
+                print(trainer)
+                trainers_mostrados.add(trainer)
+    guardarArchivo(camper)
+
+
 def listar_campers_bajo_rendimiento(camper):
     print("Campers con bajo rendimiento:")
-    for inscripcion in camper[0]["inscripciones"]:
-        if inscripcion.get("riesgo") == "Alto":
+    for inscripcion in camper[0]["inscripciones"]:# Iterar sobre las inscripciones de los campers.
+        promedio = inscripcion.get("promedioGeneral") # Obtener el promedio general de los campers
+        if promedio is not None and promedio < 60:# Verificar si el promedio es válido y bajo (menor o igual a 60)
             print(f" {inscripcion['nombre']} {inscripcion['apellido']} Promedio: {inscripcion["promedioGeneral"]}") 
         guardarArchivo(camper)
 def listar_campers_trainer_ruta(camper):
     print("Campers y Trainers asociados a una ruta de entrenamiento:")
     for inscripcion in camper[0]["inscripciones"]:
         if inscripcion.get("rutaEntrenamiento"):
-            print(f"Camper:{inscripcion['nombre']}{inscripcion['apellido']}, Trainer:{inscripcion.get('trainer, No signado')}, Ruta:{inscripcion['rutaEntrenamiento']}")
+            print(f"Camper: ID:{inscripcion["id"]} Nombre: {inscripcion['nombre']} Apellido: {inscripcion['apellido']}, Trainer: {inscripcion.get('trainer', 'No asignada')}, Ruta: {inscripcion['rutaEntrenamiento']}")
+            print("")
         guardarArchivo(camper)
 def listar_aprobados_y_reprobados(camper):
     print("Aprobados y reprobados por módulo:")
     for inscripcion in camper[0]["inscripciones"]:
         if inscripcion.get("estado") and inscripcion["estado"][0].get("evaluacion"):
-            print(f"Camper: {inscripcion['nombre']} {inscripcion['apellido']}, Ruta: {inscripcion.get('rutaEntrenamiento', 'No asignada')}, Trainer: {inscripcion.get('trainer', 'No asignado')}, Evaluación: {inscripcion['estado'][0]['evaluacion']}")
+            print(f"Camper: ID: {inscripcion["id"]} Nombre: {inscripcion['nombre']} Apellido: {inscripcion['apellido']}, Ruta: {inscripcion.get('rutaEntrenamiento', 'No asignada')}, Trainer: {inscripcion.get('trainer', 'No asignado')}, Evaluación: {inscripcion['estado'][0]['evaluacion']}")
 
 # Definir contraseñas para el coordinador y el entrenador
 contrasena_coordinador = "1234"
