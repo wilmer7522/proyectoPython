@@ -523,13 +523,13 @@
                         "evaluacion": "Aprobado"
                     }
                 ],
-                "Promedio": 75.0,
-                "rutaEntrenamiento": "ruta NodeJS",
-                "horario": "6:00 - 10:00",
+                "Promedio": 65.0,
+                "rutaEntrenamiento": "ruta Java",
+                "horario": "10:00 - 14:00",
                 "riesgo": "Bajo",
-                "trainer": "Miguel Angel Castillo",
-                "fecha_inicio": "10-05",
-                "fecha_finalizacion": "2004",
+                "trainer": "Juan Carlos Mari\u00f1o",
+                "fecha_inicio": "10",
+                "fecha_finalizacion": "20",
                 "areaEntrenamiento": "Sputnik",
                 "promedioGeneral": 80.0
             },

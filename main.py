@@ -158,9 +158,40 @@ def registrarNotas(camper):
             guardarArchivo(camper)
 
         elif ruta == 4:#hay que revisar servia y ahora da error
-            print("Rutas nuevas")
-            crearRutaEntrenamiento(camper)
-            guardarArchivo(camper)
+            print("revisar rutas nuevas")
+            # nueva_id = 0
+            # for inscripcion in camper[0]["inscripciones"]:
+            #     if 'idRuta' in inscripcion and inscripcion["idRuta"] > nueva_id:
+            #         nueva_id = inscripcion["idRuta"]
+            #         nombre_nueva_ruta = input("Ingrese el Nombre de la nueva ruta: ")
+            #         modulo_fundamentos = "Introduccion a la algoritmia, PSeInt y Python"
+            #         modulo_web = "HTML, CSS y Bootstrap"
+            #         modulo_formal = "Programación Formal"
+            #         sgdb_principal = "Mysql"
+            #         sgdb_alternativo = "MongoDb"
+            #         modulo_backend = "NetCore"
+            #         limite_estudiantes = 33  # El límite siempre es 33 para todas las rutas
+
+            # nueva_ruta = {
+            #     "nombre": nombre_nueva_ruta,
+            #     "modulos": {
+            #         "Fundamentos de programacion": modulo_fundamentos,
+            #         "Programacion Web": modulo_web,
+            #         "Programacion formal": modulo_formal,
+            #         "Bases de datos": {
+            #             "SGDB principal": sgdb_principal,
+            #             "SGDB alternativo": sgdb_alternativo
+            #         },
+            #         "Backend": modulo_backend
+            #         # Agrega otros módulos aquí
+            #     },
+            #     "Limite de estudiantes": limite_estudiantes
+            # }
+
+            #     # Agregar la nueva ruta a la lista de rutas en camper
+            # camper[2]["rutasNuevas"].append(nueva_ruta)
+
+            # print("Nueva ruta de entrenamiento creada con éxito.")
 
         else:
             print("Camper no encontrado.")
@@ -328,7 +359,7 @@ def registrarNotas(camper):
         
 
 def crearRutaEntrenamiento(camper):
-    
+
     print("Creación de nueva ruta de entrenamiento")
     print("Especifique los módulos para la nueva ruta:")
     nueva_id = 0
@@ -339,8 +370,7 @@ def crearRutaEntrenamiento(camper):
     nuevaRuta =nueva_id + 1
     modulo_fundamentos = "Introduccion a la algoritmia, PSeInt y Python"
     modulo_web = "HTML, CSS y Bootstrap"
-    nombreNuevaRuta = input("Ingrese el Nombre de la nueva ruta: ")
-    guardarArchivo(camper)
+    nombreNuevaRuta = str(input("Ingrese el Nombre de la nueva ruta "))
     print("Seleccione el módulo de Programación formal:")
     print("1. Java")
     print("2. JavaScript")
@@ -400,7 +430,7 @@ def crearRutaEntrenamiento(camper):
     camper[2]["rutasNuevas"].append(
         {
                 "idRuta": nuevaRuta,
-                "nombreR": nombreNuevaRuta,
+                "nombre": nombreNuevaRuta,
                 "modulos": {
                     "Fundamentos de programacion": modulo_fundamentos,
                     "Programacion Web": modulo_web,
@@ -411,6 +441,7 @@ def crearRutaEntrenamiento(camper):
                     },
                     "Backend": modulo_backend
                 }
+                
             
             }
     )
