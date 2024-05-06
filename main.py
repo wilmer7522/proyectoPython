@@ -1,16 +1,27 @@
 import json
 
 database = "python/info.json"
+database2 = "python/nuevasRutas.json"
 
 def abrirArchivo():
     with open('info.json', encoding="utf-8") as openfile:
         return json.load(openfile)
 
+def abrirArchivoRuta():
+    with open('nuevasRutas.json', encoding="utf-8") as openfilerutas:
+        return json.load(openfilerutas)
+        #return rutas
+
 def guardarArchivo(miData):
     with open("info.json", "w") as outfile:
         json.dump(miData, outfile)
 
+def guardarArchivoRuta(miDataRuta):
+    with open("nuevasRutas.json", "w") as outfile:
+        json.dump(miDataRuta, outfile)
+
 camper = []
+rutas = []
 
 def procesar_inscripcion(camper):
     # Función para procesar la inscripción de un nuevo camper
@@ -60,7 +71,8 @@ def procesar_inscripcion(camper):
                 "rutaEntrenamiento": "",
                 "horario": "",
                 "riesgo": "",
-                "trainer": ""
+                "trainer": "",
+                "promedioGeneral": 0
                 
         }                  
         
@@ -90,6 +102,7 @@ def vercampers(camper):
         print(f"Ruta de Entrenamiento: {inscripcion['rutaEntrenamiento']}")
         print(f"Horario: {inscripcion['horario']}")
         print(f"Trainer: {inscripcion['trainer']}")
+        print(f"Promedio General: {inscripcion["promedioGeneral"]}")
         
         print("#####################")
     else:
@@ -157,44 +170,14 @@ def registrarNotas(camper):
             inscripcion_encontrada["rutaEntrenamiento"] = "ruta NetCore"
             guardarArchivo(camper)
 
-        elif ruta == 4:#hay que revisar servia y ahora da error
-            print("revisar rutas nuevas")
-            # nueva_id = 0
-            # for inscripcion in camper[0]["inscripciones"]:
-            #     if 'idRuta' in inscripcion and inscripcion["idRuta"] > nueva_id:
-            #         nueva_id = inscripcion["idRuta"]
-            #         nombre_nueva_ruta = input("Ingrese el Nombre de la nueva ruta: ")
-            #         modulo_fundamentos = "Introduccion a la algoritmia, PSeInt y Python"
-            #         modulo_web = "HTML, CSS y Bootstrap"
-            #         modulo_formal = "Programación Formal"
-            #         sgdb_principal = "Mysql"
-            #         sgdb_alternativo = "MongoDb"
-            #         modulo_backend = "NetCore"
-            #         limite_estudiantes = 33  # El límite siempre es 33 para todas las rutas
-
-            # nueva_ruta = {
-            #     "nombre": nombre_nueva_ruta,
-            #     "modulos": {
-            #         "Fundamentos de programacion": modulo_fundamentos,
-            #         "Programacion Web": modulo_web,
-            #         "Programacion formal": modulo_formal,
-            #         "Bases de datos": {
-            #             "SGDB principal": sgdb_principal,
-            #             "SGDB alternativo": sgdb_alternativo
-            #         },
-            #         "Backend": modulo_backend
-            #         # Agrega otros módulos aquí
-            #     },
-            #     "Limite de estudiantes": limite_estudiantes
-            # }
-
-            #     # Agregar la nueva ruta a la lista de rutas en camper
-            # camper[2]["rutasNuevas"].append(nueva_ruta)
-
-            # print("Nueva ruta de entrenamiento creada con éxito.")
-
-        else:
-            print("Camper no encontrado.")
+        elif ruta == 4:#INTENTA HACER UN PRINT PARA QUE MUESTRE EL JSON DE rutasNuevas NO PUDE
+            
+            nuevo = int(input("ingrese id: "))
+            if len([c for c in rutas[0]["rutasNuevas"] if c.get("idRuta")== nuevo]) >=33:
+                print("Lo siento, la ruta de entrenamiento NetCore está llena.")
+                return
+            inscripcion_encontrada["rutaEntrenamiento"] = rutas[0]["rutasNuevas"][nuevo]
+            guardarArchivo(camper)           
 
 
     else:
@@ -358,12 +341,12 @@ def registrarNotas(camper):
         guardarArchivo(camper)
         
 
-def crearRutaEntrenamiento(camper):
-
+def crearRutaEntrenamiento(rutas):
+    
     print("Creación de nueva ruta de entrenamiento")
     print("Especifique los módulos para la nueva ruta:")
     nueva_id = 0
-    for inscripcion in camper[2]["rutasNuevas"]:
+    for inscripcion in rutas[0]["rutasNuevas"]:
         if 'idRuta' in inscripcion and inscripcion["idRuta"] > nueva_id:
             nueva_id = inscripcion["idRuta"]
 
@@ -427,7 +410,7 @@ def crearRutaEntrenamiento(camper):
         guardarArchivo(camper)
     
 
-    camper[2]["rutasNuevas"].append(
+    rutas[0]["rutasNuevas"].append(
         {
                 "idRuta": nuevaRuta,
                 "nombre": nombreNuevaRuta,
@@ -445,7 +428,7 @@ def crearRutaEntrenamiento(camper):
             
             }
     )
-    guardarArchivo(camper)
+    guardarArchivoRuta(rutas)
     print("Nueva ruta de entrenamiento creada con éxito.")
 
     
@@ -571,7 +554,7 @@ def menu():
             if a == 1:
                 listar_trainers(camper)
             elif a == 2:
-                crearRutaEntrenamiento(camper)
+                crearRutaEntrenamiento(rutas)
             else:
                 print("Contraseña incorrecta. Acceso denegado.")
         else:
@@ -595,5 +578,6 @@ def menu():
             print("Contraseña incorrecta. Acceso denegado.")
 
 camper = abrirArchivo()
+rutas = abrirArchivoRuta()
 while True:
     menu()

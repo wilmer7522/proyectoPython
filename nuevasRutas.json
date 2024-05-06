@@ -1,0 +1,77 @@
+[
+    {
+        "rutasNuevas": [
+            {},
+            {
+                "idRuta": 1,
+                "nombre": "postal",
+                "modulos": {
+                    "Fundamentos de programacion": "Introduccion a la algoritmia, PSeInt y Python",
+                    "Programacion Web": "HTML, CSS y Bootstrap",
+                    "Programacion formal": "JavaScript",
+                    "Bases de datos": {
+                        "SGDB principal": "Mysql",
+                        "SGDB alternativo": "MongoDb"
+                    },
+                    "Backend": "Spring Boot"
+                }
+            },
+            {
+                "idRuta": 2,
+                "nombre": "telefono",
+                "modulos": {
+                    "Fundamentos de programacion": "Introduccion a la algoritmia, PSeInt y Python",
+                    "Programacion Web": "HTML, CSS y Bootstrap",
+                    "Programacion formal": "Java",
+                    "Bases de datos": {
+                        "SGDB principal": "Mysql",
+                        "SGDB alternativo": "Postgresql"
+                    },
+                    "Backend": "NetCore"
+                }
+            },
+            {
+                "idRuta": 3,
+                "nombre": "roca",
+                "modulos": {
+                    "Fundamentos de programacion": "Introduccion a la algoritmia, PSeInt y Python",
+                    "Programacion Web": "HTML, CSS y Bootstrap",
+                    "Programacion formal": "C#",
+                    "Bases de datos": {
+                        "SGDB principal": "Mysql",
+                        "SGDB alternativo": "MongoDb"
+                    },
+                    "Backend": "NodeJS"
+                }
+            },
+            {
+                "idRuta": 4,
+                "nombre": "json",
+                "modulos": {
+                    "Fundamentos de programacion": "Introduccion a la algoritmia, PSeInt y Python",
+                    "Programacion Web": "HTML, CSS y Bootstrap",
+                    "Programacion formal": "Java",
+                    "Bases de datos": {
+                        "SGDB principal": "Mysql",
+                        "SGDB alternativo": "MongoDb"
+                    },
+                    "Backend": "Spring Boot"
+                }
+            },
+            {
+                "idRuta": 5,
+                "nombre": "hack",
+                "modulos": {
+                    "Fundamentos de programacion": "Introduccion a la algoritmia, PSeInt y Python",
+                    "Programacion Web": "HTML, CSS y Bootstrap",
+                    "Programacion formal": "Java",
+                    "Bases de datos": {
+                        "SGDB principal": "Mysql",
+                        "SGDB alternativo": "Postgresql"
+                    },
+                    "Backend": "Spring Boot"
+                }
+            }
+        ]
+    }
+]

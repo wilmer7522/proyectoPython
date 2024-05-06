@@ -13,19 +13,19 @@
                 "telefono_fijo": 369369,
                 "estado": [
                     {
-                        "ingreso": "Aprobado",
-                        "evaluacion": "Aprobado"
+                        "ingreso": "Inscrito",
+                        "evaluacion": "Inscrito"
                     }
                 ],
-                "Promedio": 75.0,
+                "Promedio": 85.0,
                 "rutaEntrenamiento": "ruta Java",
                 "horario": "10:00 - 14:00",
                 "riesgo": "Bajo",
                 "trainer": "Jholver Pardo",
-                "fecha_inicio": "10-02-2024",
-                "fecha_finalizacion": "20-06-2025",
+                "fecha_inicio": "20",
+                "fecha_finalizacion": "30",
                 "areaEntrenamiento": "Artemis",
-                "promedioGeneral": 80.0
+                "promedioGeneral": 0.0
             },
             {
                 "id": 2,
@@ -38,8 +38,8 @@
                 "telefono_fijo": 369369,
                 "estado": [
                     {
-                        "ingreso": "Aprobado",
-                        "evaluacion": "Aprobado"
+                        "ingreso": "Inscrito",
+                        "evaluacion": "Inscrito"
                     }
                 ],
                 "Promedio": 75.0,
@@ -50,7 +50,7 @@
                 "fecha_inicio": "10-05",
                 "fecha_finalizacion": "2004",
                 "areaEntrenamiento": "Sputnik",
-                "promedioGeneral": 80.0
+                "promedioGeneral": 0.0
             },
             {
                 "id": 3,
@@ -63,7 +63,7 @@
                 "telefono_fijo": 369369,
                 "estado": [
                     {
-                        "ingreso": "Aprobado",
+                        "ingreso": "Inscrito",
                         "evaluacion": "Reprobado"
                     }
                 ],
@@ -88,8 +88,8 @@
                 "telefono_fijo": 369369,
                 "estado": [
                     {
-                        "ingreso": "Aprobado",
-                        "evaluacion": "Aprobado"
+                        "ingreso": "Inscrito",
+                        "evaluacion": "Inscrito"
                     }
                 ],
                 "Promedio": 70.0,
@@ -100,7 +100,7 @@
                 "fecha_inicio": "5",
                 "fecha_finalizacion": "10",
                 "areaEntrenamiento": "Sputnik",
-                "promedioGeneral": 80.0
+                "promedioGeneral": 0.0
             },
             {
                 "id": 5,
@@ -113,8 +113,8 @@
                 "telefono_fijo": 369369,
                 "estado": [
                     {
-                        "ingreso": "Aprobado",
-                        "evaluacion": "Aprobado"
+                        "ingreso": "Inscrito",
+                        "evaluacion": "Inscrito"
                     }
                 ],
                 "Promedio": 75.0,
@@ -125,7 +125,7 @@
                 "fecha_inicio": "10",
                 "fecha_finalizacion": "20",
                 "areaEntrenamiento": "Sputnik",
-                "promedioGeneral": 80.0
+                "promedioGeneral": 0.0
             },
             {
                 "id": 6,
@@ -138,8 +138,8 @@
                 "telefono_fijo": 369369,
                 "estado": [
                     {
-                        "ingreso": "Aprobado",
-                        "evaluacion": "Aprobado"
+                        "ingreso": "Inscrito",
+                        "evaluacion": "Inscrito"
                     }
                 ],
                 "Promedio": 75.0,
@@ -150,38 +150,7 @@
                 "fecha_inicio": "20",
                 "fecha_finalizacion": "30",
                 "areaEntrenamiento": "Sputnik",
-                "promedioGeneral": 80.0,
-                "idRuta": [
-                    {},
-                    {
-                        "idRuta": 1,
-                        "nombre": "prueba",
-                        "modulos": {
-                            "Fundamentos de programacion": "Introduccion a la algoritmia, PSeInt y Python",
-                            "Programacion Web": "HTML, CSS y Bootstrap",
-                            "Programacion formal": "JavaScript",
-                            "Bases de datos": {
-                                "SGDB principal": "Mysql",
-                                "SGDB alternativo": "MongoDb"
-                            },
-                            "Backend": "Express"
-                        }
-                    },
-                    {
-                        "idRuta": 2,
-                        "nombre": "pasa",
-                        "modulos": {
-                            "Fundamentos de programacion": "Introduccion a la algoritmia, PSeInt y Python",
-                            "Programacion Web": "HTML, CSS y Bootstrap",
-                            "Programacion formal": "C#",
-                            "Bases de datos": {
-                                "SGDB principal": "Mysql",
-                                "SGDB alternativo": "Postgresql"
-                            },
-                            "Backend": "Spring Boot"
-                        }
-                    }
-                ]
+                "promedioGeneral": 0.0
             },
             {
                 "id": 7,
@@ -194,8 +163,8 @@
                 "telefono_fijo": 369369,
                 "estado": [
                     {
-                        "ingreso": "Aprobado",
-                        "evaluacion": "Aprobado"
+                        "ingreso": "Inscrito",
+                        "evaluacion": "Inscrito"
                     }
                 ],
                 "Promedio": 85.0,
@@ -206,7 +175,7 @@
                 "fecha_inicio": "10",
                 "fecha_finalizacion": "20",
                 "areaEntrenamiento": "Apollo",
-                "promedioGeneral": 80.0
+                "promedioGeneral": 0.0
             },
             {
                 "id": 8,
@@ -219,8 +188,8 @@
                 "telefono_fijo": 369369,
                 "estado": [
                     {
-                        "ingreso": "Aprobado",
-                        "evaluacion": "Aprobado"
+                        "ingreso": "Inscrito",
+                        "evaluacion": "Inscrito"
                     }
                 ],
                 "Promedio": 75.0,
@@ -231,7 +200,7 @@
                 "fecha_inicio": "10-05",
                 "fecha_finalizacion": "2004",
                 "areaEntrenamiento": "Sputnik",
-                "promedioGeneral": 80.0
+                "promedioGeneral": 0.0
             },
             {
                 "id": 9,
@@ -244,8 +213,8 @@
                 "telefono_fijo": 369369,
                 "estado": [
                     {
-                        "ingreso": "Aprobado",
-                        "evaluacion": "Aprobado"
+                        "ingreso": "Inscrito",
+                        "evaluacion": "Inscrito"
                     }
                 ],
                 "Promedio": 75.0,
@@ -256,7 +225,7 @@
                 "fecha_inicio": "10-05",
                 "fecha_finalizacion": "2004",
                 "areaEntrenamiento": "Sputnik",
-                "promedioGeneral": 80.0
+                "promedioGeneral": 0.0
             },
             {
                 "id": 10,
@@ -269,8 +238,8 @@
                 "telefono_fijo": 369369,
                 "estado": [
                     {
-                        "ingreso": "Aprobado",
-                        "evaluacion": "Aprobado"
+                        "ingreso": "Inscrito",
+                        "evaluacion": "Inscrito"
                     }
                 ],
                 "Promedio": 75.0,
@@ -281,7 +250,7 @@
                 "fecha_inicio": "10-05",
                 "fecha_finalizacion": "2004",
                 "areaEntrenamiento": "Sputnik",
-                "promedioGeneral": 80.0
+                "promedioGeneral": 0.0
             },
             {
                 "id": 11,
@@ -294,8 +263,8 @@
                 "telefono_fijo": 369369,
                 "estado": [
                     {
-                        "ingreso": "Aprobado",
-                        "evaluacion": "Aprobado"
+                        "ingreso": "Inscrito",
+                        "evaluacion": "Inscrito"
                     }
                 ],
                 "Promedio": 75.0,
@@ -306,7 +275,7 @@
                 "fecha_inicio": "10-05",
                 "fecha_finalizacion": "2004",
                 "areaEntrenamiento": "Sputnik",
-                "promedioGeneral": 80.0
+                "promedioGeneral": 0.0
             },
             {
                 "id": 12,
@@ -319,8 +288,8 @@
                 "telefono_fijo": 369369,
                 "estado": [
                     {
-                        "ingreso": "Aprobado",
-                        "evaluacion": "Aprobado"
+                        "ingreso": "Inscrito",
+                        "evaluacion": "Inscrito"
                     }
                 ],
                 "Promedio": 75.0,
@@ -331,7 +300,7 @@
                 "fecha_inicio": "10-05",
                 "fecha_finalizacion": "2004",
                 "areaEntrenamiento": "Sputnik",
-                "promedioGeneral": 80.0
+                "promedioGeneral": 0.0
             },
             {
                 "id": 13,
@@ -344,8 +313,8 @@
                 "telefono_fijo": 369369,
                 "estado": [
                     {
-                        "ingreso": "Aprobado",
-                        "evaluacion": "Aprobado"
+                        "ingreso": "Inscrito",
+                        "evaluacion": "Inscrito"
                     }
                 ],
                 "Promedio": 75.0,
@@ -356,7 +325,7 @@
                 "fecha_inicio": "10-05",
                 "fecha_finalizacion": "2004",
                 "areaEntrenamiento": "Sputnik",
-                "promedioGeneral": 80.0
+                "promedioGeneral": 0.0
             },
             {
                 "id": 14,
@@ -369,8 +338,8 @@
                 "telefono_fijo": 369369,
                 "estado": [
                     {
-                        "ingreso": "Aprobado",
-                        "evaluacion": "Aprobado"
+                        "ingreso": "Inscrito",
+                        "evaluacion": "Inscrito"
                     }
                 ],
                 "Promedio": 75.0,
@@ -381,7 +350,7 @@
                 "fecha_inicio": "10-05",
                 "fecha_finalizacion": "2004",
                 "areaEntrenamiento": "Sputnik",
-                "promedioGeneral": 80.0
+                "promedioGeneral": 0.0
             },
             {
                 "id": 15,
@@ -394,8 +363,8 @@
                 "telefono_fijo": 369369,
                 "estado": [
                     {
-                        "ingreso": "Aprobado",
-                        "evaluacion": "Aprobado"
+                        "ingreso": "Inscrito",
+                        "evaluacion": "Inscrito"
                     }
                 ],
                 "Promedio": 75.0,
@@ -406,7 +375,7 @@
                 "fecha_inicio": "10-05",
                 "fecha_finalizacion": "2004",
                 "areaEntrenamiento": "Sputnik",
-                "promedioGeneral": 80.0
+                "promedioGeneral": 0.0
             },
             {
                 "id": 16,
@@ -419,8 +388,8 @@
                 "telefono_fijo": 369369,
                 "estado": [
                     {
-                        "ingreso": "Aprobado",
-                        "evaluacion": "Aprobado"
+                        "ingreso": "Inscrito",
+                        "evaluacion": "Inscrito"
                     }
                 ],
                 "Promedio": 75.0,
@@ -431,7 +400,7 @@
                 "fecha_inicio": "10-05",
                 "fecha_finalizacion": "2004",
                 "areaEntrenamiento": "Sputnik",
-                "promedioGeneral": 80.0
+                "promedioGeneral": 0.0
             },
             {
                 "id": 17,
@@ -444,8 +413,8 @@
                 "telefono_fijo": 369369,
                 "estado": [
                     {
-                        "ingreso": "Aprobado",
-                        "evaluacion": "Aprobado"
+                        "ingreso": "Inscrito",
+                        "evaluacion": "Inscrito"
                     }
                 ],
                 "Promedio": 75.0,
@@ -456,7 +425,7 @@
                 "fecha_inicio": "10-05",
                 "fecha_finalizacion": "2004",
                 "areaEntrenamiento": "Sputnik",
-                "promedioGeneral": 80.0
+                "promedioGeneral": 0.0
             },
             {
                 "id": 18,
@@ -469,8 +438,8 @@
                 "telefono_fijo": 369369,
                 "estado": [
                     {
-                        "ingreso": "Aprobado",
-                        "evaluacion": "Aprobado"
+                        "ingreso": "Inscrito",
+                        "evaluacion": "Inscrito"
                     }
                 ],
                 "Promedio": 75.0,
@@ -481,7 +450,7 @@
                 "fecha_inicio": "10-05",
                 "fecha_finalizacion": "2004",
                 "areaEntrenamiento": "Sputnik",
-                "promedioGeneral": 80.0
+                "promedioGeneral": 0.0
             },
             {
                 "id": 19,
@@ -494,8 +463,8 @@
                 "telefono_fijo": 369369,
                 "estado": [
                     {
-                        "ingreso": "Aprobado",
-                        "evaluacion": "Aprobado"
+                        "ingreso": "Inscrito",
+                        "evaluacion": "Inscrito"
                     }
                 ],
                 "Promedio": 75.0,
@@ -506,7 +475,7 @@
                 "fecha_inicio": "10-05",
                 "fecha_finalizacion": "2004",
                 "areaEntrenamiento": "Sputnik",
-                "promedioGeneral": 80.0
+                "promedioGeneral": 0.0
             },
             {
                 "id": 20,
@@ -519,8 +488,8 @@
                 "telefono_fijo": 369369,
                 "estado": [
                     {
-                        "ingreso": "Aprobado",
-                        "evaluacion": "Aprobado"
+                        "ingreso": "Inscrito",
+                        "evaluacion": "Inscrito"
                     }
                 ],
                 "Promedio": 65.0,
@@ -531,7 +500,7 @@
                 "fecha_inicio": "10",
                 "fecha_finalizacion": "20",
                 "areaEntrenamiento": "Sputnik",
-                "promedioGeneral": 80.0
+                "promedioGeneral": 0.0
             },
             {
                 "id": 21,
@@ -544,8 +513,8 @@
                 "telefono_fijo": 369369,
                 "estado": [
                     {
-                        "ingreso": "Aprobado",
-                        "evaluacion": "Aprobado"
+                        "ingreso": "Inscrito",
+                        "evaluacion": "Inscrito"
                     }
                 ],
                 "Promedio": 75.0,
@@ -556,7 +525,7 @@
                 "fecha_inicio": "10-05",
                 "fecha_finalizacion": "2004",
                 "areaEntrenamiento": "Sputnik",
-                "promedioGeneral": 80.0
+                "promedioGeneral": 0.0
             },
             {
                 "id": 22,
@@ -569,8 +538,8 @@
                 "telefono_fijo": 369369,
                 "estado": [
                     {
-                        "ingreso": "Aprobado",
-                        "evaluacion": "Aprobado"
+                        "ingreso": "Inscrito",
+                        "evaluacion": "Inscrito"
                     }
                 ],
                 "Promedio": 75.0,
@@ -581,7 +550,7 @@
                 "fecha_inicio": "10-05",
                 "fecha_finalizacion": "2004",
                 "areaEntrenamiento": "Sputnik",
-                "promedioGeneral": 80.0
+                "promedioGeneral": 0.0
             },
             {
                 "id": 23,
@@ -594,8 +563,8 @@
                 "telefono_fijo": 369369,
                 "estado": [
                     {
-                        "ingreso": "Aprobado",
-                        "evaluacion": "Aprobado"
+                        "ingreso": "Inscrito",
+                        "evaluacion": "Inscrito"
                     }
                 ],
                 "Promedio": 75.0,
@@ -606,7 +575,7 @@
                 "fecha_inicio": "10-05",
                 "fecha_finalizacion": "2004",
                 "areaEntrenamiento": "Sputnik",
-                "promedioGeneral": 80.0
+                "promedioGeneral": 0.0
             },
             {
                 "id": 24,
@@ -619,8 +588,8 @@
                 "telefono_fijo": 369369,
                 "estado": [
                     {
-                        "ingreso": "Aprobado",
-                        "evaluacion": "Aprobado"
+                        "ingreso": "Inscrito",
+                        "evaluacion": "Inscrito"
                     }
                 ],
                 "Promedio": 75.0,
@@ -631,7 +600,7 @@
                 "fecha_inicio": "10-05",
                 "fecha_finalizacion": "2004",
                 "areaEntrenamiento": "Sputnik",
-                "promedioGeneral": 80.0
+                "promedioGeneral": 0.0
             },
             {
                 "id": 25,
@@ -644,8 +613,8 @@
                 "telefono_fijo": 369369,
                 "estado": [
                     {
-                        "ingreso": "Aprobado",
-                        "evaluacion": "Aprobado"
+                        "ingreso": "Inscrito",
+                        "evaluacion": "Inscrito"
                     }
                 ],
                 "Promedio": 75.0,
@@ -656,7 +625,7 @@
                 "fecha_inicio": "10-05",
                 "fecha_finalizacion": "2004",
                 "areaEntrenamiento": "Sputnik",
-                "promedioGeneral": 80.0
+                "promedioGeneral": 0.0
             },
             {
                 "id": 26,
@@ -669,8 +638,8 @@
                 "telefono_fijo": 369369,
                 "estado": [
                     {
-                        "ingreso": "Aprobado",
-                        "evaluacion": "Aprobado"
+                        "ingreso": "Inscrito",
+                        "evaluacion": "Inscrito"
                     }
                 ],
                 "Promedio": 75.0,
@@ -681,7 +650,7 @@
                 "fecha_inicio": "10-05",
                 "fecha_finalizacion": "2004",
                 "areaEntrenamiento": "Sputnik",
-                "promedioGeneral": 80.0
+                "promedioGeneral": 0.0
             },
             {
                 "id": 27,
@@ -694,8 +663,8 @@
                 "telefono_fijo": 369369,
                 "estado": [
                     {
-                        "ingreso": "Aprobado",
-                        "evaluacion": "Aprobado"
+                        "ingreso": "Inscrito",
+                        "evaluacion": "Inscrito"
                     }
                 ],
                 "Promedio": 75.0,
@@ -706,7 +675,7 @@
                 "fecha_inicio": "10-05",
                 "fecha_finalizacion": "2004",
                 "areaEntrenamiento": "Sputnik",
-                "promedioGeneral": 80.0
+                "promedioGeneral": 0.0
             },
             {
                 "id": 28,
@@ -719,8 +688,8 @@
                 "telefono_fijo": 369369,
                 "estado": [
                     {
-                        "ingreso": "Aprobado",
-                        "evaluacion": "Aprobado"
+                        "ingreso": "Inscrito",
+                        "evaluacion": "Inscrito"
                     }
                 ],
                 "Promedio": 75.0,
@@ -731,7 +700,7 @@
                 "fecha_inicio": "10-05",
                 "fecha_finalizacion": "2004",
                 "areaEntrenamiento": "Sputnik",
-                "promedioGeneral": 80.0
+                "promedioGeneral": 0.0
             },
             {
                 "id": 29,
@@ -744,8 +713,8 @@
                 "telefono_fijo": 369369,
                 "estado": [
                     {
-                        "ingreso": "Aprobado",
-                        "evaluacion": "Aprobado"
+                        "ingreso": "Inscrito",
+                        "evaluacion": "Inscrito"
                     }
                 ],
                 "Promedio": 75.0,
@@ -756,7 +725,7 @@
                 "fecha_inicio": "10-05",
                 "fecha_finalizacion": "2004",
                 "areaEntrenamiento": "Sputnik",
-                "promedioGeneral": 80.0
+                "promedioGeneral": 0.0
             },
             {
                 "id": 30,
@@ -769,8 +738,8 @@
                 "telefono_fijo": 369369,
                 "estado": [
                     {
-                        "ingreso": "Aprobado",
-                        "evaluacion": "Aprobado"
+                        "ingreso": "Inscrito",
+                        "evaluacion": "Inscrito"
                     }
                 ],
                 "Promedio": 75.0,
@@ -781,7 +750,7 @@
                 "fecha_inicio": "10-05",
                 "fecha_finalizacion": "2004",
                 "areaEntrenamiento": "Sputnik",
-                "promedioGeneral": 80.0
+                "promedioGeneral": 0.0
             },
             {
                 "id": 31,
@@ -794,8 +763,8 @@
                 "telefono_fijo": 369369,
                 "estado": [
                     {
-                        "ingreso": "Aprobado",
-                        "evaluacion": "Aprobado"
+                        "ingreso": "Inscrito",
+                        "evaluacion": "Inscrito"
                     }
                 ],
                 "Promedio": 75.0,
@@ -806,7 +775,7 @@
                 "fecha_inicio": "10-05",
                 "fecha_finalizacion": "2004",
                 "areaEntrenamiento": "Sputnik",
-                "promedioGeneral": 80.0
+                "promedioGeneral": 0.0
             },
             {
                 "id": 32,
@@ -819,8 +788,8 @@
                 "telefono_fijo": 369369,
                 "estado": [
                     {
-                        "ingreso": "Aprobado",
-                        "evaluacion": "Aprobado"
+                        "ingreso": "Inscrito",
+                        "evaluacion": "Inscrito"
                     }
                 ],
                 "Promedio": 75.0,
@@ -831,7 +800,7 @@
                 "fecha_inicio": "10-05",
                 "fecha_finalizacion": "2004",
                 "areaEntrenamiento": "Sputnik",
-                "promedioGeneral": 80.0
+                "promedioGeneral": 0.0
             },
             {
                 "id": 33,
@@ -844,8 +813,8 @@
                 "telefono_fijo": 369369,
                 "estado": [
                     {
-                        "ingreso": "Aprobado",
-                        "evaluacion": "Aprobado"
+                        "ingreso": "Inscrito",
+                        "evaluacion": "Inscrito"
                     }
                 ],
                 "Promedio": 75.0,
@@ -856,7 +825,7 @@
                 "fecha_inicio": "10-05",
                 "fecha_finalizacion": "2004",
                 "areaEntrenamiento": "Sputnik",
-                "promedioGeneral": 80.0
+                "promedioGeneral": 0.0
             },
             {
                 "id": 34,
@@ -869,19 +838,32 @@
                 "telefono_fijo": 369369,
                 "estado": [
                     {
-                        "ingreso": "Aprobado",
-                        "evaluacion": "Aprobado"
+                        "ingreso": "Inscrito",
+                        "evaluacion": "Inscrito"
                     }
                 ],
                 "Promedio": 75.0,
-                "rutaEntrenamiento": "ruta NodeJS",
-                "horario": "6:00 - 10:00",
+                "rutaEntrenamiento": {
+                    "idRuta": 4,
+                    "nombre": "json",
+                    "modulos": {
+                        "Fundamentos de programacion": "Introduccion a la algoritmia, PSeInt y Python",
+                        "Programacion Web": "HTML, CSS y Bootstrap",
+                        "Programacion formal": "Java",
+                        "Bases de datos": {
+                            "SGDB principal": "Mysql",
+                            "SGDB alternativo": "MongoDb"
+                        },
+                        "Backend": "Spring Boot"
+                    }
+                },
+                "horario": "18:00 - 22:00",
                 "riesgo": "Bajo",
-                "trainer": "Miguel Angel Castillo",
-                "fecha_inicio": "10-05",
-                "fecha_finalizacion": "2004",
-                "areaEntrenamiento": "Sputnik",
-                "promedioGeneral": 80.0
+                "trainer": "Pedro Gomez",
+                "fecha_inicio": "10",
+                "fecha_finalizacion": "20",
+                "areaEntrenamiento": "Apollo",
+                "promedioGeneral": 0.0
             },
             {
                 "id": 35,
@@ -894,19 +876,19 @@
                 "telefono_fijo": 369369,
                 "estado": [
                     {
-                        "ingreso": "Aprobado",
-                        "evaluacion": "Aprobado"
+                        "ingreso": "Inscrito",
+                        "evaluacion": "Inscrito"
                     }
                 ],
-                "Promedio": 75.0,
+                "Promedio": 85.0,
                 "rutaEntrenamiento": "ruta NodeJS",
-                "horario": "6:00 - 10:00",
+                "horario": "14:00 - 18:00",
                 "riesgo": "Bajo",
-                "trainer": "Miguel Angel Castillo",
-                "fecha_inicio": "10-05",
-                "fecha_finalizacion": "2004",
-                "areaEntrenamiento": "Sputnik",
-                "promedioGeneral": 80.0
+                "trainer": "Jholver Pardo",
+                "fecha_inicio": "10",
+                "fecha_finalizacion": "25",
+                "areaEntrenamiento": "Artemis",
+                "promedioGeneral": 0.0
             },
             {
                 "id": 36,
@@ -919,44 +901,40 @@
                 "telefono_fijo": 369369,
                 "estado": [
                     {
-                        "ingreso": "Aprobado",
+                        "ingreso": "Inscrito",
                         "evaluacion": "Reprobado"
-                    }
-                ],
-                "Promedio": 75.0,
-                "rutaEntrenamiento": "ruta NodeJS",
-                "horario": "6:00 - 10:00",
-                "riesgo": "Bajo",
-                "trainer": "Miguel Angel Castillo",
-                "fecha_inicio": "10-05",
-                "fecha_finalizacion": "2004",
-                "areaEntrenamiento": "Sputnik",
-                "promedioGeneral": 50.0
-            },
-            {
-                "id": 37,
-                "nombre": "alexander",
-                "apellido": "rojas",
-                "identificacion": 123654789,
-                "direccion": "tibu",
-                "acudiente": "no tiene",
-                "telefono_celular": 963963,
-                "telefono_fijo": 369369,
-                "estado": [
-                    {
-                        "ingreso": "Aprobado",
-                        "evaluacion": "Aprobado"
                     }
                 ],
                 "Promedio": 85.0,
                 "rutaEntrenamiento": "ruta NodeJS",
-                "horario": "6:00 - 10:00",
+                "horario": "14:00 - 18:00",
                 "riesgo": "Bajo",
                 "trainer": "Miguel Angel Castillo",
-                "fecha_inicio": "10",
-                "fecha_finalizacion": "20",
+                "fecha_inicio": "20",
+                "fecha_finalizacion": "30",
                 "areaEntrenamiento": "Apollo",
-                "promedioGeneral": 71.0
+                "promedioGeneral": 50.0
+            },
+            {
+                "id": 37,
+                "nombre": "jose",
+                "apellido": "Campos",
+                "identificacion": 125478,
+                "direccion": "Tibu",
+                "acudiente": "no tiene",
+                "telefono_celular": 369852147,
+                "telefono_fijo": 785412,
+                "estado": [
+                    {
+                        "ingreso": "Inscrito"
+                    }
+                ],
+                "Promedio": 0,
+                "rutaEntrenamiento": "",
+                "horario": "",
+                "riesgo": "",
+                "trainer": "",
+                "promedioGeneral": 0
             }
         ]
     },
@@ -988,165 +966,6 @@
                         "apellido": "Mari\u00f1o"
                     }
                 ]
-            }
-        ]
-    },
-    {
-        "rutasNuevas": [
-            {},
-            {
-                "idRuta": 1,
-                "nombre": "prueba",
-                "modulos": {
-                    "Fundamentos de programacion": "Introduccion a la algoritmia, PSeInt y Python",
-                    "Programacion Web": "HTML, CSS y Bootstrap",
-                    "Programacion formal": "JavaScript",
-                    "Bases de datos": {
-                        "SGDB principal": "Mysql",
-                        "SGDB alternativo": "MongoDb"
-                    },
-                    "Backend": "Express"
-                }
-            },
-            {
-                "idRuta": 2,
-                "nombre": "pasa",
-                "modulos": {
-                    "Fundamentos de programacion": "Introduccion a la algoritmia, PSeInt y Python",
-                    "Programacion Web": "HTML, CSS y Bootstrap",
-                    "Programacion formal": "C#",
-                    "Bases de datos": {
-                        "SGDB principal": "Mysql",
-                        "SGDB alternativo": "Postgresql"
-                    },
-                    "Backend": "Spring Boot"
-                }
-            },
-            {
-                "idRuta": 3,
-                "nombre": "React",
-                "modulos": {
-                    "Fundamentos de programacion": "Introduccion a la algoritmia, PSeInt y Python",
-                    "Programacion Web": "HTML, CSS y Bootstrap",
-                    "Programacion formal": "C#",
-                    "Bases de datos": {
-                        "SGDB principal": "Mysql",
-                        "SGDB alternativo": "Postgresql"
-                    },
-                    "Backend": "NodeJS"
-                }
-            },
-            {
-                "idRuta": 4,
-                "nombre": "bootstrat",
-                "modulos": {
-                    "Fundamentos de programacion": "Introduccion a la algoritmia, PSeInt y Python",
-                    "Programacion Web": "HTML, CSS y Bootstrap",
-                    "Programacion formal": "Java",
-                    "Bases de datos": {
-                        "SGDB principal": "Mysql",
-                        "SGDB alternativo": "Postgresql"
-                    },
-                    "Backend": "Express"
-                }
-            },
-            {
-                "idRuta": 5,
-                "nombre": "pera",
-                "modulos": {
-                    "Fundamentos de programacion": "Introduccion a la algoritmia, PSeInt y Python",
-                    "Programacion Web": "HTML, CSS y Bootstrap",
-                    "Programacion formal": "Java",
-                    "Bases de datos": {
-                        "SGDB principal": "Mysql",
-                        "SGDB alternativo": "Postgresql"
-                    },
-                    "Backend": "Express"
-                }
-            },
-            {
-                "idRuta": 6,
-                "nombre": "pera",
-                "modulos": {
-                    "Fundamentos de programacion": "Introduccion a la algoritmia, PSeInt y Python",
-                    "Programacion Web": "HTML, CSS y Bootstrap",
-                    "Programacion formal": "C#",
-                    "Bases de datos": {
-                        "SGDB principal": "Mysql",
-                        "SGDB alternativo": "Postgresql"
-                    },
-                    "Backend": "NodeJS"
-                }
-            },
-            {
-                "idRuta": 7,
-                "nombre": "pizza",
-                "modulos": {
-                    "Fundamentos de programacion": "Introduccion a la algoritmia, PSeInt y Python",
-                    "Programacion Web": "HTML, CSS y Bootstrap",
-                    "Programacion formal": "Java",
-                    "Bases de datos": {
-                        "SGDB principal": "MongoDb",
-                        "SGDB alternativo": "Mysql"
-                    },
-                    "Backend": "NetCore"
-                }
-            },
-            {
-                "idRuta": 8,
-                "nombre": "pasta",
-                "modulos": {
-                    "Fundamentos de programacion": "Introduccion a la algoritmia, PSeInt y Python",
-                    "Programacion Web": "HTML, CSS y Bootstrap",
-                    "Programacion formal": "C#",
-                    "Bases de datos": {
-                        "SGDB principal": "Mysql",
-                        "SGDB alternativo": "Postgresql"
-                    },
-                    "Backend": "Express"
-                }
-            },
-            {
-                "idRuta": 9,
-                "nombre": "pio",
-                "modulos": {
-                    "Fundamentos de programacion": "Introduccion a la algoritmia, PSeInt y Python",
-                    "Programacion Web": "HTML, CSS y Bootstrap",
-                    "Programacion formal": "C#",
-                    "Bases de datos": {
-                        "SGDB principal": "Postgresql",
-                        "SGDB alternativo": "MongoDb"
-                    },
-                    "Backend": "NetCore"
-                }
-            },
-            {
-                "nombre": "",
-                "modulos": {
-                    "Fundamentos de programacion": "Introduccion a la algoritmia, PSeInt y Python",
-                    "Programacion Web": "HTML, CSS y Bootstrap",
-                    "Programacion formal": "Programaci\u00f3n Formal",
-                    "Bases de datos": {
-                        "SGDB principal": "Mysql",
-                        "SGDB alternativo": "MongoDb"
-                    },
-                    "Backend": "NetCore"
-                },
-                "Limite de estudiantes": 33
-            },
-            {
-                "idRuta": 10,
-                "nombre": "pescado",
-                "modulos": {
-                    "Fundamentos de programacion": "Introduccion a la algoritmia, PSeInt y Python",
-                    "Programacion Web": "HTML, CSS y Bootstrap",
-                    "Programacion formal": "C#",
-                    "Bases de datos": {
-                        "SGDB principal": "Mysql",
-                        "SGDB alternativo": "Postgresql"
-                    },
-                    "Backend": "Express"
-                }
             }
         ]
     }
