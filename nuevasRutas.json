@@ -71,6 +71,20 @@
                     },
                     "Backend": "Spring Boot"
                 }
+            },
+            {
+                "idRuta": 6,
+                "nombre": "celular",
+                "modulos": {
+                    "Fundamentos de programacion": "Introduccion a la algoritmia, PSeInt y Python",
+                    "Programacion Web": "HTML, CSS y Bootstrap",
+                    "Programacion formal": "C#",
+                    "Bases de datos": {
+                        "SGDB principal": "Mysql",
+                        "SGDB alternativo": "MongoDb"
+                    },
+                    "Backend": "Express"
+                }
             }
         ]
     }

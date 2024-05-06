@@ -107,7 +107,15 @@ def vercampers(camper):
         print("#####################")
     else:
         print("No se encontró ningún camper con el ID proporcionado.")
+def imprimirRutas(rutas):
+    a = 0
+    for i in rutas[0]["rutasNuevas"]:
+        a = a + 1
+        print("###############################################")
+        print(f"ID: {i["idRuta"]} Nombre: {i['nombre']}\nModulos: {i["modulos"]["Fundamentos de programacion"]}\n{i["modulos"]["Programacion Web"]}\n{i["modulos"]["Programacion formal"]}\n{i["modulos"]["Bases de datos"]["SGDB principal"]}\n{i["modulos"]["Bases de datos"]["SGDB alternativo"]}\n{i["modulos"]["Backend"]}")
+        print("###############################################")
         
+
 def registrarNotas(camper):
     print("Registro de notas")
     id_camper = input("Ingrese el ID del camper: ")
@@ -169,10 +177,10 @@ def registrarNotas(camper):
                 return
             inscripcion_encontrada["rutaEntrenamiento"] = "ruta NetCore"
             guardarArchivo(camper)
-
-        elif ruta == 4:#INTENTA HACER UN PRINT PARA QUE MUESTRE EL JSON DE rutasNuevas NO PUDE
             
-            nuevo = int(input("ingrese id: "))
+        elif ruta == 4:#INTENTA HACER UN PRINT PARA QUE MUESTRE EL JSON DE rutasNuevas NO PUDE
+            #imprimirRutas(rutas)
+            nuevo = int(input("ingrese id de la Ruta Creada: "))
             if len([c for c in rutas[0]["rutasNuevas"] if c.get("idRuta")== nuevo]) >=33:
                 print("Lo siento, la ruta de entrenamiento NetCore está llena.")
                 return
