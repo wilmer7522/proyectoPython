@@ -24,12 +24,12 @@ rutas = []
 def procesar_inscripcion(camper):
     # Función para procesar la inscripción de un nuevo camper
     ultimo_id = 0
-    for inscripcion in camper[0]["inscripciones"]:
+    for inscripcion in camper[0]["inscripciones"]:# Iterar sobre las inscripciones de los campers.
         if 'id' in inscripcion and inscripcion["id"] > ultimo_id:
             ultimo_id = inscripcion["id"]
 
     campers = ultimo_id + 1
-    
+    #Ingresar los datos del camper
     nombre = input("Ingrese los nombres del camper: ")
     apellido = input("Ingrese los apellidos del camper: ")
     identificacion = int(input("Ingrese el número de identificación del camper: "))
@@ -47,7 +47,7 @@ def procesar_inscripcion(camper):
         print("opción invalida intente de nuevo")
             
         
-    
+    #Guarda los datos ingresados anteriormente
     camper[0]["inscripciones"].append(  
         {
         
@@ -78,16 +78,17 @@ def procesar_inscripcion(camper):
     guardarArchivo(camper)
     print("Guardado con éxito.")
 
+#Funcion para revisar los campers por medio del ID
 def vercampers(camper):
     print("Buscar Camper")
     id_camper = input("Ingrese el ID del camper a verificar: ")
     camper_encontrado = None
     
-    for inscripcion in camper[0]["inscripciones"]:
-        if str(inscripcion.get('id')) == id_camper:
-            camper_encontrado = inscripcion
+    for inscripcion in camper[0]["inscripciones"]:# Iterar sobre las inscripciones de los campers.
+        if str(inscripcion.get('id')) == id_camper:#se compara el id ingresado con la lista de todos los id en el json
+            camper_encontrado = inscripcion #Guarda el ID del camper ingresado
             break
-    
+    #Imprime los datos del ID ingresado
     if camper_encontrado:
         print(f"ID: {camper_encontrado.get('id')}")
         print("####################")
@@ -106,18 +107,18 @@ def vercampers(camper):
     else:
         print("No se encontró ningún camper con el ID proporcionado.")
         
-
+#Funcion para registrar las notas del camper
 def registrarNotas(camper):
     print("Registro de notas")
     id_camper = input("Ingrese el ID del camper: ")
     inscripcion_encontrada = None
     
-    for inscripcion in camper[0]["inscripciones"]:
-        if str(inscripcion.get('id')) == id_camper:
-            inscripcion_encontrada = inscripcion
+    for inscripcion in camper[0]["inscripciones"]:# Iterar sobre las inscripciones de los campers.
+        if str(inscripcion.get('id')) == id_camper:#Se compara el id ingresado con la lista de todos los id en el json
+            inscripcion_encontrada = inscripcion#Guarda el id del camper ingresado
             break
-    
-    if inscripcion_encontrada:
+    #Imprime algunos datos del ID ingresado
+    if inscripcion_encontrada:# Si cumple la condicion imprime 
         print("####################")
         print(f"ID: {id_camper}")
         print(f"Nombre: {inscripcion['nombre']}")
@@ -128,20 +129,21 @@ def registrarNotas(camper):
         print("#####################")
         nota_teorica = float(input("Ingrese la nota teórica del camper: "))
         nota_practica = float(input("Ingrese la nota práctica del camper: "))
-        promedio = (nota_teorica + nota_practica) / 2
-        inscripcion_encontrada["Promedio"] = promedio
-        inscripcion_encontrada["estado"][0]["ingreso"] = "Aprobado" if promedio >= 60 else "Reprobado"
-    if inscripcion_encontrada["estado"][0]["ingreso"] == "Aprobado":
+        promedio = (nota_teorica + nota_practica) / 2 # Suma las dos notas y los divide en 2 para poder sacar el promedio de cada nota
+        inscripcion_encontrada["Promedio"] = promedio #Imprime el promedio
+        inscripcion_encontrada["estado"][0]["ingreso"] = "Aprobado" if promedio >= 60 else "Reprobado" #Comprueba si el promedio es mayor a 60 asigna el estado en aprobado o menor a 60 asigna reprobado
+    if inscripcion_encontrada["estado"][0]["ingreso"] == "Aprobado": #Compara si es aprobado el riesgo sera bajo
         inscripcion_encontrada["riesgo"] = "Bajo"
-        #Agregar fecha de inicio yde finalización
         
         print("Camper aprobado.")
         print("")
+        #Agregar fecha de inicio y de finalización
         fecha_inicio = input("Ingrese la  fecha de inicio (DD-MM-AAAA: )")
         print("")
         fecha_finalizacion = input("Ingrese la fecha de finalización (DD-MM-AAAA):")
         inscripcion_encontrada["fecha_inicio"]= fecha_inicio
         inscripcion_encontrada["fecha_finalizacion"] = fecha_finalizacion
+        #Opcion para asignar rutas ya predefinidas y asignar la ruta previamente creada
         print("")
         print("1. Ruta NodeJS")
         print("2. Ruta Java")
@@ -151,7 +153,7 @@ def registrarNotas(camper):
                     
         ruta = int(input("Seleccione la ruta para este camper: "))
         if ruta == 1:
-            if len([c for c in camper[0]["inscripciones"] if c.get("rutaEntrenamiento")=="Ruta NodeJS"]) >=33:
+            if len([c for c in camper[0]["inscripciones"] if c.get("rutaEntrenamiento")=="Ruta NodeJS"]) >=33:#itera sobre todo el json para buscar rutaEntremaniento y asignar la ruta designada
                 print("Lo siento, la ruta de entrenamiento NodeJS está llena.")
                 return
             inscripcion_encontrada["rutaEntrenamiento"] = "ruta NodeJS"
@@ -169,25 +171,22 @@ def registrarNotas(camper):
             inscripcion_encontrada["rutaEntrenamiento"] = "ruta NetCore"
             guardarArchivo(camper)
             
-        elif ruta == 4:#INTENTA HACER UN PRINT PARA QUE MUESTRE EL JSON DE rutasNuevas NO PUDE
+        elif ruta == 4:
             a = 0
-            for i in rutas[0]["rutasNuevas"]:
-                a = a + 1
+            for i in rutas[0]["rutasNuevas"]:# Se itera sobre el JSON donde se alojan las nuevas rutas
+                a = a + 1 
             print("###############################################")
             print(f"ID: {i["idRuta"]} Nombre: {i['nombre']}\nModulos: {i["modulos"]["Fundamentos de programacion"]}\n{i["modulos"]["Programacion Web"]}\n{i["modulos"]["Programacion formal"]}\n{i["modulos"]["Bases de datos"]["SGDB principal"]}\n{i["modulos"]["Bases de datos"]["SGDB alternativo"]}\n{i["modulos"]["Backend"]}")
             print("###############################################")
-            nuevo = int(input("ingrese id de la Ruta Creada: "))
-            if len([c for c in rutas[0]["rutasNuevas"] if c.get("idRuta")== nuevo]) >=33:
+            nuevo = int(input("ingrese id de la Ruta Creada: ")) #Se ingresa el ID de la ruta que se va a buscar
+            if len([c for c in rutas[0]["rutasNuevas"] if c.get("idRuta")== nuevo]) >=33: #Se busca y se compara con el id ingresado 
                 print("Lo siento, la ruta de entrenamiento NetCore está llena.")
                 return
-            inscripcion_encontrada["rutaEntrenamiento"] = rutas[0]["rutasNuevas"][nuevo]
+            inscripcion_encontrada["rutaEntrenamiento"] = rutas[0]["rutasNuevas"][nuevo]#Al encontra el campo rutaEntrenamineto ya verificado el id se agrega la nueva ruta del id seleccionado antes
             guardarArchivo(camper)           
-
-
+            print("Ruta asignada")
     else:
-            print("Opción no válida, se asignará la Ruta NodeJS por defecto.")
-            inscripcion_encontrada["rutaEntrenamiento"] = "Ruta NodeJS"
-            print("Asignación de ruta completada.")
+            print("Opción invalida")
             guardarArchivo(camper)
             print("Ingrese el area de estudio")
             print("")
