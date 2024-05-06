@@ -1,7 +1,5 @@
 import json
 
-database = "python/info.json"
-database2 = "python/nuevasRutas.json"
 
 def abrirArchivo():
     with open('info.json', encoding="utf-8") as openfile:
@@ -10,7 +8,7 @@ def abrirArchivo():
 def abrirArchivoRuta():
     with open('nuevasRutas.json', encoding="utf-8") as openfilerutas:
         return json.load(openfilerutas)
-        #return rutas
+        
 
 def guardarArchivo(miData):
     with open("info.json", "w") as outfile:
@@ -107,13 +105,6 @@ def vercampers(camper):
         print("#####################")
     else:
         print("No se encontró ningún camper con el ID proporcionado.")
-def imprimirRutas(rutas):
-    a = 0
-    for i in rutas[0]["rutasNuevas"]:
-        a = a + 1
-        print("###############################################")
-        print(f"ID: {i["idRuta"]} Nombre: {i['nombre']}\nModulos: {i["modulos"]["Fundamentos de programacion"]}\n{i["modulos"]["Programacion Web"]}\n{i["modulos"]["Programacion formal"]}\n{i["modulos"]["Bases de datos"]["SGDB principal"]}\n{i["modulos"]["Bases de datos"]["SGDB alternativo"]}\n{i["modulos"]["Backend"]}")
-        print("###############################################")
         
 
 def registrarNotas(camper):
@@ -179,7 +170,12 @@ def registrarNotas(camper):
             guardarArchivo(camper)
             
         elif ruta == 4:#INTENTA HACER UN PRINT PARA QUE MUESTRE EL JSON DE rutasNuevas NO PUDE
-            #imprimirRutas(rutas)
+            a = 0
+            for i in rutas[0]["rutasNuevas"]:
+                a = a + 1
+            print("###############################################")
+            print(f"ID: {i["idRuta"]} Nombre: {i['nombre']}\nModulos: {i["modulos"]["Fundamentos de programacion"]}\n{i["modulos"]["Programacion Web"]}\n{i["modulos"]["Programacion formal"]}\n{i["modulos"]["Bases de datos"]["SGDB principal"]}\n{i["modulos"]["Bases de datos"]["SGDB alternativo"]}\n{i["modulos"]["Backend"]}")
+            print("###############################################")
             nuevo = int(input("ingrese id de la Ruta Creada: "))
             if len([c for c in rutas[0]["rutasNuevas"] if c.get("idRuta")== nuevo]) >=33:
                 print("Lo siento, la ruta de entrenamiento NetCore está llena.")
@@ -197,9 +193,6 @@ def registrarNotas(camper):
             print("")
     area = int(input("1. Sputnik\n2. Artemis\n3. Apollo\n"))
     if area == 1:
-            #if len([c for c in camper[0]["inscripciones"]]):# if c.get("areaEntrenamiento")=="Sputnik"]): #>=33:
-                #print("Lo siento, el área de entrenamiento Sputnikk está llena.")
-                #return
             inscripcion_encontrada["areaEntrenamiento"] = "Sputnik"
             guardarArchivo(camper)
             hora = int(input("ingrese horario:\n1. 6:00 - 10:00\n2. 10:00 - 14:00\n3. 14:00 - 18:00\n4. 18:00 - 22:00\n"))     
@@ -309,10 +302,7 @@ def registrarNotas(camper):
     if trainer == 1:
             
             if len([c for c in camper[0]["inscripciones"] if c.get("trainer")=="Pedro"]) >=33:
-                #if inscripcion_encontrada["trainer"] == "":
-                    #inscripcion_encontrada["trainer"] = "Pedro"
-                #print("Lo siento, el trainer ya fue asignado a otra ruta.")
-                    return
+                return
             inscripcion_encontrada["trainer"] = "Pedro Gomez"
         
             guardarArchivo(camper)
@@ -537,19 +527,9 @@ def menu():
     
     if opcion == 1:
         print("Elija la opción deseada:")
-        a = int(input("1. Ver Campers\n2. Listar Campers Inscritos\n3. Listar Campers Aprobados\n4. Listar Campers con Rendimiento Bajo\n5. Listar Campers con Ruta de Trainer\n6. Listar Campers Aprobados y Reprobados "))
+        a = int(input("1. Ver Campers "))
         if a == 1:
             vercampers(camper)
-        elif a == 2:
-            listar_campers_inscritos(camper)
-        elif a == 3:
-            listar_campers_aprobados(camper)
-        elif a == 4:
-            listar_campers_bajo_rendimiento(camper)
-        elif a == 5:
-            listar_campers_trainer_ruta(camper)
-        elif a == 6:
-            listar_aprobados_y_reprobados(camper)
         else:
             print("Opción no válida.")
     
@@ -558,11 +538,9 @@ def menu():
         contrasena_ingresada = input()
         if contrasena_ingresada == contrasena_trainer:
             print("Elija la opción deseada:")
-            a = int(input("1. Listar Trainers\n2. Crear Ruta de Entrenamiento "))
+            a = int(input("\n1. Ver Campers "))
             if a == 1:
-                listar_trainers(camper)
-            elif a == 2:
-                crearRutaEntrenamiento(rutas)
+                vercampers(camper)
             else:
                 print("Contraseña incorrecta. Acceso denegado.")
         else:
@@ -573,13 +551,27 @@ def menu():
         contrasena_ingresada = input()
         if contrasena_ingresada == contrasena_coordinador:
             print("Elija la opción deseada:")
-            a = int(input("1. Procesar Inscripción\n2. Registrar Notas\n3. Evaluar Camper "))
+            a = int(input("1. Procesar Inscripción\n2. Registrar Notas\n3. Evaluar Camper\n4. Crear Ruta de Entrenamiento\n5. Listar Campers Inscritos\n6. Listar Campers Aprobados\n7. Listar Campers con Rendimiento Bajo\n8. Listar Campers con Ruta de Trainer\n9. Listar Campers Aprobados y Reprobados\n10. Listar Trainers "))
             if a == 1:
                 procesar_inscripcion(camper)
             elif a == 2:
                 registrarNotas(camper)
             elif a == 3:
                 evaluar_camper(camper)
+            elif a == 4:
+                crearRutaEntrenamiento(camper)
+            elif a == 5:
+                listar_campers_inscritos(camper)
+            elif a == 6:
+                listar_campers_aprobados(camper)
+            elif a == 7:
+                listar_campers_bajo_rendimiento(camper)
+            elif a == 8:
+                listar_campers_trainer_ruta(camper)
+            elif a == 9:
+                listar_aprobados_y_reprobados(camper)
+            elif a == 10:
+                listar_trainers(camper)
             else:
                 print("Contraseña incorrecta. Acceso denegado.")
         else:
